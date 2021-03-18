@@ -1,0 +1,73 @@
+.about-circle{
+    padding-top: 80px;
+    
+    .bg-grad{
+        width: 60%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__caption{
+        .title{
+            color: $c-ventures-sec;
+            font-weight: 700;
+            margin-bottom: -5px;
+        }
+
+        hr{
+            background-color: $c-ventures-sec;
+            height: 4.5px;
+            width: 800px;
+            border: none;
+            margin: none;
+            margin-bottom: 25px;
+        }
+
+        .desc{
+            font-size: 16px;
+            color: $color-dark;
+            line-height: 1.92;
+            max-width: 460px;
+        }
+
+        .button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 35px;
+            padding: 18px 0;
+            width: 100%;
+            color: #fff !important;
+            font-weight: 500;
+            font-size: 24px;
+            margin-bottom: 20px;
+            box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+            @include transition();
+
+            &:hover{
+                @include scale(1.03);
+            }
+            
+            .icon{
+                font-size: 20px;
+                margin-right: 15px;
+            }
+
+            &.red{
+                background-color: $c-ventures-sec;
+            }
+            &.blue{
+                background-color: $c-fintech;
+            }
+            &.yellow{
+                background-color: $c-angels-sec;
+            }
+        }
+    }
+
+    &__banner{
+        img{
+            width: 100%;
+        }
+    }
+}

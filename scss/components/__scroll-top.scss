@@ -1,0 +1,38 @@
+.scroll-top{
+    position: absolute;
+    right: 80px;
+    top: -10px;
+    width: 62px;
+    height: 62px;
+    background-image: url(../images/ico/scroll-top.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 5;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    @include transition();
+    opacity: 0;
+    
+    @media screen and (max-width: $bp-XL){
+        right: 20px;
+    }
+
+    &.show{
+        opacity: 1;
+    }
+    &:hover{
+        @include scale(1.1);
+    }
+
+    &:active, &:focus{
+        outline: none;
+    }
+
+    @media screen and (max-width: $bp-MD){
+        right: 30px;
+        top: 20px;
+        width: 47px;
+        height: 47px;
+    }
+}

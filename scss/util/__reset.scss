@@ -1,0 +1,33 @@
+a:visited, a:link, a:hover, a:active{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: underline;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight: 400;
+
+    li{
+        display: block;
+        padding: 2px 0;
+    }
+}
+
+button, a[role="button"]{
+    cursor: pointer !important;
+}
+
+b{
+    font-weight: bold;
+}
+
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1230px;
+    }
+  }

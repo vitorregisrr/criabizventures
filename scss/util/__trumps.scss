@@ -1,0 +1,85 @@
+.section-wraper {
+    padding: 50px 0;
+    overflow: hidden;
+    
+    .section-title {
+        font-size: 24px;
+        font-family: 'Myriad Pro Semibold', sans-serif;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        color: black;
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
+    }
+}
+
+.inner-title {
+    @include title();
+    color: #839097;
+
+    @media screen and(max-width: $bp-MD) {
+        font-size: 30px;
+        line-height: 32px;
+    }
+}
+
+.inner-desc {
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: rgb(173, 173, 173);
+    font-size: 18px;
+}
+
+.color-primary {
+    color: $color-primary !important;
+}
+
+.color-secondary {
+    color: $color-secondary !important;
+}
+
+.bg-secondary{
+    background-color: #B89F80 !important;
+}
+
+.border-light {
+    border: .5px solid rgb(228, 228, 228) !important;
+}
+
+.img-70 {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.container-interna{
+    padding: 0 120px 0 200px;
+
+    @media screen and (max-width: $bp-LG){
+        padding: 0 10px;
+    }
+}
+
+.chevron-right {
+    height: 100% !important;
+    width: 100% !important;
+    background-image: url(../images/ico/chevron-right.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.chevron-left {
+    height: 100% !important;
+    width: 100% !important;
+    background-image: url(../images/ico/chevron-left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,83 @@
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    box-shadow: 0px 6px 4px rgba(0,0,0,.17);
+    background-color: #fff;
+    z-index: 12;
+    @include transition();
+
+    @media (min-width: 1400px) {
+        .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+          max-width: 1320px;
+        }
+      }
+    
+    &.sticky{
+        padding-top: 8px;
+        padding-bottom: 6px;
+        opacity: 1;
+
+        .brand{
+            width: 80px;
+        }
+
+        .main-nav{
+            ul{
+                li{
+                    a{
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .brand{
+            width: 106px;
+
+            @include transition();
+
+            &:hover{
+                @include scale(1.02);
+            }
+        }
+
+        .main-nav {
+            display: flex;
+
+            ul{
+                display: flex;
+                padding-top: 5px;
+
+                li{
+
+                    &:not(:last-child){
+                        margin-right: 30px;
+                    }
+                    
+                    a{
+                        display: block;
+                        font-size: 21px;
+                        color: $c-ventures-primary;
+                        transition: all 0.4s;
+                        
+                        &:hover{
+                            color: $c-ventures-sec;
+
+                            @include scale(1.03);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

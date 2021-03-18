@@ -1,0 +1,104 @@
+@mixin transition($time:0.3s, $element:all, $type:ease-in-out) {
+    -webkit-transition: $element $time $type;
+    -moz-transition: $element $time $type;
+    -ms-transition: $element $time $type;
+    -o-transition: $element $time $type;
+    transition: $element $time $type;
+}
+
+@mixin scale($val) {
+    -webkit-transform: scale($val);
+    -moz-transform: scale($val);
+    -ms-transform: scale($val);
+    -o-transform: scale($val);
+    transform: scale($val);
+}
+
+.bounce {
+	-moz-animation: bounce 1.5s infinite;
+	-webkit-animation: bounce 1.5s infinite;
+	animation: bounce 1.5s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  
+  50% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+
+  100%{
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+
+  100%{
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+
+  }
+}
+
+
+.float{
+  animation: float 6s infinite;
+  
+  &--fast{
+    animation-duration: 4.6s;
+    animation-delay: 4.6s;
+  }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+
+	50% {
+		transform: translatey(-15px);
+	}
+
+	100% {
+		transform: translatey(0px);
+	}
+}

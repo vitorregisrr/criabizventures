@@ -1,0 +1,29 @@
+//Import Variables //
+@import './variables/__all';
+
+//Import Mixins //
+@import './mixins/__all';
+
+// Import Utils //
+@import  './util/__all';
+
+// Import Components //
+@import './components/__all';
+
+// Import Sections //
+@import './sections/__all';
+
+
+body {
+    position: relative;
+    margin: 0;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    background: #fff;
+}
+
+html{
+    max-width: 100vw;
+    overflow-x: hidden;
+}

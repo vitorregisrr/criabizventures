@@ -1,0 +1,109 @@
+.home-banner {
+    background-color: $c-ventures-primary;
+    min-height: 100vh;
+    background-image: url("../../images/bg//home-bg-grads.png");
+    background-size: 85%;
+    background-position: 0 170px;
+    background-repeat: no-repeat;
+    padding-top: 234px;
+    padding-bottom: 130px;
+    
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .content-1 {
+                display: inline-block;
+                background-color: #fff;
+                border-radius: 32px;
+                color: $color-dark;
+                font-weight: 500;
+                padding: 4px 16px;
+                text-transform: uppercase;
+            }
+
+            .content-2 {
+                background-color: rgba(255, 255, 255, 0.13);
+                padding: 9px 20px 9px 120px;
+                border-radius: 32px;
+                margin-left: -103px;
+            }
+
+            .content-2 {
+                display: inline-block;
+            }
+        }
+
+        .title{
+            font-weight: bold;
+            font-size: 58px;
+        }
+
+        .desc{
+            font-weight: 400;
+            opacity: .9;
+            font-size: 16.5px;
+            line-height: 1.8;
+            max-width: 435px;
+            margin-bottom: 30px;
+        }
+
+        .more{
+            display: flex;
+            align-items: center;
+            background-color: $c-ventures-sec;
+            font-size: 18px;
+            padding: 15px 15px 15px 20px;
+            font-weight: 500;
+            color: #fff;
+            border-radius: 32px;
+            @include transition();
+
+            &:hover{
+                padding-right: 35px;
+                // @include scale(1.02);
+
+               .circle{
+                  transform: translateX(15px);
+               }
+            }
+
+            .circle{
+                display: flex;
+                font-size: 12px;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                color: $c-ventures-sec;
+                border-radius: 32px;
+                margin-left: 20px;
+                @include transition();
+
+                i{
+                    margin-left: 2px;
+                }
+            }
+        }
+    }
+
+    &__banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+
+        img {
+            width: 80.2%;
+        }
+    }
+}
