@@ -1,12 +1,15 @@
 .home-banner {
     background-color: $c-ventures-primary;
-    min-height: 100vh;
     background-image: url("../../images/bg//home-bg-grads.png");
     background-size: 85%;
     background-position: 0 170px;
     background-repeat: no-repeat;
     padding-top: 234px;
     padding-bottom: 130px;
+
+    @media screen and (max-width: 1350px){
+        background-position: 0 160%;
+    }
     
     &__caption {
         display: flex;
@@ -101,6 +104,10 @@
         flex-direction: column;
         align-items: center;
         height: 100%;
+
+        @media screen and (max-width: $bp-LG){
+            display: none;
+        }
 
         img {
             width: 80.2%;

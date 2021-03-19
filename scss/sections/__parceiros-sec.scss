@@ -1,0 +1,22 @@
+.parceiros-sec{
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+    img{
+        width: 250px;
+        margin: 10px;
+        max-height: 180px;
+        object-fit: contain;
+        @include transition();
+
+        &:hover{
+            @include scale(1.05);
+        }
+    }
+
+    .copy{
+        p{
+            margin-bottom: 0;
+        }
+    }
+}

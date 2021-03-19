@@ -5,31 +5,41 @@
     width: 100%;
     padding-top: 16px;
     padding-bottom: 12px;
-    box-shadow: 0px 6px 4px rgba(0,0,0,.17);
+    box-shadow: 0 6px 4px rgba(0,0,0,.17);
     background-color: #fff;
     z-index: 12;
     @include transition();
-
     @media (min-width: 1400px) {
-        .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-          max-width: 1320px;
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl,
+        .container-xxl {
+            max-width: 1320px;
         }
-      }
+    }
     
-    &.sticky{
-        padding-top: 8px;
-        padding-bottom: 6px;
-        opacity: 1;
+    @media screen and (max-width: $bp-LG) {
+        position: absolute;
+    }
 
-        .brand{
-            width: 80px;
-        }
+    @media screen and (min-width: $bp-LG) {
+        &.sticky {
+            padding-top: 8px;
+            padding-bottom: 6px;
+            opacity: 1;
 
-        .main-nav{
-            ul{
-                li{
-                    a{
-                        font-size: 19px;
+            .brand {
+                width: 80px;
+            }
+
+            .main-nav {
+                ul {
+                    li {
+                        a {
+                            font-size: 19px;
+                        }
                     }
                 }
             }
@@ -41,12 +51,20 @@
         justify-content: space-between;
         align-items: center;
 
-        .brand{
-            width: 106px;
+        @media screen and (max-width: $bp-LG){
+            display: flex;
+            flex-direction: column;
+        }
 
+        .brand {
+            width: 106px;
             @include transition();
 
-            &:hover{
+            @media screen and (max-width: $bp-MD){
+                width: 85px;
+            }
+
+            &:hover {
                 @include scale(1.02);
             }
         }
@@ -54,25 +72,39 @@
         .main-nav {
             display: flex;
 
-            ul{
+            ul {
                 display: flex;
                 padding-top: 5px;
 
-                li{
-
-                    &:not(:last-child){
+                li {
+                    &:not(:last-child) {
                         margin-right: 30px;
+
+                        @media screen and (max-width: $bp-MD){
+                            margin-right: 15px;
+                        }
                     }
-                    
-                    a{
+
+                    a {
                         display: block;
                         font-size: 21px;
                         color: $c-ventures-primary;
                         transition: all 0.4s;
-                        
-                        &:hover{
-                            color: $c-ventures-sec;
 
+                        @media screen and (max-width: $bp-MD){
+                            font-size: 15px;
+                            text-align: center;
+                            font-weight: 700;
+                        }
+
+                        @media screen and (max-width: $bp-SM){
+                            font-size: 14px;
+                            text-align: center;
+                            font-weight: 700;
+                        }
+
+                        &:hover {
+                            color: $c-ventures-sec;
                             @include scale(1.03);
                         }
                     }

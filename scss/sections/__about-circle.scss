@@ -21,6 +21,10 @@
             border: none;
             margin: none;
             margin-bottom: 25px;
+
+            @media screen and (max-width: $bp-LG){
+                width: 90%;
+            }
         }
 
         .desc{

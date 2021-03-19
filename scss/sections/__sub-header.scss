@@ -1,0 +1,23 @@
+.sub-header {
+    .title {
+        text-align: center;
+        color: $c-ventures-sec;
+        font-weight: 700;
+    }
+
+    .line {
+        border: none;
+        height: 5px;
+        width: 65%;
+        background-color: $c-ventures-sec;
+    }
+
+    .desc {
+        font-size: 17px;
+        color: $color-dark;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 25px;
+        letter-spacing: 0.2px;
+    }
+}

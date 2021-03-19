@@ -3,7 +3,7 @@
 
     &__content {
         border-radius: 16px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.441);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.34);
         background-color: $c-ventures-terc;
 
         .header {
@@ -31,6 +31,15 @@
                     .content {
                         padding-left: 20px;
                     }
+                }
+            }
+
+            @media screen and (max-width: $bp-LG){
+                display: none;
+                
+                &[data-visible="true"]{
+                    display: block;
+                    animation: fadeIn 0.5s;       
                 }
             }
         }
@@ -119,6 +128,10 @@
         border-radius: 0 0 16px 16px;
         padding-top: 20px;
         padding-bottom: 50px;
+
+        @media screen and (max-width: $bp-LG){
+            display: none;
+        }
 
         .title{
             color: $c-ventures-primary;

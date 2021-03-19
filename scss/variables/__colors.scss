@@ -7,44 +7,211 @@ $c-ventures-primary: #BA1814;
 $c-ventures-sec: #ED3833;
 $c-ventures-terc: #9C211E;
 
+.c-v-p{
+    color: $c-ventures-primary;
+}
+.c-v-s{
+    color: $c-ventures-sec;
+}
+.c-v-t{
+    color: $c-ventures-terc;
+}
+
+.bg-v-p{
+    background-color: $c-ventures-primary;
+}
+.bg-v-s{
+    background-color: $c-ventures-sec;
+}
+.bg-v-t{
+    background-color: $c-ventures-terc;
+}
+
 // Colors Education
 $c-education-primary: #9F349E;
 $c-education-sec: #E153E0;
+
+.c-ed-p{
+    color: $c-education-primary;
+}
+.c-ed-s{
+    color: $c-education-sec;
+}
+
+.bg-ed-p{
+    background-color: $c-education-primary;
+}
+.bg-ed-s{
+    background-color: $c-education-sec;
+}
 
 // Colors Health
 $c-health-primary: #038874;
 $c-health-sec: #00BD9F;
 
+.c-he-p{
+    color: $c-health-primary;
+}
+.c-he-s{
+    color: $c-health-sec;
+}
+
+.bg-he-p{
+    background-color: $c-health-primary;
+}
+.bg-he-s{
+    background-color: $c-health-sec;
+}
+
 // Colors Impact
 $c-impact-primary: #CB0000;
+
+.c-imp-p{
+    color: $c-impact-primary;
+}
+
+.bg-imp-p{
+    background-color: $c-impact-primary;
+}
 
 // Colors Women
 $c-women-primary: #A43E79;
 $c-women-sec: #691546;
 
+.c-wom-p{
+    color: $c-women-primary;
+}
+.c-wom-s{
+    color: $c-women-sec;
+}
+
+.bg-wom-p{
+    background-color: $c-women-primary;
+}
+.bg-wom-s{
+    background-color: $c-women-sec;
+}
+
 // Colors Tech
 $c-tech-primary: #0074C5;
 $c-tech-sec: #00528C;
+
+.c-t-p{
+    color: $c-tech-primary;
+}
+
+.c-t-s{
+    color: $c-tech-sec;
+}
+
+.bg-t-p{
+    background-color: $c-tech-primary;
+}
+
+.bg-t-s{
+    background-color: $c-tech-sec;
+}
 
 // Colors Aging
 $c-aging-primary: #009DCC;
 $c-aging-sec: #006887;
 
+.c-ag-p{
+    color: $c-aging-primary;
+}
+
+.c-ag-s{
+    color: $c-aging-sec;
+}
+
+.bg-ag-p{
+    background-color: $c-aging-primary;
+}
+
+.bg-ag-s{
+    background-color: $c-aging-sec;
+}
+
 // Colors Educa
 $c-educa-primary: #DAA402;
 $c-educa-sec: #FFBA00;
+
+.c-edu-p{
+    color: $c-educa-primary;
+}
+
+.c-edu-s{
+    color: $c-educa-sec;
+}
 
 // Colors Youth
 $c-youth-primary: #D97E00;
 $c-youth-sec: #995A03;
 
+.c-yo-p{
+    color: $c-youth-primary;
+}
+
+.c-yo-s{
+    color: $c-youth-sec;
+}
+
+.bg-yo-p{
+    background-color: $c-youth-primary;
+}
+
+.bg-yo-s{
+    background-color: $c-youth-sec;
+}
+
 // Colors Agritech
 $c-agritech-primary: #8F3F1B;
 $c-agritech-sec: #842C05;
+
+.c-agr-p{
+    color: $c-agritech-primary;
+}
+
+.c-agr-s{
+    color: $c-agritech-sec;
+}
+
+.bg-agr-p{
+    background-color: $c-agritech-primary;
+}
+
+.bg-agr-s{
+    background-color: $c-agritech-sec;
+}
 
 // Colors Angels
 $c-angels-primary: #E5AC00;
 $c-angels-sec: #FFBA00;
 
+.c-ang-p{
+    color: $c-angels-primary;
+}
+
+.c-ang-s{
+    color: $c-angels-sec;
+}
+
+.bg-ang-p{
+    background-color: $c-angels-primary;
+}
+
+.bg-ang-s{
+    background-color: $c-angels-sec;
+}
+
+
 // Misc
 $c-fintech: #00B3B6;
+
+.c-f-p{
+    color: $c-fintech;
+}
+
+.bg-f-p{
+    background-color: $c-fintech;
+}
