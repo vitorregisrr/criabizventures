@@ -1901,6 +1901,7 @@ textarea.form-control {
   width: 100%;
   padding-top: 245px;
   padding-bottom: 300px;
+  max-height: 400px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1915,6 +1916,13 @@ textarea.form-control {
     padding-bottom: 150px;
     padding-left: 13.5px;
     margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 769px) {
+  .verticais-neg__brands {
+    max-width: 450px;
+    margin: 0 auto;
   }
 }
 
