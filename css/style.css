@@ -663,7 +663,7 @@ b {
 
 @media screen and (max-width: 768px) {
   .main-header__content .main-nav ul li a {
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     font-weight: 700;
   }
@@ -671,7 +671,7 @@ b {
 
 @media screen and (max-width: 576px) {
   .main-header__content .main-nav ul li a {
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     font-weight: 500;
   }
