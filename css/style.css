@@ -1488,13 +1488,13 @@ textarea.form-control {
 
 @media screen and (max-width: 992px) {
   .about-circle__banner img {
-    width: 105vw;
-    margin-left: -13vw;
+    width: 107vw;
+    margin-left: -14vw;
   }
 }
 
 .painel-numeros {
-  padding-top: 80px;
+  padding-top: 90px;
 }
 
 @media screen and (min-width: 992px) {
@@ -1533,7 +1533,7 @@ textarea.form-control {
 
 .painel-numeros__content {
   border-radius: 16px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.34);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   background-color: #9C211E;
 }
 
@@ -1568,6 +1568,12 @@ textarea.form-control {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 992px) {
+  .painel-numeros__content .header .toggle-btn {
+    display: none;
+  }
 }
 
 .painel-numeros__content .header .toggle-btn:hover {
@@ -1882,7 +1888,7 @@ textarea.form-control {
 }
 
 .verticais-neg {
-  padding-top: 100px;
+  padding-top: 130px;
   max-width: 100vw;
   overflow: hidden;
 }
@@ -1901,7 +1907,6 @@ textarea.form-control {
   width: 100%;
   padding-top: 245px;
   padding-bottom: 300px;
-  max-height: 400px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1921,7 +1926,7 @@ textarea.form-control {
 
 @media screen and (min-width: 767px) and (max-width: 769px) {
   .verticais-neg__brands {
-    max-width: 450px;
+    max-width: 400px;
     margin: 0 auto;
   }
 }
@@ -2167,7 +2172,7 @@ textarea.form-control {
 }
 
 .programas-impacto {
-  padding-top: 55px;
+  padding-top: 75px;
 }
 
 @media screen and (max-width: 992px) {

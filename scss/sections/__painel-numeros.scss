@@ -1,5 +1,5 @@
 .painel-numeros {
-    padding-top: 80px;
+    padding-top: 90px;
 
     @media screen and (min-width: $bp-LG) {
         padding-left: 200px;
@@ -27,8 +27,9 @@
 
     &__content {
         border-radius: 16px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.34);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
         background-color: $c-ventures-terc;
+        
         @media screen and (max-width: $bp-LG) {
             margin-top: 30px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.34);
@@ -53,6 +54,10 @@
                 font-size: 20px;
                 border: none;
                 @include transition();
+
+                @media screen and (min-width: $bp-LG){
+                    display: none;
+                }
 
                 &:hover{
                     outline: none;
@@ -88,6 +93,7 @@
                         display: block;
                     }
                 }
+                
             }
 
             @media screen and (max-width: $bp-LG) {
