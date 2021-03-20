@@ -21,6 +21,10 @@
         padding-right: 100px;
     }
 
+    @media screen and (max-width: $bp-SM){
+        padding-top: 55px;
+    }
+
     &__content {
         border-radius: 16px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.34);

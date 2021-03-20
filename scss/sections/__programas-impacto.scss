@@ -5,6 +5,10 @@
         padding-top: 25px;
     }
 
+    @media screen and (max-width: $bp-SM){
+        padding-top: 15px;
+    }
+
     .sub-header{
         padding-bottom: 50px;
 

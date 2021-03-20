@@ -1499,6 +1499,12 @@ textarea.form-control {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .painel-numeros {
+    padding-top: 55px;
+  }
+}
+
 .painel-numeros__content {
   border-radius: 16px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.34);
@@ -2133,6 +2139,12 @@ textarea.form-control {
 @media screen and (max-width: 992px) {
   .programas-impacto {
     padding-top: 25px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .programas-impacto {
+    padding-top: 15px;
   }
 }
 
