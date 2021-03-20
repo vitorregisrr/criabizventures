@@ -561,6 +561,8 @@ b {
 
 @media screen and (max-width: 992px) {
   .main-header {
+    padding-top: 20px;
+    padding-bottom: 16px;
     box-shadow: 0 6px 4px rgba(0, 0, 0, 0.15);
   }
 }
@@ -1432,7 +1434,7 @@ textarea.form-control {
 @media screen and (max-width: 992px) {
   .painel-numeros {
     padding-top: 40px;
-    padding-bottom: 90px;
+    padding-bottom: 00px;
   }
 }
 
@@ -2073,6 +2075,13 @@ textarea.form-control {
   padding-bottom: 100px;
 }
 
+@media screen and (max-width: 992px) {
+  .parceiros-sec {
+    padding-top: 65px;
+    padding-bottom: 80px;
+  }
+}
+
 .parceiros-sec img {
   width: 250px;
   margin: 10px;
@@ -2083,6 +2092,13 @@ textarea.form-control {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .parceiros-sec img {
+    width: 110px;
+    max-height: 80px;
+  }
 }
 
 .parceiros-sec img:hover {

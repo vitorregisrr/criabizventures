@@ -2,6 +2,11 @@
     padding-top: 150px;
     padding-bottom: 100px;
 
+    @media screen and (max-width: $bp-LG){
+        padding-top: 65px;
+        padding-bottom: 80px;
+    }
+
     img{
         width: 250px;
         margin: 10px;
@@ -9,6 +14,10 @@
         object-fit: contain;
         @include transition();
 
+        @media screen and (max-width: $bp-MD){
+            width: 110px;
+            max-height: 80px;
+        }
         &:hover{
             @include scale(1.05);
         }
