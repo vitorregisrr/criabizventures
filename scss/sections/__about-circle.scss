@@ -75,7 +75,12 @@
             @media screen and (max-width: $bp-LG) {
                 font-size: 15px;
                 padding: 12px 0;
+            }
 
+            @media screen and (max-width: $bp-MD){
+                font-size: 13px;
+                padding: 9px 0;
+                margin-bottom: 15px;
             }
 
             .icon {
@@ -85,6 +90,10 @@
                 @media screen and (max-width: $bp-LG) {
                     font-size: 12px;
                     margin-right: 10px;
+                }
+
+                @media screen and (max-width: $bp-MD){
+                   font-size: 10px;
                 }
             }
 

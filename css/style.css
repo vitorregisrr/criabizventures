@@ -1444,6 +1444,14 @@ textarea.form-control {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .about-circle__caption .button {
+    font-size: 13px;
+    padding: 9px 0;
+    margin-bottom: 15px;
+  }
+}
+
 .about-circle__caption .button .icon {
   font-size: 20px;
   margin-right: 15px;
@@ -1453,6 +1461,12 @@ textarea.form-control {
   .about-circle__caption .button .icon {
     font-size: 12px;
     margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-circle__caption .button .icon {
+    font-size: 10px;
   }
 }
 
