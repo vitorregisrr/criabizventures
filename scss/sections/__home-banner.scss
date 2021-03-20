@@ -19,17 +19,26 @@
         padding-top: 220px;
         padding-bottom: 66px;
         background-size: 120%;
-        background-position: 160% 1535%;
+        background-position: 160% 150px;
     }
     
     @media screen and (max-width: $bp-MD){
         padding-top: 195px;
-        background-position: 160% 405%;
+        background-position: 160% 200px;
     }
     
     @media screen and (max-width: $bp-SM){
-        background-position: 160% 135%;
+        background-position: 160% 255px;
     }
+
+    @media screen and (max-width: 375px){
+        background-position: 160% 325px;
+    }
+
+    @media screen and (max-width: 320px){
+        background-position: 160% 315px;
+    }
+
     
     &__caption {
         display: flex;

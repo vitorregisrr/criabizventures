@@ -1139,20 +1139,32 @@ textarea.form-control {
     padding-top: 220px;
     padding-bottom: 66px;
     background-size: 120%;
-    background-position: 160% 1535%;
+    background-position: 160% 150px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .home-banner {
     padding-top: 195px;
-    background-position: 160% 405%;
+    background-position: 160% 200px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .home-banner {
-    background-position: 160% 135%;
+    background-position: 160% 255px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .home-banner {
+    background-position: 160% 325px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home-banner {
+    background-position: 160% 315px;
   }
 }
 
@@ -2289,6 +2301,12 @@ textarea.form-control {
     line-height: 1.5;
     max-width: 450px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sub-header .desc {
+    font-size: 13px;
   }
 }
 
