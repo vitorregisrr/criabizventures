@@ -67,6 +67,11 @@
             &:hover {
                 @include scale(1.03);
             }
+
+            @media screen and (max-width: $bp-XL){
+                font-size: 18.5px;
+            }
+
             @media screen and (max-width: $bp-LG) {
                 font-size: 15px;
                 padding: 12px 0;
@@ -96,9 +101,9 @@
     }
 
     &__banner {
-        
         img {
             width: 100%;
+
             @media screen and (max-width: $bp-LG) {
                 width: 105vw;
                 margin-left: -13vw;

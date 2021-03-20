@@ -69,6 +69,11 @@
         .brand {
             width: 106px;
             @include transition();
+
+            @media screen and (max-width: $bp-LG) {
+                width: 95px;
+            }
+
             @media screen and (max-width: $bp-MD) {
                 width: 85px;
             }
@@ -100,6 +105,13 @@
                         font-size: 21px;
                         color: $c-ventures-primary;
                         transition: all 0.4s;
+                        
+                        @media screen and (max-width: $bp-LG) {
+                            font-size: 17px;
+                            text-align: center;
+                            font-weight: 500;
+                        }
+                        
                         @media screen and (max-width: $bp-MD) {
                             font-size: 16px;
                             text-align: center;
