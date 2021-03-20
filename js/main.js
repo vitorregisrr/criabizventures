@@ -40,7 +40,7 @@
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href'))
                 .offset()
-                .top - 300
+                .top - 50
         }, 500);
     });
 

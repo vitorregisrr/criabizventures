@@ -48,6 +48,11 @@
 
         &-sub{
             position: absolute;
+            @include transition();
+
+            &:hover{
+               transform: scale(1.1) translateX(-45%) !important;
+            }
             
             img{
                 width: 175px;
@@ -59,10 +64,6 @@
 
                 @media screen and (max-width: $bp-MD){
                     width: 85px;
-                }
-
-                &:hover{
-                    @include scale(1.05);
                 }
             }
 

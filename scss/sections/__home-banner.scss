@@ -2,10 +2,20 @@
     background-color: $c-ventures-primary;
     background-image: url("../images/bg//home-bg-grads.png");
     background-size: 85%;
-    background-position: 0 170px;
+    background-position: 100px 200px;
     background-repeat: no-repeat;
     padding-top: 234px;
     padding-bottom: 130px;
+    
+    &.v-2{
+        background-image: url("../images/bg/home-bg-grads-2.png");
+        background-size: 100%;
+        background-position: -50px 380px;
+
+        @media screen and (min-width: $bp-XL){
+            padding-bottom: 150px;
+        }
+    }
 
     @media screen and (max-width: 1350px){
         background-position: 0 160%;
