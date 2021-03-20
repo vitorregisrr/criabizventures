@@ -1291,8 +1291,6 @@ textarea.form-control {
 
 @media screen and (max-width: 992px) {
   .about-circle {
-    max-width: 100vw;
-    overflow-x: hidden;
     padding-top: 50px;
   }
 }
@@ -1415,8 +1413,8 @@ textarea.form-control {
 
 @media screen and (max-width: 992px) {
   .about-circle__banner img {
-    width: 110vw;
-    margin-left: -15%;
+    width: 105vw;
+    margin-left: -13vw;
   }
 }
 
@@ -1708,9 +1706,9 @@ textarea.form-control {
   padding-bottom: 50px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .painel-numeros__footer {
-    display: none;
+    padding-bottom: 30px;
   }
 }
 
@@ -1719,6 +1717,15 @@ textarea.form-control {
   text-align: center;
   font-weight: 700;
   margin-bottom: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .painel-numeros__footer .title {
+    font-size: 15px;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
 }
 
 .painel-numeros__footer .brands {
@@ -1743,6 +1750,13 @@ textarea.form-control {
   -ms-transform: scale(1.02);
   -o-transform: scale(1.02);
   transform: scale(1.02);
+}
+
+@media screen and (max-width: 768px) {
+  .painel-numeros__footer .brands img {
+    height: 45px;
+    margin: 0 10px;
+  }
 }
 
 .verticais-neg {

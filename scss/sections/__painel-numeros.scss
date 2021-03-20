@@ -243,8 +243,9 @@
         border-radius: 0 0 16px 16px;
         padding-top: 20px;
         padding-bottom: 50px;
-        @media screen and (max-width: $bp-LG) {
-            display: none;
+
+        @media screen and (max-width: $bp-MD){
+            padding-bottom: 30px;   
         }
 
         .title {
@@ -252,6 +253,13 @@
             text-align: center;
             font-weight: 700;
             margin-bottom: 35px;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 15px;
+                max-width: 250px;
+                margin: 0 auto;
+                margin-bottom: 25px;
+            }
         }
 
         .brands {
@@ -263,8 +271,14 @@
                 height: 90px;
                 margin: 0 20px;
                 @include transition();
+
                 &:hover {
                     @include scale(1.02);
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    height: 45px;
+                    margin: 0 10px;
                 }
             }
         }

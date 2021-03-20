@@ -2,8 +2,6 @@
     padding-top: 80px;
     
     @media screen and (max-width: $bp-LG) {
-        max-width: 100vw;
-        overflow-x: hidden;
         padding-top: 50px;
     }
 
@@ -98,11 +96,12 @@
     }
 
     &__banner {
+        
         img {
             width: 100%;
             @media screen and (max-width: $bp-LG) {
-                width: 110vw;
-                margin-left: -15%;
+                width: 105vw;
+                margin-left: -13vw;
             }
         }
     }
