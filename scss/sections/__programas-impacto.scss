@@ -1,8 +1,16 @@
 .programas-impacto{
-    padding-top: 85px;
+    padding-top: 55px;
+
+    @media screen and (max-width: $bp-LG){
+        padding-top: 25px;
+    }
 
     .sub-header{
         padding-bottom: 50px;
+
+        @media screen and (max-width: $bp-LG){
+            padding-bottom: 15px;
+        }
     }
 
     &__item{
@@ -14,6 +22,14 @@
         height: 160px;
         padding: 15px 10px;
         @include transition();
+
+        @media screen and (max-width: $bp-LG){
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px 15px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
 
         &:hover{
             @include scale(1.05);

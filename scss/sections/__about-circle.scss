@@ -1,40 +1,59 @@
-.about-circle{
+.about-circle {
     padding-top: 80px;
     
-    .bg-grad{
+    @media screen and (max-width: $bp-LG) {
+        max-width: 100vw;
+        overflow-x: hidden;
+        padding-top: 50px;
+    }
+
+    .bg-grad {
         width: 60%;
         position: absolute;
         z-index: -1;
     }
 
-    &__caption{
-        .title{
+    &__caption {
+        .title {
             color: $c-ventures-sec;
             font-weight: 700;
             margin-bottom: -5px;
+            @media screen and (max-width: $bp-LG) {
+                font-size: 22px;
+                width: 90%;
+                margin: 0 auto;
+                text-align: left;
+                color: $c-impact-primary;
+                margin-bottom: -5px;
+            }
         }
 
-        hr{
+        hr {
             background-color: $c-ventures-sec;
             height: 4.5px;
             width: 800px;
             border: none;
-            margin: none;
-            margin-bottom: 25px;
-
-            @media screen and (max-width: $bp-LG){
+            margin: none none 25px;
+            @media screen and (max-width: $bp-LG) {
                 width: 90%;
+                background-color: $c-ventures-sec;
+                margin-bottom: 15px;
             }
         }
 
-        .desc{
+        .desc {
             font-size: 16px;
             color: $color-dark;
             line-height: 1.92;
             max-width: 460px;
+            @media screen and (max-width: $bp-LG) {
+                padding-top: 10px;
+                font-size: 14px;
+                line-height: 1.5;
+            }
         }
 
-        .button{
+        .button {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -47,31 +66,44 @@
             margin-bottom: 20px;
             box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
             @include transition();
-
-            &:hover{
+            &:hover {
                 @include scale(1.03);
             }
-            
-            .icon{
-                font-size: 20px;
-                margin-right: 15px;
+            @media screen and (max-width: $bp-LG) {
+                font-size: 15px;
+                padding: 12px 0;
+
             }
 
-            &.red{
+            .icon {
+                font-size: 20px;
+                margin-right: 15px;
+
+                @media screen and (max-width: $bp-LG) {
+                    font-size: 12px;
+                    margin-right: 10px;
+                }
+            }
+
+            &.red {
                 background-color: $c-ventures-sec;
             }
-            &.blue{
+            &.blue {
                 background-color: $c-fintech;
             }
-            &.yellow{
+            &.yellow {
                 background-color: $c-angels-sec;
             }
         }
     }
 
-    &__banner{
-        img{
+    &__banner {
+        img {
             width: 100%;
+            @media screen and (max-width: $bp-LG) {
+                width: 110vw;
+                margin-left: -15%;
+            }
         }
     }
 }

@@ -15,6 +15,16 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -90,6 +100,16 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <!-- partial -->
     </head>
 
@@ -146,9 +166,12 @@
                                     Ajudamos a construir startups Inovadoras
                                 </h1>
 
-                                <div class="desc wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="desc wow fadeInUp d-none d-lg-block" data-wow-delay="0.6s">
                                     Nossa tese é fundamentada na entrega de valor aos clientes através de
                                     Plataformas Digitais e Inteligência de Dados.
+                                </div>
+                                <div class="desc wow fadeInUp d-block d-lg-none" data-wow-delay="0.6s">
+                                    Através de Inovação Tecnológica e Algoritmos, com foco B2B e Inteligência de Dados.
                                 </div>
 
                                 <div class="d-flex justify-content-start">
@@ -176,9 +199,17 @@
                         <div class="col-lg-5">
                             <div class="about-circle__caption">
                                 <h2 class="title wow fadeInUp" data-wow-delay="0.3s">
-                                    Nossa atuação
+                                    <span class="d-block">
+                                        Nossa atuação
+                                    </span>
                                 </h2>
                                 <hr class="line wow fadeIn" data-wow-delay="1s">
+
+                                <div class="col-lg-12">
+                                    <div class="about-circle__banner lazy wow zoomIn d-block d-lg-none" data-wow-delay="0.6s">
+                                        <img class="lazy" src="../images/bg/banner-books-mobile.png" alt="">
+                                    </div>
+                                </div>
 
                                 <div class="desc wow fadeInUp" data-wow-delay="0.6s">
                                     <p>
@@ -198,8 +229,8 @@
                                         de inovação.</p>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-6">
+                                <div class="row px-4 px-lg-0">
+                                    <div class="col-6 pr-0 pr-lg-3">
                                         <a href="./empresas.html" class="button wow zoomIn red" data-wow-delay="0.2s">
                                             <span class="icon">
                                                 <i class="far fa-building"></i>
@@ -222,7 +253,7 @@
                                             href="./investidores.html"
                                             class="button wow zoomIn yellow"
                                             data-wow-delay="0.2s">
-                                            <span class="icon mr-4">
+                                            <span class="icon mr-3 mr-lg-4">
                                                 <i class="fas fa-dollar-sign"></i>
                                             </span>
                                             Investidor Anjo
@@ -232,7 +263,7 @@
                             </div>
                         </div>
                         <div class="col-lg-7">
-                            <div class="about-circle__banner lazy wow zoomIn" data-wow-delay="0.6s">
+                            <div class="about-circle__banner lazy wow zoomIn d-none d-lg-block" data-wow-delay="0.6s">
                                 <img class="lazy" src="../images/bg/circle-home.png" alt="">
                             </div>
                         </div>
@@ -242,18 +273,39 @@
 
             <section id="numeros" class="painel-numeros order-last order-lg-4">
                 <div class="container">
-                    <div class="painel-numeros__content">
+                    <header class="sub-header d-block d-lg-none">
+                        <h2 class="title wow fadeInUp" data-wow-delay="0.3s">
+                            Entenda o alcance e as conquistas da CriabizNossos segmentos de Atuação
+                        </h2>
+    
+                        <hr class="line wow zoomIn" data-wow-delay="0.4s">
+    
+                        <p class="desc wow fadeInUp" data-wow-delay="0.5s">
+                            As ações desenvolvidas peça Criabiz Ventures e projetos de sua carreira atuam de acordo com os seguintes ODS da ONU
+                        </p>
+                    </header>
+
+                    <div class="painel-numeros__content wow fadeInUp">
                         <div class="header">
                             <h2 class="title wow zoomIn" data-wow-delay="0.1s">
                                 Números Criabiz
                             </h2>
+
+                            <button class="toggle-btn" data-toggle="painel-numeros">
+                                <div class="right">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                                <div class="left">
+                                    <i class="fas fa-long-arrow-alt-left"></i>
+                                </div>
+                            </button>
                         </div>
 
                         <div class="info">
-                            <div class="column">
+                            <div id="painel-numeros-tab-1" class="column" data-visible="true">
                                 <div class="subheader">
                                     <h3 class="subtitle wow zoomIn" data-wow-delay="0.2s">
-                                        Financeiro
+                                        Financeiros
                                     </h3>
                                 </div>
 
@@ -306,7 +358,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="column">
+                            <div id="painel-numeros-tab-2" class="column">
                                 <div class="subheader">
                                     <h3 class="subtitle wow zoomIn" data-wow-delay="0.3s">
                                         Inovações
@@ -326,7 +378,7 @@
                                         </span>
                                     </div>
 
-                                    <div class="sub-group mb-5 wow zoomIn" data-wow-delay="0.3s">
+                                    <div class="sub-group mb-3 wow zoomIn" data-wow-delay="0.3s">
                                         <span class="financial-number sm">
                                             8 Segmentos
                                         </span>
@@ -337,7 +389,7 @@
                                             impacto, fintech, investimento anjo)
                                         </span>
                                     </div>
-                                    <div class="sub-group mb-5 wow zoomIn" data-wow-delay="0.4s">
+                                    <div class="sub-group mb-4 wow zoomIn" data-wow-delay="0.4s">
                                         <span class="financial-number sm">
                                             18 Startups
                                         </span>
@@ -345,7 +397,7 @@
                                             Inovadoras em Desenvolvimento
                                         </span>
                                     </div>
-                                    <div class="sub-group mb-5 wow zoomIn" data-wow-delay="0.5s">
+                                    <div class="sub-group mb-3 wow zoomIn" data-wow-delay="0.5s">
                                         <span class="financial-number sm">
                                             9 Certificadas
                                         </span>
@@ -353,7 +405,7 @@
                                             Open100, Startups to Watch
                                         </span>
                                     </div>
-                                    <div class="sub-group mb-5 wow zoomIn" data-wow-delay="0.6s">
+                                    <div class="sub-group mb-3 wow zoomIn" data-wow-delay="0.6s">
                                         <span class="financial-number sm">
                                             100 + Corporates
                                         </span>
@@ -496,37 +548,37 @@
             <div class="container">
                 <header class="sub-header">
                     <h2 class="title wow fadeInUp" data-wow-delay="0.3s">
-                        Nossos Programas de Impacto ESG
+                        Nossos Programas<br class="d-block d-lg-none" /> de Impacto ESG
                     </h2>
                     <hr class="line wow zoomIn" data-wow-delay="0.4s">
                 </header>
 
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-6 col-lg-3">
                         <div class="programas-impacto__item wow zoomIn" data-wow-delay="0.3s">
                             <a href="#">
                                 <img class="lazy" src="../images/logo/criabiz-educa.png" alt="Logo Criabiz Angels Educa">
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-6 col-lg-3">
                         <div class="programas-impacto__item wow zoomIn" data-wow-delay="0.4s">
                             <a href="#">
                                 <img class="lazy" src="../images/logo/criabiz-aging-v.png" alt="Logo Criabiz Aging">
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-6 col-lg-3">
                         <div class="programas-impacto__item wow zoomIn" data-wow-delay="0.5s">
                             <a href="#">
                                 <img class="lazy" src="../images/logo/criabiz-youth-v.png" alt="Logo Criabiz Youth">
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-6 col-lg-3">
                         <div class="programas-impacto__item wow zoomIn" data-wow-delay="0.4s">
                             <a href="#">
-                                <img class="lazy px-4" src="../images/logo/criabiz-women.png" alt="Logo Criabiz Women">
+                                <img class="lazy px-1 px-lg-4" src="../images/logo/criabiz-women.png" alt="Logo Criabiz Women">
                             </a>
                         </div>
                     </div>
@@ -630,93 +682,110 @@
 
     <!-- partial:../partials/__footer.html -->
     <footer class="main-footer wow fadeInUp" data-wow-delay="1.5s">
-   <div class="container">
-       <div class="row">
-           <div class="col-lg-3 wow zoomIn" data-wow-delay="1.5s">
-               <img src="../images/logo/criabiz-ventures-white.png" alt="">
-           </div>
-           <div class="col-lg-2">
-               <ul>
-                   <li class="title wow fadeInUp" data-wow-delay="1.5s">
-                       Saiba mais
-                   </li>
-                   <li class="wow fadeInUp" data-wow-delay="1.5s">
-                       <a href="#">Home</a>
-                   </li>
-                   <li class="wow fadeInUp" data-wow-delay="1.5s">
-                       <a href="#">Sobre Nós</a>
-                   </li>
-                   <li class="wow fadeInUp" data-wow-delay="1.5s">
-                       <a href="#">Imprensa</a>
-                   </li>
-                   <li class="wow fadeInUp" data-wow-delay="1.5s">
-                       <a href="#">Nossos Projetos</a>
-                   </li>
-                   <li class="wow fadeInUp" data-wow-delay="1.5s">
-                       <a href="#">BovBrasil</a>
-                   </li>
-               </ul>
-           </div>
-           <div class="col-lg-2">
-            <ul>
-                <li class="title wow fadeInUp" data-wow-delay="1.5s">
-                    Negócio
-                </li>
-                <li class="wow fadeInUp" data-wow-delay="1.5s">
-                    <a href="#">Empresas</a>
-                </li>
-                <li class="wow fadeInUp" data-wow-delay="1.5s">
-                    <a href="#">Startups</a>
-                </li>
-                <li class="wow fadeInUp" data-wow-delay="1.5s">
-                    <a href="#">Investidores Anjo</a>
-                </li>
-            </ul>
-           </div>
-           <div class="col-lg-2">
-            <ul>
-                <li class="title wow fadeInUp" data-wow-delay="1.5s">
-                    Projetos
-                </li>
-                <li class="wow fadeInUp" data-wow-delay="1.5s">
-                    <a href="#">Industria .0</a>
-                </li>
-                <li class="wow fadeInUp" data-wow-delay="1.5s">
-                    <a href="#">Agro 4.0</a>
-                </li>
-                <li class="wow fadeInUp" data-wow-delay="1.5s">
-                    <a href="#">Edu 5.0</a>
-                </li>
-            </ul>
-           </div>
-           <div class="col-lg-1"></div>
-           <div class="col-lg-2">
-            <ul>
-                <li class="title wow fadeInUp" data-wow-delay="1.5s">
-                    Contato
-                </li>
-                <li class="wow fadeInUp" data-wow-delay="1.5s">
-                  <div class="social">
-                      <i class="fa"></i>
-                  </div>
-                </li>
-                <li class="wow fadeInUp" data-wow-delay="1.5s">
-                    <a href="mailto:contato@criabiz.com">contato@criabiz.com</a>
-                </li>
-                
-            </ul>
-           </div>
-       </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-3 wow zoomIn" data-wow-delay="1.5s">
+                <img src="../images/logo/criabiz-ventures-white.png" alt=""></div>
+                <div class="col-4 col-lg-2">
+                    <ul>
+                        <li class="title wow fadeInUp" data-wow-delay="1.5s">
+                            Saiba mais
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1.5s">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1.5s">
+                            <a href="#">Sobre Nós</a>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1.5s">
+                            <a href="#">Imprensa</a>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1.5s">
+                            <a href="#">Nossos Projetos</a>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1.5s">
+                            <a href="#">BovBrasil</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4 col-lg-2">
+                    <ul>
+                        <li class="title wow fadeInUp" data-wow-delay="1.5s">
+                            Negócio
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1.5s">
+                            <a href="#">Empresas</a>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1.5s">
+                            <a href="#">Startups</a>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1.5s">
+                            <a href="#">Investidores Anjo</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4 col-lg-2">
+                    <ul>
+                        <li class="title wow fadeInUp" data-wow-delay="1.5s">
+                            Projetos
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1.5s">
+                            <a href="#">Industria .0</a>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1.5s">
+                            <a href="#">Agro 4.0</a>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1.5s">
+                            <a href="#">Edu 5.0</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-12 col-lg-2 pt-3 pt-lg-0">
+                    <ul class="text-center text-lg-left">
+                        <li class="title wow fadeInUp" data-wow-delay="1.5s">
+                            Contato
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1.5s">
+                            <div class="social">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f" title="Facebook"></i>
+                                </a>
 
-       <div class="copyright">
-           <hr class="line wow zoomIn" data-wow-delay="1.5s">
+                                <a href="#">
+                                    <i class="fab fa-instagram" title="Instagram"></i>
+                                </a>
 
-           <p class="wow fadeInUp" data-wow-delay="1.5s">
-            @ 2019 Criabiz Todos Direitos Reservados
-           </p>
-       </div>
-   </div>
-</footer>
+                                <a href="#">
+                                    <i class="fab fa-twitter" title="Twitter"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="fab fa-youtube" title="Youtube"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="fab fa-wordpress" title="Wordpress"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1.5s">
+                            <a href="mailto:contato@criabiz.com">contato@criabiz.com</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <hr class="line wow zoomIn" data-wow-delay="1.5s">
+
+                    <p class="wow fadeInUp" data-wow-delay="1.5s">
+                        @ 2019 Criabiz Todos Direitos Reservados
+                    </p>
+                </div>
+            </div>
+        </footer>
     <!-- partial -->
 
 </body>

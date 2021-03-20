@@ -3,6 +3,16 @@
         text-align: center;
         color: $c-ventures-sec;
         font-weight: 700;
+
+        @media screen and (max-width: $bp-LG) {
+            font-size: 19px;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            color: $c-impact-primary;
+            margin-bottom: -5px;
+        }
+
     }
 
     .line {
@@ -10,6 +20,11 @@
         height: 5px;
         width: 65%;
         background-color: $c-ventures-sec;
+        @media screen and (max-width: $bp-LG) {
+            width: 90%;
+            background-color: $c-ventures-sec;
+            margin-bottom: 12px;
+        }
     }
 
     .desc {
@@ -19,5 +34,14 @@
         text-align: center;
         padding-top: 25px;
         letter-spacing: 0.2px;
+        
+
+        @media screen and (max-width: $bp-LG) {
+            padding-top: 0px;
+            font-size: 15px;
+            line-height: 1.5;
+            max-width: 450px;
+            margin: 0 auto;
+        }
     }
 }

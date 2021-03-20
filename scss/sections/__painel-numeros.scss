@@ -1,12 +1,25 @@
 .painel-numeros {
     padding-top: 80px;
+    @media screen and (min-width: $bp-LG) {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    @media screen and (max-width: $bp-LG) {
+        padding-top: 40px;
+        padding-bottom: 90px;
+    }
 
     &__content {
         border-radius: 16px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.34);
         background-color: $c-ventures-terc;
+        @media screen and (max-width: $bp-LG) {
+            margin-top: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.34);
+        }
 
         .header {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -14,9 +27,65 @@
             padding: 23px 0;
             border-bottom: 1.5px solid rgba(255, 255, 255, 0.432);
 
+            .toggle-btn {
+                position: absolute;
+                right: 45px;
+                top: 17px;
+                color: #fff;
+                background-color: none;
+                background: none;
+                font-size: 20px;
+                border: none;
+                @include transition();
+
+                &:hover{
+                    outline: none;
+                    @include scale(1.05);
+                }
+
+                &:focus{
+                    outline: none;
+                }
+                
+                &:active{
+                    outline: none;
+                }
+
+                .right{
+                    display: block;
+                }
+
+                .left{
+                    display: none;
+                }
+
+                .right, .left{
+                    animation: fadeIn 0.4s;
+                }
+
+                &.active{
+                    .right{
+                        display: none;
+                    }
+
+                    .left{
+                        display: block;
+                    }
+                }
+            }
+
+            @media screen and (max-width: $bp-LG) {
+                justify-content: flex-start;
+                padding: 16px 20px 16px 40px;
+            }
+
             .title {
                 font-weight: 700;
                 margin-bottom: 5px;
+                @media screen and (max-width: $bp-LG) {
+                    font-size: 20px;
+                    text-align: left;
+                }
             }
         }
 
@@ -32,16 +101,17 @@
                         padding-left: 20px;
                     }
                 }
-            }
+                @media screen and (max-width: $bp-LG) {
+                    width: 100%;
+                    display: none;
 
-            @media screen and (max-width: $bp-LG){
-                display: none;
-                
-                &[data-visible="true"]{
-                    display: block;
-                    animation: fadeIn 0.5s;       
+                    &[data-visible="true"] {
+                        display: block;
+                        animation: fadeIn 0.5s;
+                    }
                 }
             }
+
         }
 
         .subheader {
@@ -51,6 +121,14 @@
             padding-top: 10px;
             padding-bottom: 5px;
             border-bottom: 1.5px solid rgba(255, 255, 255, 0.46);
+            @media screen and (max-width: $bp-LG) {
+                justify-content: flex-start;
+                padding-left: 40px;
+
+                .subtitle {
+                    font-size: 18px;
+                }
+            }
 
             .subtitle {
                 font-weight: 700;
@@ -62,11 +140,20 @@
             padding-top: 25px;
             padding-bottom: 65px;
 
+            @media screen and (max-width: $bp-MD){
+                padding-left: 30px;
+                padding-bottom: 29px;
+            }
+
             .group {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 margin-bottom: 40px;
+
+                @media screen and (max-width: $bp-MD){
+                    margin-bottom: 25px;
+                }
 
                 .financial-number {
                     display: flex;
@@ -77,12 +164,21 @@
                     padding: 8px 55px;
                     color: $c-ventures-sec;
                     background-color: #fff;
+
+                    @media screen and (max-width: $bp-MD){
+                        font-size: 14px;
+                        min-width: 220px;
+                    }
                 }
 
                 .sub-desc {
                     margin-top: 5px;
                     font-size: 18px;
                     margin-left: 10px;
+
+                    @media screen and (max-width: $bp-MD){
+                        font-size: 12px;
+                    }
                 }
             }
 
@@ -90,6 +186,10 @@
                 display: flex;
                 align-items: center;
                 margin-bottom: 35px;
+
+                @media screen and (max-width: $bp-MD){
+                    margin-bottom: 15px;
+                }
 
                 .financial-number {
                     display: flex;
@@ -101,6 +201,11 @@
                     padding: 8px 0;
                     color: $c-ventures-primary;
                     background-color: #fff;
+
+                    @media screen and (max-width: $bp-MD){
+                        font-size: 11px;
+                        min-width: 150px;
+                    }
                 }
 
                 .sub-desc {
@@ -108,8 +213,18 @@
                     margin-left: 16px;
                     margin-bottom: 10px;
 
+                    @media screen and (max-width: $bp-MD){
+                        font-size: 10px;
+                        padding-right: 20px;
+                        margin-bottom: 0;
+                    }
+
                     &.has-mw {
                         max-width: 180px;
+
+                        @media screen and (max-width: $bp-MD){
+                            padding-right: 50px;
+                        }
                     }
                 }
             }
@@ -123,34 +238,32 @@
         }
     }
 
-    &__footer{
+    &__footer {
         background-color: #fff;
         border-radius: 0 0 16px 16px;
         padding-top: 20px;
         padding-bottom: 50px;
-
-        @media screen and (max-width: $bp-LG){
+        @media screen and (max-width: $bp-LG) {
             display: none;
         }
 
-        .title{
+        .title {
             color: $c-ventures-primary;
             text-align: center;
             font-weight: 700;
             margin-bottom: 35px;
         }
 
-        .brands{
+        .brands {
             display: flex;
             align-items: center;
             justify-content: center;
-            
-            img{
+
+            img {
                 height: 90px;
                 margin: 0 20px;
                 @include transition();
-
-                &:hover{
+                &:hover {
                     @include scale(1.02);
                 }
             }

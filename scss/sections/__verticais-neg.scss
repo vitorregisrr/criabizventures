@@ -1,5 +1,11 @@
 .verticais-neg{
     padding-top: 100px;
+    max-width: 100vw;
+    overflow: hidden;
+
+    @media screen and (max-width: $bp-MD){
+        padding-top: 35px;
+    }
 
     &__brands{
         position: relative;
@@ -7,12 +13,30 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding-top: 260px;
+        padding-top: 245px;
         padding-bottom: 300px;
+
+        @media screen and (max-width: $bp-LG){
+            padding-top: 150px;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            padding-top: 112.5px;
+            padding-bottom: 150px;
+            padding-left: 13.5px;
+        }
 
         &-main{
             img{
                 width: 280px;
+
+                @media screen and (max-width: $bp-LG){
+                    width: 180px;
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    width: 120px;
+                }
             }
         }
 
@@ -24,7 +48,11 @@
                 @include transition();
 
                 @media screen and (max-width: $bp-LG){
-                    width: 100px;
+                    width: 123px;
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    width: 85px;
                 }
 
                 &:hover{
@@ -33,27 +61,69 @@
             }
 
             &.item-1{
-                top: 40px;
+                top: 10px;
                 left: calc(50% - 120px);
                 transform: translateX(-50%);
+
+                @media screen and (max-width: $bp-LG){
+                    left: calc(50% - 75px);
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    left: calc(50% - 50px);
+                }
             }
 
             &.item-2{
-                top: 40px;
+                top: 10px;
                 left: calc(50% + 150px);
                 transform: translateX(-50%);
+
+                @media screen and (max-width: $bp-LG){
+                    left: calc(50% + 100.5px);
+                }
+
+
+                @media screen and (max-width: $bp-MD){
+                    left: calc(50% + 70px);
+                }
             }
 
             &.item-3{
                 top: 230px;
                 left: calc(75%);
                 transform: translateX(-50%);
+
+                @media screen and (max-width: $bp-LG){
+                    top: 135px;
+                    left: calc(80%);
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    left: calc(88%);
+                    top: 100px;
+                }
             }
 
             &.item-4{
                 top: 435px;
                 left: calc(74.5%);
                 transform: translateX(-50%);
+
+                @media screen and (max-width: $bp-LG){
+                    top: 270px;
+                    left: calc(79.5%);
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    left: calc(87%);
+                    top: 205px;
+                }
+
+                @media screen and (max-width: 320px){
+                    left: calc(90%);
+                    top: 195px;
+                }
             
             }
 
@@ -61,6 +131,16 @@
                 top: 628px;
                 left: calc(50% - 110px);
                 transform: translateX(-50%);
+
+                @media screen and (max-width: $bp-LG){
+                    top: 377px;
+                    left: calc(41%);
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    top: 265px;
+                    left: calc(50% - 50px);
+                }
             
             }
 
@@ -68,6 +148,16 @@
                 top: 620px;
                 left: calc(50% + 140px);
                 transform: translateX(-50%);
+
+                @media screen and (max-width: $bp-LG){
+                    top: 370px;
+                    left: calc(62.5%);
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    top: 260px;
+                    left: calc(50% + 70px);
+                }
             
             }
 
@@ -75,12 +165,32 @@
                 top: 440px;
                 left: calc(26%);
                 transform: translateX(-50%);
+
+                @media screen and (max-width: $bp-LG){
+                    top: 120px;
+                    left: calc(22%);
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    left: calc(14%);
+                    top: 200px;
+                }
             }
             
             &.item-8{
                 top: 210px;
                 left: calc(25.5%);
                 transform: translateX(-50%);
+
+                @media screen and (max-width: $bp-LG){
+                    top: 256px;
+                    left: calc(22.5%);
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    left: calc(14%);
+                    top: 89.5px;
+                }
             }
         }
     }

@@ -44,6 +44,19 @@
         }, 500);
     });
 
+    // Painel Numeros tab toggle
+    $('[data-toggle="painel-numeros"]').click(function(){
+        const curr = $('#painel-numeros-tab-1').attr('data-visible') === 'true' ? 1 : 2;
+        if(curr === 1){
+            $(this).addClass('active');
+        }
+        if(curr === 2){
+            $(this).removeClass('active');
+        }
+        $(`#painel-numeros-tab-${curr}`).attr('data-visible', false);
+        $(`#painel-numeros-tab-${curr == 1 ? 2 : 1}`).attr('data-visible', true);
+    });
+
     $('[data-toggle="produto-tab"]').click( function(){
         var isActive = $(this).attr('data-active') === 'true' ? true : false;
         
@@ -54,25 +67,8 @@
             $(this).attr('data-active', true);
         }
 
-        // var target = $(this).attr('data-target');
-        // var screenW = window.innerWidth;
-
-        // if(screenW < 1200){
-        //     $('.home-produtos__tab').attr('data-active', false);
-        //     $(target).attr('data-active', !isActive);
-        //     $('.home-produtos__tabs').attr('data-active', !isActive);
-        // }else{
-        //     $(target).attr('data-active', !isActive);
-        //     $('.home-produtos__tabs').attr('data-active', true);
-        // }
     });
 
-    $('[data-toggle="popup"]').click(function(event){
-        event.preventDefault();
-        var target = $(this).attr('data-target');
-        console.log(target)
-        $(target).toggleClass('visible');
-    });
 
     scrollTopBtn.on('click', function (e) {
         e.preventDefault();

@@ -10,6 +10,13 @@
     @media screen and (max-width: 1350px){
         background-position: 0 160%;
     }
+
+    @media screen and (max-width: $bp-LG){
+        padding-top: 185px;
+        padding-bottom: 66px;
+        background-size: 120%;
+        background-position: 160% 150%;
+    }
     
     &__caption {
         display: flex;
@@ -21,6 +28,11 @@
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+
+            @media screen and (max-width: $bp-LG){
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
 
             .content-1 {
                 display: inline-block;
@@ -47,6 +59,14 @@
         .title{
             font-weight: bold;
             font-size: 58px;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 30px;
+            }
+
+            @media screen and (max-width: 330px){
+                font-size: 26px;
+            }
         }
 
         .desc{
@@ -56,6 +76,20 @@
             line-height: 1.8;
             max-width: 435px;
             margin-bottom: 30px;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 14px;
+                max-width: 285px;
+                line-height: 1.5;
+                margin-bottom: 10px;
+            }
+
+            @media screen and (max-width: 330px){
+                font-size: 12px;
+                max-width: 248px;
+                line-height: 1.5;
+                margin-bottom: 10px;
+            }
         }
 
         .more{
@@ -68,6 +102,12 @@
             color: #fff;
             border-radius: 32px;
             @include transition();
+            
+            @media screen and (max-width: $bp-LG){
+                font-size: 15px;
+                padding: 12px 13px 12px 23px;
+                margin-top: 3px;
+            }
 
             &:hover{
                 padding-right: 35px;
@@ -91,6 +131,11 @@
                 border-radius: 32px;
                 margin-left: 20px;
                 @include transition();
+
+                @media screen and (max-width: $bp-LG){
+                    width: 25px;
+                    height: 25px;
+                }
 
                 i{
                     margin-left: 2px;

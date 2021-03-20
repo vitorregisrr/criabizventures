@@ -9,6 +9,7 @@
     background-color: #fff;
     z-index: 12;
     @include transition();
+
     @media (min-width: 1400px) {
         .container,
         .container-lg,
@@ -19,30 +20,37 @@
             max-width: 1320px;
         }
     }
-    
+
     @media screen and (max-width: $bp-LG) {
-        position: absolute;
+        box-shadow: 0 6px 4px rgba(0,0,0,.15);
     }
 
-    @media screen and (min-width: $bp-LG) {
-        &.sticky {
-            padding-top: 8px;
-            padding-bottom: 6px;
-            opacity: 1;
+    &.sticky {
+        padding-top: 8px;
+        padding-bottom: 6px;
+        opacity: 1;
 
-            .brand {
-                width: 80px;
+        .brand {
+            width: 80px;
+
+            @media screen and (max-width: $bp-LG){
+                width: 60px;
             }
+        }
+        
+        .main-nav {
+            ul {
+                li {
+                    a {
+                        font-size: 19px;
 
-            .main-nav {
-                ul {
-                    li {
-                        a {
-                            font-size: 19px;
+                        @media screen and (max-width: $bp-LG){
+                            font-size: 11px;
                         }
                     }
                 }
             }
+
         }
     }
 
@@ -50,8 +58,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        @media screen and (max-width: $bp-LG){
+        
+        @media screen and (max-width: $bp-LG) {
             display: flex;
             flex-direction: column;
         }
@@ -59,11 +67,12 @@
         .brand {
             width: 106px;
             @include transition();
-
-            @media screen and (max-width: $bp-MD){
+            @media screen and (max-width: $bp-MD) {
                 width: 85px;
             }
-
+            @media screen and (max-width: 320px) {
+                width: 75px;
+            }
             &:hover {
                 @include scale(1.02);
             }
@@ -79,8 +88,7 @@
                 li {
                     &:not(:last-child) {
                         margin-right: 30px;
-
-                        @media screen and (max-width: $bp-MD){
+                        @media screen and (max-width: $bp-MD) {
                             margin-right: 15px;
                         }
                     }
@@ -90,19 +98,19 @@
                         font-size: 21px;
                         color: $c-ventures-primary;
                         transition: all 0.4s;
-
-                        @media screen and (max-width: $bp-MD){
+                        @media screen and (max-width: $bp-MD) {
                             font-size: 15px;
                             text-align: center;
                             font-weight: 700;
                         }
-
-                        @media screen and (max-width: $bp-SM){
-                            font-size: 14px;
+                        @media screen and (max-width: $bp-SM) {
+                            font-size: 13px;
                             text-align: center;
-                            font-weight: 700;
+                            font-weight: 500;
                         }
-
+                        @media screen and (max-width: 320px) {
+                            font-size: 12px;
+                        }
                         &:hover {
                             color: $c-ventures-sec;
                             @include scale(1.03);
