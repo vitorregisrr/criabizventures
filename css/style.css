@@ -2363,7 +2363,7 @@ textarea.form-control {
 }
 
 .carteira-sec .sub-header {
-  margin-bottom: 75px;
+  margin-bottom: 55px;
 }
 
 @media screen and (max-width: 992px) {
@@ -2391,15 +2391,15 @@ textarea.form-control {
 }
 
 .carteira-sec__buttons-item img {
-  width: 97%;
-  max-width: 380px;
+  width: 91%;
+  max-width: 320px;
   margin: 0 auto;
 }
 
 .carteira-sec__carousel {
   position: relative;
   padding: 0 100px;
-  margin-top: 55.4px;
+  margin-top: 35.4px;
 }
 
 @media screen and (max-width: 768px) {
@@ -2502,6 +2502,10 @@ textarea.form-control {
     max-height: 130px;
     object-fit: contain;
   }
+}
+
+.carteira-sec__carousel-item .banner-img img.md {
+  width: 62% !important;
 }
 
 .carteira-sec__carousel-item .caption {

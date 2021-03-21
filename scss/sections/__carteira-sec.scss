@@ -10,7 +10,7 @@
     }
 
     .sub-header {
-        margin-bottom: 75px;
+        margin-bottom: 55px;
 
         @media screen and (max-width: $bp-LG){
             margin-bottom: 35px;
@@ -27,8 +27,8 @@
             }
 
             img {
-                width: 97%;
-                max-width: 380px;
+                width: 91%;
+                max-width: 320px;
                 margin: 0 auto;
             }
         }
@@ -37,7 +37,7 @@
     &__carousel {
         position: relative;
         padding: 0 100px;
-        margin-top: 55.4px;
+        margin-top: 35.4px;
 
         @media screen and (max-width: $bp-MD){
            padding: 0 40px;
@@ -114,6 +114,10 @@
                         width: 65%;
                         max-height: 130px;
                         object-fit: contain;
+                    }
+
+                    &.md{
+                        width: 62% !important;
                     }
                 }
             }
