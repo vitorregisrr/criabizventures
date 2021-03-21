@@ -2337,9 +2337,9 @@ textarea.form-control {
 }
 
 .parceiros-sec img {
-  width: 250px;
+  width: 280px;
   margin: 10px;
-  max-height: 180px;
+  max-height: 195px;
   object-fit: contain;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
