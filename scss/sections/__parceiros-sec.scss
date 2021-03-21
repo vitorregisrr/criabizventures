@@ -23,8 +23,8 @@
         @include transition();
 
         @media screen and (max-width: $bp-MD){
-            width: 110px;
-            max-height: 80px;
+            width: 140px;
+            max-height: 100px;
         }
         &:hover{
             @include scale(1.05);
