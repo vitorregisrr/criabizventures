@@ -1,14 +1,109 @@
-.case-invest{
-    padding-top: 140px;
-    padding-bottom: 150px;
+.case-invest {
+    padding: 120px 300px 150px;
 
-    
-    @media screen and (max-width: $bp-LG){
-        padding-top: 50px;
+    @media screen and (max-width: 1300px){
+        padding: 120px 150px 150px;
     }
 
-    @media screen and (max-width: $bp-MD){
+    @media screen and (max-width: $bp-XL){
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sub-header {
+        .line {
+            @media screen and (min-width: $bp-XL) {
+                width: 76% !important;
+            }
+        }
+    }
+    @media screen and (max-width: $bp-LG) {
+        padding: 75px 0px 90px;
+
+    }
+    @media screen and (max-width: $bp-MD) {
         padding-top: 40px;
+        padding-bottom: 50px;
     }
+    
+    &__content {
+        margin-top: 40px;
 
+        @media screen and (max-width: $bp-MD){
+            margin-top: 30px;
+        }
+
+        .brand-banner {
+            width: 90%;
+            margin-left: -25px;
+
+            @media screen and (max-width: $bp-LG){
+                max-width: 180px;
+                margin: 0 auto;
+                margin-left: 0;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                max-width: 160px;
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+        }
+
+        .caption{
+            .desc{
+                color: $color-dark;
+                font-size: 16px;
+                line-height: 1.7;
+                font-weight: 400;
+                max-width: 345px;
+
+                @media screen and (max-width: $bp-LG){
+                    font-size: 14px;
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 13px;
+                    margin: 0 auto;
+                    margin-bottom: 25px;
+                    text-align: center;
+                }
+            }
+
+            img{
+                margin-left: 50px;
+                margin-top: 20px;
+                width: 140px;
+
+                @media screen and (max-width: $bp-LG){
+                    width: 120px;
+                    margin-top: 0;
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .sub-img{
+            display: block;
+            height: 100px;
+            margin: 0 auto;
+            max-width: 250px;
+            object-fit: contain;
+
+            @media screen and (max-width: $bp-LG){
+                height: 80px;
+                max-width: 210px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                height: 70px;
+                margin-top: 20px;
+            }
+        }
+    }
 }

@@ -1447,7 +1447,18 @@ textarea.form-control {
 @media screen and (max-width: 992px) {
   .about-circle__caption .desc {
     padding-top: 10px;
+    font-size: 17px;
+    line-height: 1.5;
+    padding-top: 20px;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-circle__caption .desc {
     font-size: 14px;
+    padding-top: 10px;
+    max-width: 460px;
     line-height: 1.5;
   }
 }
@@ -2330,19 +2341,135 @@ textarea.form-control {
 }
 
 .case-invest {
-  padding-top: 140px;
-  padding-bottom: 150px;
+  padding: 120px 300px 150px;
+}
+
+@media screen and (max-width: 1300px) {
+  .case-invest {
+    padding: 120px 150px 150px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .case-invest {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .case-invest .sub-header .line {
+    width: 76% !important;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .case-invest {
-    padding-top: 50px;
+    padding: 75px 0px 90px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .case-invest {
     padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+
+.case-invest__content {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .case-invest__content {
+    margin-top: 30px;
+  }
+}
+
+.case-invest__content .brand-banner {
+  width: 90%;
+  margin-left: -25px;
+}
+
+@media screen and (max-width: 992px) {
+  .case-invest__content .brand-banner {
+    max-width: 180px;
+    margin: 0 auto;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .case-invest__content .brand-banner {
+    max-width: 160px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+.case-invest__content .caption .desc {
+  color: #0D0D2B;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  max-width: 345px;
+}
+
+@media screen and (max-width: 992px) {
+  .case-invest__content .caption .desc {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .case-invest__content .caption .desc {
+    font-size: 13px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}
+
+.case-invest__content .caption img {
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 140px;
+}
+
+@media screen and (max-width: 992px) {
+  .case-invest__content .caption img {
+    width: 120px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .case-invest__content .caption img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.case-invest__content .sub-img {
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+  max-width: 250px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 992px) {
+  .case-invest__content .sub-img {
+    height: 80px;
+    max-width: 210px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .case-invest__content .sub-img {
+    height: 70px;
+    margin-top: 20px;
   }
 }
 
@@ -2372,6 +2499,12 @@ textarea.form-control {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .carteira-sec .sub-header .title {
+    font-size: 23px !important;
+  }
+}
+
 .carteira-sec__buttons-item {
   background: none;
   border: none;
@@ -2394,6 +2527,10 @@ textarea.form-control {
   width: 91%;
   max-width: 320px;
   margin: 0 auto;
+}
+
+.carteira-sec__buttons-item img.md {
+  width: 80%;
 }
 
 .carteira-sec__carousel {
@@ -2447,10 +2584,10 @@ textarea.form-control {
   transform: scale(1.1);
 }
 
-.carteira-sec__carousel-arrows .next:hover, .carteira-sec__carousel-arrows .next:focus, .carteira-sec__carousel-arrows .next:active,
-.carteira-sec__carousel-arrows .prev:hover,
+.carteira-sec__carousel-arrows .next:active, .carteira-sec__carousel-arrows .next:focus, .carteira-sec__carousel-arrows .next:hover,
+.carteira-sec__carousel-arrows .prev:active,
 .carteira-sec__carousel-arrows .prev:focus,
-.carteira-sec__carousel-arrows .prev:active {
+.carteira-sec__carousel-arrows .prev:hover {
   outline: none;
 }
 
@@ -2471,7 +2608,7 @@ textarea.form-control {
 
 .carteira-sec__carousel-item {
   display: none;
-  animation: fadeIn .4s;
+  animation: fadeIn 0.4s;
 }
 
 .carteira-sec__carousel-item[data-visible="true"] {
@@ -2502,10 +2639,6 @@ textarea.form-control {
     max-height: 130px;
     object-fit: contain;
   }
-}
-
-.carteira-sec__carousel-item .banner-img img.md {
-  width: 62% !important;
 }
 
 .carteira-sec__carousel-item .caption {

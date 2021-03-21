@@ -1,19 +1,22 @@
 .carteira-sec {
     padding-top: 120px;
-
-    @media screen and (max-width: $bp-LG){
+    @media screen and (max-width: $bp-LG) {
         padding-top: 50px;
     }
-
-    @media screen and (max-width: $bp-MD){
+    @media screen and (max-width: $bp-MD) {
         padding-top: 30px;
     }
 
     .sub-header {
         margin-bottom: 55px;
-
-        @media screen and (max-width: $bp-LG){
+        @media screen and (max-width: $bp-LG) {
             margin-bottom: 35px;
+        }
+
+        .title{
+            @media screen and (max-width: $bp-MD){
+                font-size: 23px !important;
+            }
         }
     }
 
@@ -30,6 +33,10 @@
                 width: 91%;
                 max-width: 320px;
                 margin: 0 auto;
+
+                &.md {
+                    width: 80%;
+                }
             }
         }
     }
@@ -38,10 +45,9 @@
         position: relative;
         padding: 0 100px;
         margin-top: 35.4px;
-
-        @media screen and (max-width: $bp-MD){
-           padding: 0 40px;
-           margin-top: 20px;
+        @media screen and (max-width: $bp-MD) {
+            padding: 0 40px;
+            margin-top: 20px;
         }
 
         &-arrows {
@@ -55,28 +61,25 @@
                 color: $c-education-primary;
                 font-size: 39px;
                 @include transition();
-
-                @media screen and (max-width: $bp-XL){
+                @media screen and (max-width: $bp-XL) {
                     font-size: 35px;
                 }
-
-                @media screen and (max-width: $bp-MD){
+                @media screen and (max-width: $bp-MD) {
                     font-size: 20px;
                 }
-
-                &:hover{
+                &:hover {
                     @include scale(1.1);
                 }
-
-                &:hover, &:focus, &:active {
-                   outline: none;
+                &:active,
+                &:focus,
+                &:hover {
+                    outline: none;
                 }
             }
 
             .prev {
                 left: 35px;
-
-                @media screen and (max-width: $bp-LG){
+                @media screen and (max-width: $bp-LG) {
                     left: 0;
                 }
             }
@@ -88,11 +91,11 @@
 
         }
 
-        &-item{
+        &-item {
             display: none;
-            animation: fadeIn .4s;
+            animation: fadeIn 0.4s;
 
-            &[data-visible="true"]{
+            &[data-visible="true"] {
                 display: block;
             }
 
@@ -101,27 +104,21 @@
                 justify-content: center;
                 align-items: center;
                 height: 100%;
-    
+
                 img {
                     width: 68.5%;
-
-                    @media screen and (max-width: $bp-LG){
+                    @media screen and (max-width: $bp-LG) {
                         max-width: 200px;
                         margin: 0 auto;
                     }
-
-                    @media screen and (max-width: $bp-MD){
+                    @media screen and (max-width: $bp-MD) {
                         width: 65%;
                         max-height: 130px;
                         object-fit: contain;
                     }
-
-                    &.md{
-                        width: 62% !important;
-                    }
                 }
             }
-    
+
             .caption {
                 display: flex;
                 justify-content: center;
@@ -129,38 +126,33 @@
                 flex-direction: column;
                 height: 100%;
                 padding-top: 50px;
-    
+
                 .title {
                     font-size: 50px;
                     color: $c-education-primary;
                     font-weight: 700;
-
-                    @media screen and (max-width: $bp-XL){
+                    @media screen and (max-width: $bp-XL) {
                         font-size: 40px;
                     }
-
-                    @media screen and (max-width: $bp-LG){
+                    @media screen and (max-width: $bp-LG) {
                         display: none;
                     }
                 }
-    
+
                 .desc {
                     font-size: 30px;
                     color: $color-dark;
                     line-height: 1.6;
                     text-align: center;
-
-                    @media screen and (max-width: $bp-XL){
+                    @media screen and (max-width: $bp-XL) {
                         font-size: 25px;
                     }
-
-                    @media screen and (max-width: $bp-LG){
+                    @media screen and (max-width: $bp-LG) {
                         font-size: 21px;
                         padding-left: 10px;
                         margin-top: -25px;
                     }
-
-                    @media screen and (max-width: $bp-MD){
+                    @media screen and (max-width: $bp-MD) {
                         font-size: 15px;
                         padding-left: 0;
                         line-height: 1.24;

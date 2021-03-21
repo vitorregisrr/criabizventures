@@ -48,7 +48,16 @@
 
             @media screen and (max-width: $bp-LG) {
                 padding-top: 10px;
+                font-size: 17px;
+                line-height: 1.5;
+                padding-top: 20px;
+                max-width: 600px;
+            }
+
+            @media screen and (max-width: $bp-MD) {
                 font-size: 14px;
+                padding-top: 10px;
+                max-width: 460px;
                 line-height: 1.5;
             }
         }
@@ -119,6 +128,7 @@
                 width: 107vw;
                 margin-left: -14vw;
             }
+
         }
     }
 }
