@@ -1,6 +1,6 @@
 .equipe-sec {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 
     @media screen and (max-width: $bp-XL){
         padding-bottom: 0;
@@ -78,6 +78,8 @@
 
                 @media screen and (max-width: $bp-LG){
                     display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
 
                     .img{
                         order: 1;

@@ -2835,7 +2835,7 @@ textarea.form-control {
 
 .equipe-sec {
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2928,6 +2928,8 @@ textarea.form-control {
 @media screen and (max-width: 992px) {
   .equipe-sec__people-item .about {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .equipe-sec__people-item .about .img {
     order: 1;
