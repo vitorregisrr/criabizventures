@@ -38,6 +38,14 @@
             @media screen and (max-width: $bp-LG){
                 width: 60px;
             }
+            
+            &.horizontal{
+                width: 150px;
+
+                @media screen and (max-width: $bp-LG){
+                    width: 105px;
+                }
+            }
         }
         
         .main-nav {
@@ -80,8 +88,25 @@
             @media screen and (max-width: 320px) {
                 width: 75px;
             }
+
             &:hover {
                 @include scale(1.02);
+            }
+
+            &.horizontal{
+                width: 180px;
+
+                @media screen and (max-width: $bp-LG) {
+                    width: 145px;
+                }
+    
+                @media screen and (max-width: $bp-MD) {
+                    width: 140px;
+                    margin-left: -10px;
+                }
+                @media screen and (max-width: 320px) {
+                    width: 75px;
+                }
             }
         }
 
@@ -115,12 +140,10 @@
                         @media screen and (max-width: $bp-MD) {
                             font-size: 16px;
                             text-align: center;
-                            font-weight: 700;
                         }
                         @media screen and (max-width: $bp-SM) {
                             font-size: 14px;
                             text-align: center;
-                            font-weight: 500;
                         }
                         @media screen and (max-width: 320px) {
                             font-size: 12px;

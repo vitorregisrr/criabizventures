@@ -16,25 +16,25 @@
         }
 
         if ($(window).scrollTop() > 200) {
-            $('#home-banner-more').css("opacity", 1 - $(window).scrollTop() / ($('#home-banner-more').height() + 400) );
+            $('#home-banner-more').css("opacity", 1 - $(window).scrollTop() / ($('#home-banner-more').height() + 400));
         } else {
             $('#home-banner-more').css("opacity", 1);
         }
     });
 
-      // Navbar stick event
-        $(document).on("scroll", function () {
-            if ($(document).scrollTop() > 100) {
+    // Navbar stick event
+    $(document).on("scroll", function () {
+        if ($(document).scrollTop() > 100) {
             $("#main-header").addClass("sticky");
-            } else if (!($(".navbar-collapse").hasClass('show'))) {
+        } else if (!($(".navbar-collapse").hasClass('show'))) {
             $("#main-header").removeClass("sticky");
 
-            }
+        }
 
-        });
+    });
 
-     //Smooth Scrooling
-     $('a[href*=\\#]:not([href$=\\#])').click(function () {
+    //Smooth Scrooling
+    $('a[href*=\\#]:not([href$=\\#])').click(function () {
         event.preventDefault();
 
         $('html, body').animate({
@@ -44,31 +44,50 @@
         }, 500);
     });
 
-    // Painel Numeros tab toggle
-    $('[data-toggle="painel-numeros"]').click(function(){
-        const curr = $('#painel-numeros-tab-1').attr('data-visible') === 'true' ? 1 : 2;
-        if(curr === 1){
+    // Painel Numeros tab toggle JS
+    $('[data-toggle="painel-numeros"]').click(function () {
+        const curr = $('#painel-numeros-tab-1').attr('data-visible') === 'true'
+            ? 1
+            : 2;
+        if (curr === 1) {
             $(this).addClass('active');
         }
-        if(curr === 2){
+        if (curr === 2) {
             $(this).removeClass('active');
         }
         $(`#painel-numeros-tab-${curr}`).attr('data-visible', false);
-        $(`#painel-numeros-tab-${curr == 1 ? 2 : 1}`).attr('data-visible', true);
+        $(`#painel-numeros-tab-${curr == 1
+            ? 2
+            : 1}`).attr('data-visible', true);
     });
 
-    $('[data-toggle="produto-tab"]').click( function(){
-        var isActive = $(this).attr('data-active') === 'true' ? true : false;
-        
-        if(isActive){
-            $(this).attr('data-active', false);
-        }else{
-            $('[data-toggle="produto-tab"]').attr('data-active', false);
-            $(this).attr('data-active', true);
-        }
+    // Carousel Carteira JS Misc
 
+    const carteiraLength = $('.carteira-sec__carousel-item').length - 1;
+    let carteiraCurr = $('.carteira-sec__carousel-item[data-visible="true"]').index();
+
+    const updateCarteira = function(){
+        $('.carteira-sec__carousel-item').attr('data-visible', false);
+        $(`.carteira-sec__carousel-item:nth-child(${carteiraCurr + 1})`).attr('data-visible', true);
+    }
+    
+    $('[data-toggle="carteira-next"]').click( function(){
+        carteiraCurr = carteiraCurr < carteiraLength ? carteiraCurr + 1 : 0;
+        updateCarteira();
     });
 
+    $('[data-toggle="carteira-prev"]').click( function(){
+        carteiraCurr = carteiraCurr > 0 ? carteiraCurr - 1 : carteiraLength;
+        updateCarteira();
+    });
+
+    
+    $('[data-toggle="carteira-dot"]').click( function(){
+        carteiraCurr = $(this).parent().index();
+        updateCarteira();
+    });
+
+    // Misc
 
     scrollTopBtn.on('click', function (e) {
         e.preventDefault();
@@ -81,19 +100,20 @@
 
         var ua = window.navigator.userAgent;
         var msie = ua.indexOf("MSIE ");
-    
-        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
-        {
-            return true;
+
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) { // If Internet Explorer, return version number
+            return
+            true;
         }
-    
-        return false;
+
+        return
+        false;
     }
 
-    if (isIE()) {
-        $('#popup-explorer').addClass('visible');
+    if
+    (isIE()) {$('#popup-explorer').addClass('visible');
     }
 
-    window.dispatchEvent(new Event('resize'));
+    window.dispatchEvent(newEvent('resize'));
 
 })();

@@ -1,0 +1,14 @@
+.case-invest{
+    padding-top: 140px;
+    padding-bottom: 150px;
+
+    
+    @media screen and (max-width: $bp-LG){
+        padding-top: 50px;
+    }
+
+    @media screen and (max-width: $bp-MD){
+        padding-top: 40px;
+    }
+
+}

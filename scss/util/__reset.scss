@@ -31,3 +31,9 @@ b{
       max-width: 1230px;
     }
   }
+
+button{
+    &:hover, &:focus, &:active {
+        outline: none;
+     }
+}
