@@ -15,11 +15,16 @@
         @media screen and (max-width: $bp-LG){
             padding-bottom: 15px;
         }
+
+        .line{
+            @media screen and (min-width: $bp-XL){
+                width: 58%;
+            }
+        }
     }
 
     &__item{
         background-color: #fff;
-        box-sizing: 5px 5px 10px;
         width: 100%;
         border-radius: 8px;
         box-shadow: 2px 5px 10px rgba(0,0,0,.2);
@@ -44,6 +49,25 @@
             height: 100%;
             object-fit: contain;
             object-position: center center;
+        }
+
+        &.v-light{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            box-shadow: none;
+            background: none;
+            padding: 0;
+            height: unset;
+
+            img{
+                height: 220px;
+                width: unset;
+
+                @media screen and (max-width: $bp-MD){
+                    height: 100px;
+                }
+            }
         }
     }
 }

@@ -62,6 +62,30 @@
   background-color: #CB0000 !important;
 }
 
+.border-imp-p {
+  border-color: #CB0000 !important;
+}
+
+.c-imp-s {
+  color: #852000 !important;
+}
+
+.bg-imp-s {
+  background-color: #852000 !important;
+}
+
+.c-imp-t {
+  color: #B91E2E !important;
+}
+
+.bg-imp-t {
+  background-color: #B91E2E !important;
+}
+
+.bg-imp-q {
+  background-color: #B53006 !important;
+}
+
 .c-wom-p {
   color: #A43E79 !important;
 }
@@ -2294,9 +2318,14 @@ textarea.form-control {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .programas-impacto .sub-header .line {
+    width: 58%;
+  }
+}
+
 .programas-impacto__item {
   background-color: #fff;
-  box-sizing: 5px 5px 10px;
   width: 100%;
   border-radius: 8px;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
@@ -2332,6 +2361,27 @@ textarea.form-control {
   height: 100%;
   object-fit: contain;
   object-position: center center;
+}
+
+.programas-impacto__item.v-light {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-shadow: none;
+  background: none;
+  padding: 0;
+  height: unset;
+}
+
+.programas-impacto__item.v-light img {
+  height: 220px;
+  width: unset;
+}
+
+@media screen and (max-width: 768px) {
+  .programas-impacto__item.v-light img {
+    height: 100px;
+  }
 }
 
 .parceiros-sec {

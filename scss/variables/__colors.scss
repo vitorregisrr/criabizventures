@@ -65,6 +65,9 @@ $c-health-sec: #00BD9F;
 
 // Colors Impact
 $c-impact-primary: #CB0000;
+$c-impact-sec: #852000;
+$c-impact-ter: #B91E2E;
+$c-impact-q: #B53006;
 
 .c-imp-p{
     color: $c-impact-primary !important;
@@ -72,6 +75,30 @@ $c-impact-primary: #CB0000;
 
 .bg-imp-p{
     background-color: $c-impact-primary !important;
+}
+
+.border-imp-p{
+    border-color: $c-impact-primary !important;
+}
+
+.c-imp-s{
+    color: $c-impact-sec !important;
+}
+
+.bg-imp-s{
+    background-color: $c-impact-sec !important;
+}
+
+.c-imp-t{
+    color: $c-impact-ter !important;
+}
+
+.bg-imp-t{
+    background-color: $c-impact-ter !important;
+}
+
+.bg-imp-q{
+    background-color: $c-impact-q !important;
 }
 
 // Colors Women
