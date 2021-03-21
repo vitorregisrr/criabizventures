@@ -1151,7 +1151,7 @@ textarea.form-control {
   background-color: #BA1814;
   background-image: url("../images/bg//home-bg-grads.png");
   background-size: 85%;
-  background-position: 00px 200px;
+  background-position: 0px 200px;
   background-repeat: no-repeat;
   padding-top: 234px;
   padding-bottom: 130px;
@@ -1166,6 +1166,26 @@ textarea.form-control {
 @media screen and (min-width: 1200px) {
   .home-banner.v-2 {
     padding-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home-banner.v-2 {
+    background-size: 140%;
+    background-position: 80% 345px;
+  }
+}
+
+.home-banner.v-3 {
+  background-image: url("../images/bg/home-bg-grads-2.png");
+  background-size: 100%;
+  background-position: -50px 450px;
+}
+
+@media screen and (max-width: 576px) {
+  .home-banner.v-3 {
+    background-size: 140%;
+    background-position: 80% 405px;
   }
 }
 
@@ -1199,7 +1219,8 @@ textarea.form-control {
 
 @media screen and (max-width: 576px) {
   .home-banner {
-    background-position: 160% 255px;
+    background-size: 120%;
+    background-position: 160% 305px;
   }
 }
 
@@ -2298,7 +2319,7 @@ textarea.form-control {
 }
 
 .parceiros-sec {
-  padding-top: 150px;
+  padding-top: 120px;
   padding-bottom: 100px;
 }
 
@@ -2306,6 +2327,12 @@ textarea.form-control {
   .parceiros-sec {
     padding-top: 65px;
     padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .parceiros-sec .sub-header .line {
+    width: 55% !important;
   }
 }
 

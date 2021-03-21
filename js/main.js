@@ -83,7 +83,7 @@
 
     
     $('[data-toggle="carteira-dot"]').click( function(){
-        carteiraCurr = $(this).parent().index();
+        carteiraCurr = $(this).index();
         updateCarteira();
     });
 
