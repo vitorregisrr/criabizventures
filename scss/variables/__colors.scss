@@ -167,6 +167,7 @@ $c-youth-sec: #995A03;
 // Colors Agritech
 $c-agritech-primary: #8F3F1B;
 $c-agritech-sec: #842C05;
+$c-agritech-ter: #D55600;
 
 .c-agr-p{
     color: $c-agritech-primary !important;
@@ -175,6 +176,9 @@ $c-agritech-sec: #842C05;
 .c-agr-s{
     color: $c-agritech-sec !important;
 }
+.c-agr-ter{
+    color: $c-agritech-ter !important;
+}
 
 .bg-agr-p{
     background-color: $c-agritech-primary !important;
@@ -182,6 +186,9 @@ $c-agritech-sec: #842C05;
 
 .bg-agr-s{
     background-color: $c-agritech-sec !important;
+}
+.bg-agr-ter{
+    background-color: $c-agritech-ter !important;
 }
 
 // Colors Angels

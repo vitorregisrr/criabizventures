@@ -142,12 +142,20 @@
   color: #842C05 !important;
 }
 
+.c-agr-ter {
+  color: #D55600 !important;
+}
+
 .bg-agr-p {
   background-color: #8F3F1B !important;
 }
 
 .bg-agr-s {
   background-color: #842C05 !important;
+}
+
+.bg-agr-ter {
+  background-color: #D55600 !important;
 }
 
 .c-ang-p {
