@@ -1,0 +1,252 @@
+.equipe-sec {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    @media screen and (max-width: $bp-XL){
+        padding-bottom: 0;
+    }
+
+    @media screen and (max-width: $bp-MD){
+        padding-top: 34px;
+        margin-bottom: 20px;
+    }
+
+    .sub-header {
+        margin-bottom: 65px;
+
+        .line {
+            background-color: $c-health-sec;
+            @media screen and (min-width: $bp-XL) {
+                width: 58%;
+            }
+
+        }
+
+        .title {
+            color: $c-health-sec;
+        }
+    }
+
+    .top-header {
+        padding-bottom: 25px;
+
+        @media screen and (max-width: $bp-MD){
+            padding-bottom: 0;
+            margin-bottom: -30px;
+        }
+
+        .title {
+            @media screen and (min-width: $bp-LG) {
+                font-size: 30px;
+                max-width: 750px;
+                margin: 0 auto;
+                padding-bottom: 10px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 18px;
+            }
+        }
+
+        .desc {
+            @media screen and (min-width: $bp-LG) {
+                font-size: 18px;
+                margin-top: -10px;
+            }
+        }
+    }
+
+
+    &__people{
+        margin-top: -90px;
+
+        @media screen and (max-width: $bp-LG){
+            margin-top: -40px;
+        }
+
+        &-item{
+            padding-top: 80px;
+            padding-bottom: 30px;
+            border-bottom: 3.5px solid $c-health-sec;
+
+            @media screen and (max-width: $bp-LG){
+                border-bottom: 0;
+                padding-top: 10px;
+            }
+
+            .about{
+
+                @media screen and (max-width: $bp-LG){
+                    display: flex;
+
+                    .img{
+                        order: 1;
+                    }
+
+                    &> div{
+                        order: 2;
+                    }
+                }
+
+                .name{
+                    font-size: 32px;
+                    color: $c-health-sec;
+                    font-weight: 800;
+                    margin-bottom: 25px;
+                    
+                    @media screen and (min-width: $bp-LG){
+                        white-space: nowrap;
+                    }
+
+                    @media screen and (max-width: $bp-LG){
+                        font-size: 18px;
+                        font-weight: 500;
+                        padding-left: 15px;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .ocupation{
+                    color: $color-dark;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 30px;
+
+                    @media screen and (max-width: $bp-LG){
+                        font-size: 13px;
+                        font-weight: 500;
+                        padding-left: 15px;
+                    }
+                }
+
+                .img{
+                    width: 80%;
+
+                    @media screen and (max-width: $bp-LG){
+                        width: 150px;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            .caption{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+
+                .desc{
+                    color: $color-dark;
+                    font-size: 17px;
+                    padding-left: 150px;
+                    padding-right: 50px;
+
+                    @media screen and (max-width: $bp-XL){
+                        font-size: 15px;
+                        padding-left: 130px;
+                    }
+
+                    @media screen and (max-width: $bp-LG){
+                        font-size: 14px;
+                        line-height: 1.2;
+                        box-shadow: 0px 5px 4px 4px rgba(0,0,0,.03);
+                        padding-left: 15px;
+                        padding-right: 25px;
+                        padding-top: 10px;
+                        padding-bottom: 6px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .conselheiros{
+        padding-top: 80px;
+        border-bottom: 3.5px solid $c-health-sec;
+
+        @media screen and (max-width: $bp-LG){
+            padding-top: 20px;
+            border-bottom: 0;
+        }
+
+        .sub-header{
+            margin-bottom: 20px;
+
+            @media screen and (max-width: $bp-LG){
+                margin-bottom: 30px;
+
+                .title{
+                    font-size: 25px;
+                }
+            }
+        }
+
+        &__item{
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            padding-bottom: 30px;
+            margin-bottom: -38px;
+            
+            @media screen and (max-width: $bp-LG){
+                box-shadow: 0px 5px 4px 4px rgba(0,0,0,.03);
+                padding-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            .about{
+                text-align: left;
+
+                @media screen and (max-width: $bp-LG){
+                    text-align: center;
+                }
+
+                .name{
+                    font-size: 32px;
+                    color: $c-health-sec;
+                    font-weight: 800;
+                    margin-bottom: 15px;
+
+                    @media screen and (max-width: $bp-XL){
+                        font-size: 30px;
+                    }
+                    
+                    @media screen and (max-width: $bp-LG){
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                }
+
+                .ocupation{
+                    color: $color-dark;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 30px;
+
+                    @media screen and (max-width: $bp-XL){
+                        font-size: 16px;
+                    }
+
+                    @media screen and (max-width: $bp-LG){
+                        font-size: 12px;
+                    }
+                }
+
+                .img{
+                    display: block;
+                    width: 100%;
+                    max-width: 250px;
+                    margin: 0 auto;
+
+                    @media screen and (max-width: $bp-LG){
+                        max-width: 160px;
+                        margin-top: -15px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

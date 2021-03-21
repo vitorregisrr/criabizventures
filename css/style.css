@@ -2811,6 +2811,7 @@ textarea.form-control {
   .banner-curso__caption .desc p {
     font-size: 15px;
     text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -2829,6 +2830,296 @@ textarea.form-control {
     margin: 0 auto;
     max-width: 300px;
     display: block;
+  }
+}
+
+.equipe-sec {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .equipe-sec {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .equipe-sec {
+    padding-top: 34px;
+    margin-bottom: 20px;
+  }
+}
+
+.equipe-sec .sub-header {
+  margin-bottom: 65px;
+}
+
+.equipe-sec .sub-header .line {
+  background-color: #00BD9F;
+}
+
+@media screen and (min-width: 1200px) {
+  .equipe-sec .sub-header .line {
+    width: 58%;
+  }
+}
+
+.equipe-sec .sub-header .title {
+  color: #00BD9F;
+}
+
+.equipe-sec .top-header {
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .equipe-sec .top-header {
+    padding-bottom: 0;
+    margin-bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .equipe-sec .top-header .title {
+    font-size: 30px;
+    max-width: 750px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .equipe-sec .top-header .title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .equipe-sec .top-header .desc {
+    font-size: 18px;
+    margin-top: -10px;
+  }
+}
+
+.equipe-sec__people {
+  margin-top: -90px;
+}
+
+@media screen and (max-width: 992px) {
+  .equipe-sec__people {
+    margin-top: -40px;
+  }
+}
+
+.equipe-sec__people-item {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  border-bottom: 3.5px solid #00BD9F;
+}
+
+@media screen and (max-width: 992px) {
+  .equipe-sec__people-item {
+    border-bottom: 0;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .equipe-sec__people-item .about {
+    display: flex;
+  }
+  .equipe-sec__people-item .about .img {
+    order: 1;
+  }
+  .equipe-sec__people-item .about > div {
+    order: 2;
+  }
+}
+
+.equipe-sec__people-item .about .name {
+  font-size: 32px;
+  color: #00BD9F;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 992px) {
+  .equipe-sec__people-item .about .name {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .equipe-sec__people-item .about .name {
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 15px;
+    margin-bottom: 5px;
+  }
+}
+
+.equipe-sec__people-item .about .ocupation {
+  color: #0D0D2B;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .equipe-sec__people-item .about .ocupation {
+    font-size: 13px;
+    font-weight: 500;
+    padding-left: 15px;
+  }
+}
+
+.equipe-sec__people-item .about .img {
+  width: 80%;
+}
+
+@media screen and (max-width: 992px) {
+  .equipe-sec__people-item .about .img {
+    width: 150px;
+    object-fit: contain;
+  }
+}
+
+.equipe-sec__people-item .caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.equipe-sec__people-item .caption .desc {
+  color: #0D0D2B;
+  font-size: 17px;
+  padding-left: 150px;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .equipe-sec__people-item .caption .desc {
+    font-size: 15px;
+    padding-left: 130px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .equipe-sec__people-item .caption .desc {
+    font-size: 14px;
+    line-height: 1.2;
+    box-shadow: 0px 5px 4px 4px rgba(0, 0, 0, 0.03);
+    padding-left: 15px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    margin-top: 10px;
+  }
+}
+
+.equipe-sec .conselheiros {
+  padding-top: 80px;
+  border-bottom: 3.5px solid #00BD9F;
+}
+
+@media screen and (max-width: 992px) {
+  .equipe-sec .conselheiros {
+    padding-top: 20px;
+    border-bottom: 0;
+  }
+}
+
+.equipe-sec .conselheiros .sub-header {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .equipe-sec .conselheiros .sub-header {
+    margin-bottom: 30px;
+  }
+  .equipe-sec .conselheiros .sub-header .title {
+    font-size: 25px;
+  }
+}
+
+.equipe-sec .conselheiros__item {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin-bottom: -38px;
+}
+
+@media screen and (max-width: 992px) {
+  .equipe-sec .conselheiros__item {
+    box-shadow: 0px 5px 4px 4px rgba(0, 0, 0, 0.03);
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+.equipe-sec .conselheiros__item .about {
+  text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+  .equipe-sec .conselheiros__item .about {
+    text-align: center;
+  }
+}
+
+.equipe-sec .conselheiros__item .about .name {
+  font-size: 32px;
+  color: #00BD9F;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .equipe-sec .conselheiros__item .about .name {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .equipe-sec .conselheiros__item .about .name {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.equipe-sec .conselheiros__item .about .ocupation {
+  color: #0D0D2B;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .equipe-sec .conselheiros__item .about .ocupation {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .equipe-sec .conselheiros__item .about .ocupation {
+    font-size: 12px;
+  }
+}
+
+.equipe-sec .conselheiros__item .about .img {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  .equipe-sec .conselheiros__item .about .img {
+    max-width: 160px;
+    margin-top: -15px;
   }
 }
 
