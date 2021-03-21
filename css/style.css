@@ -1930,7 +1930,7 @@ textarea.form-control {
 
 @media screen and (max-width: 768px) {
   .painel-numeros__footer .brands img {
-    height: 45px;
+    height: 40px;
     margin: 0 10px;
   }
 }
