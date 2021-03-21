@@ -21,18 +21,28 @@
     }
 
     &__buttons {
+        padding-bottom: 20px;
+
         &-item {
             background: none;
             border: none;
             @include transition();
+
             &:hover {
                 @include scale(1.05);
             }
 
             img {
-                width: 93%;
+                height: 70px;
+                object-fit: contain;
+                object-position: center;
                 max-width: 390px;
-                margin: 0 auto;
+                margin: 0 15px;
+                margin-bottom: 30px;
+
+                &.vertical{
+                    height: 150px;
+                }
 
                 &.md {
                     width: 80%;
@@ -61,15 +71,19 @@
                 color: $c-education-primary;
                 font-size: 39px;
                 @include transition();
+
                 @media screen and (max-width: $bp-XL) {
                     font-size: 35px;
                 }
+
                 @media screen and (max-width: $bp-MD) {
                     font-size: 20px;
                 }
+
                 &:hover {
                     @include scale(1.1);
                 }
+
                 &:active,
                 &:focus,
                 &:hover {
@@ -125,7 +139,10 @@
                 align-items: center;
                 flex-direction: column;
                 height: 100%;
-                padding-top: 50px;
+                
+                @media screen and (max-width: $bp-LG){
+                    padding-top: 50px;
+                }
 
                 .title {
                     font-size: 50px;

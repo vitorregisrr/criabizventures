@@ -2505,6 +2505,10 @@ textarea.form-control {
   }
 }
 
+.carteira-sec__buttons {
+  padding-bottom: 20px;
+}
+
 .carteira-sec__buttons-item {
   background: none;
   border: none;
@@ -2524,9 +2528,16 @@ textarea.form-control {
 }
 
 .carteira-sec__buttons-item img {
-  width: 93%;
+  height: 70px;
+  object-fit: contain;
+  object-position: center;
   max-width: 390px;
-  margin: 0 auto;
+  margin: 0 15px;
+  margin-bottom: 30px;
+}
+
+.carteira-sec__buttons-item img.vertical {
+  height: 150px;
 }
 
 .carteira-sec__buttons-item img.md {
@@ -2647,7 +2658,12 @@ textarea.form-control {
   align-items: center;
   flex-direction: column;
   height: 100%;
-  padding-top: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .carteira-sec__carousel-item .caption {
+    padding-top: 50px;
+  }
 }
 
 .carteira-sec__carousel-item .caption .title {
