@@ -2333,7 +2333,7 @@ textarea.form-control {
 
 @media screen and (max-width: 992px) {
   .parceiros-sec {
-    padding-top: 65px;
+    padding-top: 45px;
     padding-bottom: 80px;
   }
 }
@@ -2745,6 +2745,90 @@ textarea.form-control {
     font-size: 15px;
     padding-left: 0;
     line-height: 1.24;
+  }
+}
+
+.banner-curso {
+  padding-bottom: 150px;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-curso {
+    padding-bottom: 70px;
+  }
+}
+
+.banner-curso__content {
+  padding: 0 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-curso__content {
+    padding: 0 30px;
+  }
+}
+
+.banner-curso__caption {
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-curso__caption {
+    padding-left: 0;
+  }
+}
+
+.banner-curso__caption .title {
+  font-size: 34px;
+  color: #00BD9F;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-curso__caption .title {
+    font-size: 28px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-curso__caption .title {
+    font-size: 25px;
+  }
+}
+
+.banner-curso__caption .desc p {
+  font-size: 17px;
+  color: #0D0D2B;
+  max-width: 414px;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-curso__caption .desc p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-curso__caption .desc p {
+    font-size: 14px;
+  }
+}
+
+.banner-curso img {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-curso img {
+    margin: 0 auto;
+    max-width: 300px;
+    display: block;
   }
 }
 

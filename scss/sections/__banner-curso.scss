@@ -1,0 +1,69 @@
+.banner-curso {
+    padding-bottom: 150px;
+
+    @media screen and (max-width: $bp-LG){
+        padding-bottom: 70px;
+    }
+
+    &__content {
+        padding: 0 50px;
+
+        @media screen and (max-width: $bp-MD){
+            padding: 0 30px;
+        }
+    }
+
+    &__caption {
+        padding-left: 30px;
+
+        @media screen and (max-width: $bp-LG){
+            padding-left: 0;
+        }
+
+        .title {
+            font-size: 34px;
+            color: $c-health-sec;
+            font-weight: 800;
+            margin-bottom: 50px;
+
+            @media screen and (max-width: $bp-LG){
+                font-size: 28px;
+                text-align: center;
+                padding-top: 20px;
+                margin-bottom: 15px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 25px;
+            }
+        }
+
+        .desc {
+           p{
+            font-size: 17px;
+            color: $color-dark;
+            max-width: 414px;
+            line-height: 1.8;
+
+            @media screen and (max-width: $bp-LG){
+                font-size: 15px;
+                text-align: center;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 14px;
+            }
+           }
+        }
+    }
+
+    img {
+        width: 100%;
+
+        @media screen and (max-width: $bp-LG){
+            margin: 0 auto;
+            max-width: 300px;
+            display: block;
+        }
+    }
+}
