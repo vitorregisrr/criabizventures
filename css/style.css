@@ -575,6 +575,7 @@ button:hover, button:focus, button:active {
   padding-top: 8px;
   padding-bottom: 6px;
   opacity: 1;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.04);
 }
 
 .main-header.sticky .brand {
