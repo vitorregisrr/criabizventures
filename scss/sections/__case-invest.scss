@@ -27,7 +27,7 @@
     }
     
     &__content {
-        margin-top: 40px;
+        margin-top: 30px;
 
         @media screen and (max-width: $bp-MD){
             margin-top: 30px;
@@ -84,6 +84,10 @@
                 @media screen and (max-width: $bp-MD){
                     display: block;
                     margin: 0 auto;
+                }
+
+                &.v-2{
+                    max-width: 120px;
                 }
             }
         }

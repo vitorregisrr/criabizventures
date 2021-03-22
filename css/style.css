@@ -114,6 +114,10 @@
   background-color: #0074C5 !important;
 }
 
+.border-t-p {
+  border-color: #0074C5 !important;
+}
+
 .bg-t-s {
   background-color: #00528C !important;
 }
@@ -2470,7 +2474,7 @@ textarea.form-control {
 }
 
 .case-invest__content {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -2542,6 +2546,10 @@ textarea.form-control {
     display: block;
     margin: 0 auto;
   }
+}
+
+.case-invest__content .caption img.v-2 {
+  max-width: 120px;
 }
 
 .case-invest__content .sub-img {
