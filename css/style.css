@@ -90,6 +90,10 @@
   color: #A43E79 !important;
 }
 
+.border-wom-p {
+  border-color: #A43E79 !important;
+}
+
 .c-wom-s {
   color: #691546 !important;
 }
@@ -1228,6 +1232,26 @@ textarea.form-control {
 
 @media screen and (max-width: 576px) {
   .home-banner.v-3 {
+    background-size: 140%;
+    background-position: 80% 405px;
+  }
+}
+
+.home-banner.v-4 {
+  background-image: url("../images/bg/home-bg-grads-2.png");
+  background-size: 100%;
+  background-position: -50px 450px;
+}
+
+@media screen and (min-width: 992px) {
+  .home-banner.v-4 {
+    padding-top: 190px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home-banner.v-4 {
     background-size: 140%;
     background-position: 80% 405px;
   }

@@ -38,6 +38,24 @@
 
     }
 
+    
+    &.v-4{
+        background-image: url("../images/bg/home-bg-grads-2.png");
+        background-size: 100%;
+        background-position: -50px 450px;
+
+        @media screen and (min-width: $bp-LG){
+            padding-top: 190px;
+            padding-bottom: 60px;
+        }
+
+        @media screen and (max-width: $bp-SM){
+            background-size: 140%;
+            background-position: 80% 405px;
+        }
+
+    }
+
     @media screen and (max-width: 1350px){
         background-position: 0 160%;
     }
