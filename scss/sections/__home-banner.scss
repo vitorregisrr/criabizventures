@@ -165,6 +165,9 @@
 
             &.v5{
                 @media screen and (min-width: $bp-LG){
+                    font-size: 51px;
+                }
+                @media screen and (min-width: $bp-XL){
                     font-size: 62px;
                 }
             }
