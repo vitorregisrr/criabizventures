@@ -89,7 +89,7 @@
                 }
 
                 @media screen and (max-width: $bp-MD){
-                    left: calc(50% - 50px);
+                    left: calc(50% - 40px);
                 }
             }
 
@@ -103,7 +103,7 @@
 
 
                 @media screen and (max-width: $bp-MD){
-                    left: calc(50% + 70px);
+                    left: calc(50% + 65px);
                 }
             }
 
@@ -164,7 +164,7 @@
 
                 @media screen and (max-width: $bp-MD){
                     top: 265px;
-                    left: calc(50% - 50px);
+                    left: calc(50% - 40px);
                 }
             
             }
@@ -180,7 +180,7 @@
 
                 @media screen and (max-width: $bp-MD){
                     top: 260px;
-                    left: calc(50% + 70px);
+                    left: calc(50% + 60px);
                 }
             
             }
