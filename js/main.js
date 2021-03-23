@@ -86,7 +86,7 @@
         carteiraCurr = $(this).index();
         updateCarteira();
     });
-
+    
     // Misc
 
     scrollTopBtn.on('click', function (e) {

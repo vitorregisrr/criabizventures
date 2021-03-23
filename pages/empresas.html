@@ -116,7 +116,7 @@
                             <h1 class="title wow zoomIn" data-wow-delay="0.2s">
                                 Ajudamos a construir suas Estratégias e Tese de Inovação, sem ônus.
                             </h1>
-                            <p class="wow fadeInLeft" data-wow-delay="0.2s">
+                            <p class="desc wow fadeInLeft" data-wow-delay="0.2s">
                                 <b>Estruturamos:</b>
                                 <br/>
                                 - Centros de Inovação,
@@ -134,77 +134,126 @@
                 <div class="container">
 
                     <div class="empresas-sec__content">
-                        <h3 class="subtitle">
+                        <h3 class="subtitle wow fadeInUp" data-wow-delay="0.2s">
                             Conte conosco para o desenvolvimento dos seus programas de inovação digital.
                         </h3>
 
-                        <h2 class="title">
+                        <h2 class="title wow fadeInUp" data-wow-delay="0.2s">
                             Como ser ajudado pela Criabiz?
                         </h2>
 
-                        <hr class="line">
+                        <hr class="line wow zoomIn" data-wow-delay="0.2s">
 
-                        <h4 class="desc">
+                        <h4 class="desc wow fadeInDown" data-wow-delay="0.3s">
                             Ajudamos a construir suas Estratégias e Tese de Inovação, sem ônus.
 
                         </h4>
                     </div>
 
-                    <form action="#" class="empresas-sec__form">
+                    <form
+                        id="form-empresas"
+                        action="#"
+                        class="empresas-sec__form wow fadeInUp"
+                        data-wow-delay="0.25s">
                         <div class="row">
+                            <div class="col-5 d-block d-lg-none">
+                                <div class="mobile__steps">
+                                    <div id="form-marker-1" class="step step-1 active">
+                                        <span class="text">
+                                            Informações
+                                        </span>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div id="form-marker-2" class="step step-2">
+                                        <span class="text">
+                                            Sua mensagem
+                                        </span>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="step-1" class="row">
                             <div class="col-lg-6">
-                                <div class="input-group">
+                                <div class="form-group">
                                     <label for="Empresa">Empresa</label>
-                                    <input type="text" class="form-control">
+                                    <input name="empresa" type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="input-group">
+                                <div class="form-group">
                                     <label for="pessoa">Pessoa de contato</label>
-                                    <input type="text" class="form-control">
+                                    <input name="pessoa" type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="input-group">
+                                <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="text" class="form-control">
+                                    <input name="email" type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="input-group">
+                                <div class="form-group">
                                     <label for="telefone">Telefone</label>
-                                    <input type="text" class="form-control">
+                                    <input name="telefone" type="text" class="form-control mask-phone">
                                 </div>
                             </div>
 
-                            <div class="col-12">
-                                <div class="col-lg-6">
-                                    <div class="input-group">
-                                        <label for="Empresa">Empresa</label>
-                                        <input type="text" class="form-control">
-                                    </div>
+                            <div class="col-12 d-flex d-lg-none justify-content-center">
+                                <div class="pt-3">
+                                    <button id="form-next" type="button" class="send-btn col-lg-">
+                                        Proximo
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="input-group">
-                                        <label for="pessoa">Resumo da Demanda - Inovação Digital Corporativa</label>
-                                        <textarea name="#" id="#" cols="30" rows="10"></textarea>
-                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="row fadeIn" id="step-2">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="pessoa">Resumo da Demanda - Inovação Digital Corporativa</label>
+                                    <textarea
+                                        name="resumo"
+                                        class="form-control"
+                                        name="#"
+                                        id="#"
+                                        cols="30"
+                                        rows="10"></textarea>
                                 </div>
                             </div>
 
-                            <div class="col-12">
-                                <butto type="submit" class="send-btn">
-                                    Enviar
-                                </button>
+                            <div class="col-12 d-flex justify-content-center">
+                                <div>
+                                    <button id="form-submit" type="button" class="send-btn">
+                                        Enviar
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </form>
+
+                    <div id="success-tab" style="display: none;" class="empresas-sec__success">
+                        <span class="icon">
+                            <i class="far fa-smile-wink"></i>
+                        </span>
+                        <h5 class="title">
+                            Seus dados foram enviados com sucesso!
+                        </h5>
+                        <p class="desc">
+                            Mantemos um grupo educacional voltado à formação gratuita de futuros
+                            “Investidores Anjo de Performance”.
+                        </p>
+                        <a href="#" class="send-btn mt-4">
+                            Quero entrar no grupo
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
                 </div>
             </section>
         </main>
 
-        <!-- partial:../partials/__footer.html -->
-        <footer class="main-footer wow fadeIn" data-wow-offset="-200">
+        <footer class="main-footer c-ventures-sec wow fadeIn" data-wow-offset="-200">
             <div class="container">
                 <div class="row">
                     <div

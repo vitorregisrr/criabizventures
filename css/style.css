@@ -795,69 +795,42 @@ button:hover, button:focus, button:active {
 }
 
 .form-control {
-  background-color: #fffff7c4;
-  height: 45px;
-  border-radius: 0;
-  border: none;
+  height: 50px;
+  border: 1.6px solid #ED3833;
+  border-radius: 7px !important;
   color: #181818;
+  width: 100%;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+  .form-control {
+    height: 48px;
+  }
 }
 
 .form-control::placeholder {
   color: rgba(24, 24, 24, 0.76);
 }
 
-.form-control:focus, .form-control:active {
+.form-control:active, .form-control:focus {
   outline: none;
-  border: none;
-  box-shadow: none;
-  background-color: rgba(255, 255, 255, 0.726);
+  box-shadow: 0 0 0 2px #d82020;
 }
 
-textarea.form-control {
-  height: auto;
-}
-
-.custom-radio {
-  cursor: pointer;
-  display: flex;
-  margin-left: 8px;
-  padding-top: 10px;
-  margin-bottom: 10px;
-}
-
-.custom-radio .text {
+.send-btn {
+  background-color: #ED3833;
+  font-weight: 800;
+  font-size: 28px;
+  border-radius: 9px;
+  padding: 4px 115px;
+  margin: 0 auto;
   color: #fff;
-  font-size: 17px;
-  line-height: 1.3;
-  letter-spacing: 0.3px;
-  color: #0084bf;
-  padding-left: 6px;
-  margin-top: -8px;
-}
-
-@media screen and (max-width: 768px) {
-  .custom-radio .text {
-    font-size: 14px;
-  }
-}
-
-.custom-radio .mask {
-  position: relative;
-  display: block;
-  flex-shrink: 0;
-  flex-grow: 0;
-  position: relative;
-  margin: 0;
-  width: 29px;
-  height: 28px;
-  background-image: linear-gradient(110deg, rgba(0, 132, 191, 0.7) 46%, rgba(128, 183, 76, 0.7) 70%);
-  border-radius: 20%;
-  margin-right: 5px;
+  border: none !important;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -865,53 +838,72 @@ textarea.form-control {
   transition: all 0.3s ease-in-out;
 }
 
-.custom-radio .mask::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 82%;
-  height: 82%;
-  border-radius: 10%;
-  background-color: #fff;
-  transition: all 0.4s;
+@media screen and (max-width: 992px) {
+  .send-btn {
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 12px 40px;
+  }
 }
 
-.custom-radio input {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+.send-btn i {
+  font-size: 22px;
+  margin-left: 12px;
 }
 
-.custom-radio input:hover ~ .mask::after {
-  opacity: 0;
+@media screen and (max-width: 992px) {
+  .send-btn i {
+    font-size: 13px;
+    margin-left: 9px;
+  }
 }
 
-.custom-radio input:checked ~ .mask::after {
-  opacity: 0;
+.send-btn:hover {
+  color: #fff;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-.input-grad {
-  background: linear-gradient(90deg, rgba(0, 132, 191, 0.2) 46%, rgba(128, 183, 76, 0.2) 70%);
-  color: #0084bf;
-  width: 100%;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 6px;
-  padding: 1.3px 16px;
-  font-size: 19px;
+.form-group {
+  margin-bottom: 35px;
 }
 
-.input-grad:focus {
-  outline: none;
+@media screen and (max-width: 992px) {
+  .form-group {
+    margin-bottom: 14px;
+  }
 }
 
-.input-grad::placeholder {
-  color: #0084bf;
+.form-group .error {
+  color: #e24c4c;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+  .form-group .error {
+    font-size: 12px;
+  }
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  color: #0D0D2B;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
+
+textarea.form-control {
+  height: auto;
 }
 
 .scroll-top {
@@ -3465,11 +3457,22 @@ textarea.form-control {
   object-position: center;
 }
 
+.empresas-sec {
+  padding-bottom: 110px;
+}
+
 .empresas-sec__header {
   padding-top: 230px;
   padding-bottom: 60px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center bottom;
+}
+
+@media screen and (max-width: 992px) {
+  .empresas-sec__header {
+    padding-top: 260px;
+  }
 }
 
 .empresas-sec__header .content {
@@ -3485,20 +3488,210 @@ textarea.form-control {
   font-weight: 800;
   text-align: center;
   max-width: 680px;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .empresas-sec__header .content .title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
 }
 
 .empresas-sec__header .content .desc {
   font-size: 23px;
 }
 
+@media screen and (max-width: 992px) {
+  .empresas-sec__header .content .desc {
+    font-size: 14px;
+    padding-left: 10px;
+    text-align: center;
+  }
+}
+
 .empresas-sec__content {
-  padding-top: 120px;
+  padding-top: 90px;
+}
+
+@media screen and (max-width: 992px) {
+  .empresas-sec__content {
+    padding-top: 40px;
+  }
 }
 
 .empresas-sec__content .subtitle {
   color: #0D0D2B;
+  font-weight: bold;
+  max-width: 970px;
+  color: #4F4F4F;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 992px) {
+  .empresas-sec__content .subtitle {
+    font-size: 16px;
+    max-width: 90%;
+    margin: 0 auto;
+    font-weight: 400;
+    margin-bottom: 35px;
+  }
+}
+
+.empresas-sec__content .title {
+  color: #CB0000;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+  .empresas-sec__content .title {
+    font-size: 22px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.empresas-sec__content .line {
+  background-color: #CB0000;
+  height: 4px;
+  width: 46%;
+  margin: 25px auto 35px;
+}
+
+@media screen and (max-width: 992px) {
+  .empresas-sec__content .line {
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 3px;
+  }
+}
+
+.empresas-sec__content .desc {
+  font-size: 29px;
+  font-weight: bold;
+  color: #383838;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .empresas-sec__content .desc {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+}
+
+.empresas-sec__form {
+  padding: 20px 215px 0;
+}
+
+@media screen and (max-width: 992px) {
+  .empresas-sec__form {
+    padding: 0 5px;
+  }
+}
+
+.empresas-sec .mobile__steps {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.empresas-sec .mobile__steps .step {
+  white-space: nowrap;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.empresas-sec .mobile__steps .step .text {
+  display: block;
+  padding-left: 5px;
+  margin-bottom: 4px;
+}
+
+.empresas-sec .mobile__steps .step.step-2 .text {
+  padding-left: 10px;
+  padding-right: 8px;
+}
+
+.empresas-sec .mobile__steps .step .line {
+  height: 3px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.empresas-sec .mobile__steps .step.active {
+  font-weight: bold;
+  color: #CB0000;
+}
+
+.empresas-sec .mobile__steps .step.active .line {
+  height: 3px;
+  width: 100%;
+  background-color: #CB0000;
+}
+
+.empresas-sec__success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.empresas-sec__success .icon {
+  color: #ED3833;
+  font-size: 80px;
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 992px) {
+  .empresas-sec__success .icon {
+    font-size: 85px;
+  }
+}
+
+.empresas-sec__success .title {
+  font-size: 23px;
+  font-weight: bold;
+  color: #ED3833;
+}
+
+@media screen and (min-width: 992px) {
+  .empresas-sec__success .title {
+    font-size: 38px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #0D0D2B !important;
+    margin-bottom: 20px;
+  }
+}
+
+.empresas-sec__success .desc {
+  font-size: 12px;
+  padding: 0 10px;
+  color: #0D0D2B;
+}
+
+@media screen and (min-width: 992px) {
+  .empresas-sec__success .desc {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .empresas-sec__success .send-btn {
+    padding: 4.5px 38px;
+  }
 }
 
 .sub-header .title {

@@ -12,37 +12,52 @@
     
 
     // Formulário acessar (LOGIN)
-    $("#form-contato").validate({
+    $("#form-empresas").validate({
         rules: {
+            empresa: {
+                required: true
+            },
+            pessoa: {
+                required: true,
+            },
             email: {
                 required: true,
                 email: true
-            },
-            nome: {
-                required: true,
-            },
-            empresa: {
-                required: true,
             },
             telefone: {
                 required: true,
                 minlength: 15
             },
-            assunto: {
-                required: true,
-            },
-            mensagem: {
+            resumo: {
                 required: true,
             },
         },
     
         messages: {
-
-            telefone:{
-                minlength: 'Seu número parece estar incompleto.'
-            }
         }
     
     });
+
+    
+    // Form empresa JS
+    if(window.innerWidth < 992){
+        $('#step-2').hide();
+    }
+
+    $('#form-next').click(function(){
+        if($("#form-empresas").valid()){
+            $('#step-1').hide();
+            $('#step-2').fadeIn();
+            $('#form-marker-2').addClass('active');
+        }
+    });
+
+    $('#form-submit').click(function(){
+        if($("#form-empresas").valid()){
+            $('#form-empresas').hide();
+            $('#success-tab').fadeIn();
+        }
+    });
+
    
 })();
