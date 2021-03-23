@@ -3465,6 +3465,42 @@ textarea.form-control {
   object-position: center;
 }
 
+.empresas-sec__header {
+  padding-top: 230px;
+  padding-bottom: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.empresas-sec__header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.empresas-sec__header .content .title {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.empresas-sec__header .content .desc {
+  font-size: 23px;
+}
+
+.empresas-sec__content {
+  padding-top: 120px;
+}
+
+.empresas-sec__content .subtitle {
+  color: #0D0D2B;
+}
+
 .sub-header .title {
   text-align: center;
   color: #ED3833;
