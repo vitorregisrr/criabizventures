@@ -180,6 +180,14 @@ $c-educa-sec: #FFBA00;
     color: $c-educa-sec !important;
 }
 
+.bg-edu-p{
+    background-color: $c-educa-primary !important;
+}
+
+.bg-edu-s{
+    background-color: $c-educa-sec !important;
+}
+
 // Colors Youth
 $c-youth-primary: #D97E00;
 $c-youth-sec: #995A03;

@@ -150,6 +150,14 @@
   color: #FFBA00 !important;
 }
 
+.bg-edu-p {
+  background-color: #DAA402 !important;
+}
+
+.bg-edu-s {
+  background-color: #FFBA00 !important;
+}
+
 .c-yo-p {
   color: #D97E00 !important;
 }
@@ -1048,6 +1056,63 @@ textarea.form-control {
   z-index: 2;
 }
 
+.depoimento-item {
+  padding: 0 70px;
+  margin-bottom: 70px;
+}
+
+@media screen and (max-width: 992px) {
+  .depoimento-item {
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.depoimento-item img {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .depoimento-item img {
+    max-width: 290px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+}
+
+.depoimento-item .name, .depoimento-item .ocupation {
+  font-weight: 800;
+  color: #DAA402;
+}
+
+.depoimento-item .name {
+  font-size: 34px;
+}
+
+@media screen and (max-width: 992px) {
+  .depoimento-item .name {
+    font-size: 24px;
+  }
+}
+
+.depoimento-item .ocupation {
+  font-size: 20px;
+  margin-top: -5px;
+  margin-bottom: 13px;
+}
+
+.depoimento-item .desc {
+  color: #0D0D2B;
+  font-size: 17px;
+  max-width: 450px;
+}
+
+@media screen and (max-width: 992px) {
+  .depoimento-item .desc {
+    font-size: 16px;
+  }
+}
+
 .main-footer {
   background-color: #BA1814;
   padding-top: 115px;
@@ -1257,6 +1322,26 @@ textarea.form-control {
   }
 }
 
+.home-banner.v-5 {
+  background-image: url("../images/bg/home-bg-grads-2.png");
+  background-size: 100%;
+  background-position: -50px 450px;
+}
+
+@media screen and (min-width: 992px) {
+  .home-banner.v-5 {
+    padding-top: 270px;
+    padding-bottom: 130px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home-banner.v-5 {
+    background-size: 140%;
+    background-position: 80% 275px;
+  }
+}
+
 @media screen and (max-width: 1350px) {
   .home-banner {
     background-position: 0 160%;
@@ -1367,6 +1452,12 @@ textarea.form-control {
 @media screen and (max-width: 330px) {
   .home-banner__caption .title {
     font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .home-banner__caption .title.v5 {
+    font-size: 62px;
   }
 }
 

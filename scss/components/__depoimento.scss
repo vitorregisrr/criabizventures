@@ -1,0 +1,49 @@
+.depoimento-item{
+    padding: 0 70px;
+    margin-bottom: 70px;
+
+    @media screen and (max-width: $bp-LG){
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    img{
+        margin-bottom: 15px;
+
+        @media screen and (max-width: $bp-LG){
+            max-width: 290px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+    }
+
+    .name, .ocupation{
+        font-weight: 800;
+        color: $c-educa-primary;
+    }
+
+    .name{
+        font-size: 34px;
+
+        @media screen and (max-width: $bp-LG){
+            font-size: 24px;
+        }
+    }
+
+    .ocupation{
+        font-size: 20px;
+        margin-top: -5px;
+        margin-bottom: 13px;
+    }
+
+    .desc{
+        color: $color-dark;
+        font-size: 17px;
+        max-width: 450px;
+
+        @media screen and (max-width: $bp-LG){
+            font-size: 16px;
+        }
+        
+    }
+}
