@@ -1,0 +1,100 @@
+.startups{
+    background-color: $c-ventures-primary;
+    background-image: url("../images/bg/grad-alone-3.png");
+    background-size: 80%;
+    background-position: -50px 20%;
+    background-repeat: no-repeat;
+    padding-top: 220px;
+
+    @media screen and (max-width: $bp-LG){
+padding-top: 205px;
+    }
+
+    &__header{
+        margin-bottom: 65px;
+
+        @media screen and (max-width: $bp-LG){
+            margin-bottom: 35px;
+        }
+
+        .title{
+            text-align: center;
+            color: #fff;
+            font-weight: 800;
+            font-size: 58px;
+
+            @media screen and (max-width: $bp-LG){
+                font-size: 35px;
+            }
+            
+        }
+
+        .desc{
+            text-align: center;
+            font-size: 17px;
+            font-weight: 300;
+
+            @media screen and (max-width: $bp-LG){
+                font-size: 16px;
+            }
+        }
+    }
+
+    .sub-header{
+        margin-bottom: 45px;
+
+        .title{
+            font-weight: 800;
+            color: #fff;
+
+            @media screen and (min-width: $bp-LG){
+                font-size: 42px;
+            }
+
+            @media screen and (max-width: $bp-LG){
+                font-size: 28px;
+            }
+        }
+        .line{
+            background-color: #fff;
+            @media screen and (min-width: $bp-LG){
+                width: 57.5%;
+            }
+        }
+    }
+
+    &__item{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 14px;
+        box-shadow: 0 5px 5px rgba(0,0,0,.2);
+        height: 220px;
+        padding: 15px;
+        margin-bottom: 30px;
+        @include transition();
+
+        @media screen and (max-width: $bp-MD){
+            height: 150px;
+        }
+
+        &:hover{
+            @include scale(1.05);
+        }
+
+        @media screen and (min-width: $bp-XL){
+            width: 92.5%;
+            margin: 0 auto;
+        }
+
+        img{
+            width: 100%;
+            max-height: 90%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+}
