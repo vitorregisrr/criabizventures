@@ -1309,7 +1309,7 @@ textarea.form-control {
 .home-banner.v-4 {
   background-image: url("../images/bg/home-bg-grads-2.png");
   background-size: 100%;
-  background-position: -50px 450px;
+  background-position: -50px 280px;
 }
 
 @media screen and (min-width: 992px) {
