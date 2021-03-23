@@ -2198,6 +2198,7 @@ textarea.form-control {
 
 .verticais-neg__brands-sub {
   position: absolute;
+  margin-left: -14%;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -2205,8 +2206,26 @@ textarea.form-control {
   transition: all 0.3s ease-in-out;
 }
 
+@media screen and (min-width: 360px) {
+  .verticais-neg__brands-sub {
+    margin-left: -12.5%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .verticais-neg__brands-sub {
+    margin-left: -10%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .verticais-neg__brands-sub {
+    margin-left: -8%;
+  }
+}
+
 .verticais-neg__brands-sub:hover {
-  transform: scale(1.1) translateX(-45%) !important;
+  transform: scale(1.1);
 }
 
 .verticais-neg__brands-sub img {
@@ -2233,7 +2252,6 @@ textarea.form-control {
 .verticais-neg__brands-sub.item-1 {
   top: 10px;
   left: calc(50% - 120px);
-  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 992px) {
@@ -2251,7 +2269,6 @@ textarea.form-control {
 .verticais-neg__brands-sub.item-2 {
   top: 10px;
   left: calc(50% + 150px);
-  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 992px) {
@@ -2269,7 +2286,6 @@ textarea.form-control {
 .verticais-neg__brands-sub.item-3 {
   top: 230px;
   left: calc(75%);
-  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 992px) {
@@ -2296,7 +2312,6 @@ textarea.form-control {
 .verticais-neg__brands-sub.item-4 {
   top: 435px;
   left: calc(74.5%);
-  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 992px) {
@@ -2330,7 +2345,6 @@ textarea.form-control {
 .verticais-neg__brands-sub.item-6 {
   top: 628px;
   left: calc(50% - 110px);
-  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 992px) {
@@ -2350,7 +2364,6 @@ textarea.form-control {
 .verticais-neg__brands-sub.item-5 {
   top: 620px;
   left: calc(50% + 140px);
-  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 992px) {
@@ -2370,7 +2383,6 @@ textarea.form-control {
 .verticais-neg__brands-sub.item-7 {
   top: 440px;
   left: calc(26%);
-  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 992px) {
@@ -2397,7 +2409,6 @@ textarea.form-control {
 .verticais-neg__brands-sub.item-8 {
   top: 210px;
   left: calc(25.5%);
-  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 992px) {

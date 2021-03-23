@@ -48,10 +48,23 @@
 
         &-sub{
             position: absolute;
+            margin-left: -14%;
             @include transition();
 
+            @media screen and (min-width: 360px){
+                margin-left: -12.5%;
+            }
+
+            @media screen and (min-width: $bp-SM){
+                margin-left: -10%;
+            }
+
+            @media screen and (min-width: $bp-LG){
+                margin-left: -8%;
+            }
+
             &:hover{
-               transform: scale(1.1) translateX(-45%) !important;
+               transform: scale(1.1);
             }
             
             img{
@@ -70,7 +83,6 @@
             &.item-1{
                 top: 10px;
                 left: calc(50% - 120px);
-                transform: translateX(-50%);
 
                 @media screen and (max-width: $bp-LG){
                     left: calc(50% - 75px);
@@ -84,7 +96,6 @@
             &.item-2{
                 top: 10px;
                 left: calc(50% + 150px);
-                transform: translateX(-50%);
 
                 @media screen and (max-width: $bp-LG){
                     left: calc(50% + 100.5px);
@@ -99,7 +110,6 @@
             &.item-3{
                 top: 230px;
                 left: calc(75%);
-                transform: translateX(-50%);
 
                 @media screen and (max-width: $bp-LG){
                     top: 135px;
@@ -120,7 +130,6 @@
             &.item-4{
                 top: 435px;
                 left: calc(74.5%);
-                transform: translateX(-50%);
 
                 @media screen and (max-width: $bp-LG){
                     top: 270px;
@@ -147,7 +156,6 @@
             &.item-6{
                 top: 628px;
                 left: calc(50% - 110px);
-                transform: translateX(-50%);
 
                 @media screen and (max-width: $bp-LG){
                     top: 377px;
@@ -164,7 +172,6 @@
             &.item-5{
                 top: 620px;
                 left: calc(50% + 140px);
-                transform: translateX(-50%);
 
                 @media screen and (max-width: $bp-LG){
                     top: 370px;
@@ -181,7 +188,6 @@
             &.item-7{
                 top: 440px;
                 left: calc(26%);
-                transform: translateX(-50%);
 
                 @media screen and (max-width: $bp-LG){
                     top: 120px;
@@ -202,7 +208,6 @@
             &.item-8{
                 top: 210px;
                 left: calc(25.5%);
-                transform: translateX(-50%);
 
                 @media screen and (max-width: $bp-LG){
                     top: 256px;
