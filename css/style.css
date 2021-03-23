@@ -1117,6 +1117,12 @@ textarea.form-control {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .depoimento-item .desc {
+    font-size: 14px;
+  }
+}
+
 .main-footer {
   background-color: #BA1814;
   padding-top: 115px;
