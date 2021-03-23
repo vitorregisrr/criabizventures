@@ -130,6 +130,10 @@
   color: #009DCC !important;
 }
 
+.border-ag-p {
+  border-color: #009DCC !important;
+}
+
 .c-ag-s {
   color: #006887 !important;
 }
@@ -1578,7 +1582,7 @@ textarea.form-control {
 }
 
 .about-circle {
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 @media screen and (max-width: 992px) {
