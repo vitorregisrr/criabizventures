@@ -37,7 +37,7 @@
             },
             telefone: {
                 required: true,
-                minlength: 15
+                minlength: 14
             },
             resumo: {
                 required: true
