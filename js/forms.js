@@ -65,12 +65,12 @@
         if ($("#form-empresas").valid()) {
 
             $('#form-submit').attr('disabled', 'true');
-            $('#form-submit').append('<i class="fa fa-spinner"></i>')
 
             $.ajax({
                 url: "https://formsquash.io/f/dMIPTXMFpTk8Q3cRyRGe",
                 method: "POST",
                 dataType: "json",
+                contentType: "application/json; charset=iso-8859-1",
                 data: JSON.stringify(
                     {
                         type: $('#form-empresas').find('input[name="type"]').val(),
