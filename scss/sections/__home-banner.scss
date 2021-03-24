@@ -89,7 +89,7 @@
     }
     
     @media screen and (max-width: $bp-MD){
-        padding-top: 185px;
+        padding-top: 190px;
         background-position: 160% 200px;
     }
     
@@ -103,6 +103,8 @@
     }
 
     @media screen and (max-width: 320px){
+        padding-top: 165px;
+        padding-bottom: 60px;
         background-position: 160% 315px;
     }
 

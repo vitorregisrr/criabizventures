@@ -58,6 +58,9 @@
                         @media screen and (max-width: $bp-LG){
                             font-size: 11px;
                         }
+                        @media screen and (max-width: 330px){
+                            font-size: 9px;
+                        }
                     }
                 }
             }
@@ -106,7 +109,7 @@
                     margin-left: -10px;
                 }
                 @media screen and (max-width: 320px) {
-                    width: 75px;
+                    width: 95px;
                 }
             }
         }
@@ -143,11 +146,11 @@
                             text-align: center;
                         }
                         @media screen and (max-width: $bp-SM) {
-                            font-size: 14px;
+                            font-size: 13px;
                             text-align: center;
                         }
                         @media screen and (max-width: 320px) {
-                            font-size: 12px;
+                            font-size: 10px;
                         }
                         &:hover {
                             color: $c-ventures-sec;

@@ -664,6 +664,12 @@ button:hover, button:focus, button:active {
   }
 }
 
+@media screen and (max-width: 330px) {
+  .main-header.sticky .main-nav ul li a {
+    font-size: 9px;
+  }
+}
+
 .main-header__content {
   display: flex;
   justify-content: space-between;
@@ -731,7 +737,7 @@ button:hover, button:focus, button:active {
 
 @media screen and (max-width: 320px) {
   .main-header__content .brand.horizontal {
-    width: 75px;
+    width: 95px;
   }
 }
 
@@ -778,14 +784,14 @@ button:hover, button:focus, button:active {
 
 @media screen and (max-width: 576px) {
   .main-header__content .main-nav ul li a {
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
   }
 }
 
 @media screen and (max-width: 320px) {
   .main-header__content .main-nav ul li a {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -1379,7 +1385,7 @@ textarea.form-control {
 
 @media screen and (max-width: 768px) {
   .home-banner {
-    padding-top: 185px;
+    padding-top: 190px;
     background-position: 160% 200px;
   }
 }
@@ -1399,6 +1405,8 @@ textarea.form-control {
 
 @media screen and (max-width: 320px) {
   .home-banner {
+    padding-top: 165px;
+    padding-bottom: 60px;
     background-position: 160% 315px;
   }
 }
