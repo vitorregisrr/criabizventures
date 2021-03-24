@@ -31,10 +31,35 @@
     }
 
     .desc{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        padding-left: 120px;
+        padding-bottom: 25px;
+        text-align: left;
+
+        @media screen and (max-width: $bp-LG){
+            padding-left: 0px;
+            padding-bottom: 0;
+        }
+
         p{
-            font-size: 24px;
-            padding-right: 50px;
-            color: $color-dark;
+            font-size: 28px;
+            color: #383838;
+            opacity: .9;
+
+            b{
+                font-size: 30px;
+
+                @media screen and (max-width: $bp-LG){
+                    font-size: 23px;
+                }
+            }
+
+            a{
+                color: #383838!important;
+            }
 
             @media screen and (max-width: $bp-LG){
                 font-size: 17px;

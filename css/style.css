@@ -3081,10 +3081,41 @@ textarea.form-control {
   }
 }
 
+.contato .desc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 120px;
+  padding-bottom: 25px;
+  text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+  .contato .desc {
+    padding-left: 0px;
+    padding-bottom: 0;
+  }
+}
+
 .contato .desc p {
-  font-size: 24px;
-  padding-right: 50px;
-  color: #0D0D2B;
+  font-size: 28px;
+  color: #383838;
+  opacity: .9;
+}
+
+.contato .desc p b {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .contato .desc p b {
+    font-size: 23px;
+  }
+}
+
+.contato .desc p a {
+  color: #383838 !important;
 }
 
 @media screen and (max-width: 992px) {
