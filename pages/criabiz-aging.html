@@ -71,12 +71,11 @@
     </head>
 
     <body class="wow fadeIn">
-        <!-- partial:../partials/__main-nav.html -->
-
+        
         <header id="main-header" class="main-header wow fadeInDown">
             <div class="container">
                 <div class="main-header__content">
-                    <a href="#">
+                    <a href="#home">
                         <img
                             src="../images/logo/criabiz-aging.png"
                             alt="Logo CriaBiz Aging"
@@ -85,16 +84,19 @@
                     <nav class="main-nav">
                         <ul>
                             <li class="wow fadeInRight" data-wow-delay="0.3s">
-                                <a class="c-ag-p" href="#">Sobre</a>
+                                <a class="c-ag-p" href="./index.html">Home</a>
+                            </li>
+                            <li class="wow fadeInRight" data-wow-delay="0.3s">
+                                <a class="c-ag-p" href="#about">Sobre</a>
                             </li>
                             <li class="wow fadeInRight" data-wow-delay="0.2s">
-                                <a class="c-ag-p" href="#">Nossos projetos</a>
+                                <a class="c-ag-p" href="./startups.html">Nossos projetos</a>
                             </li>
-                            <li class="wow fadeInRight" data-wow-delay="0.2s">
+                            <li class="wow fadeInRight" style="pointer-events: none;" data-wow-delay="0.2s">
                                 <a class="c-ag-p" href="#">Imprensa</a>
                             </li>
                             <li class="wow fadeInRight" data-wow-delay="0.2s">
-                                <a class="c-ag-p" href="#">Contato</a>
+                                <a class="c-ag-p" href="./contato.html">Contato</a>
                             </li>
                         </ul>
                     </nav>
@@ -102,10 +104,8 @@
             </div>
         </header>
 
-        <!-- partial -->
-
         <main class="d-flex flex-column order-1 order-lg-1">
-            <section class="home-banner bg-ag-p v-4">
+            <section id="home" class="home-banner bg-ag-p v-4">
                 <div class="container h-100">
                     <div class="row h-100">
                         <div class="col-lg-6 pl-lg-5">

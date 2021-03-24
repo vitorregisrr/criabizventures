@@ -73,12 +73,11 @@
     </head>
 
     <body class="wow fadeIn">
-        <!-- partial:../partials/__main-nav.html -->
 
         <header id="main-header" class="main-header wow fadeInDown">
             <div class="container">
                 <div class="main-header__content">
-                    <a href="#">
+                    <a href="#home">
                         <img
                             src="../images/logo/criabiz-health.png"
                             alt="Logo CriaBiz Health"
@@ -87,12 +86,15 @@
                     <nav class="main-nav">
                         <ul>
                             <li class="wow fadeInRight" data-wow-delay="0.3s">
-                                <a class="c-he-p" href="./sobre.html">Sobre</a>
+                                <a class="c-he-p" href="./index.html">Index</a>
+                            </li>
+                            <li class="wow fadeInRight" data-wow-delay="0.3s">
+                                <a class="c-he-p" href="#about">Sobre</a>
                             </li>
                             <li class="wow fadeInRight" data-wow-delay="0.2s">
                                 <a class="c-he-p" href="./startups.html">Nossos projetos</a>
                             </li>
-                            <li class="wow fadeInRight" data-wow-delay="0.2s">
+                            <li class="wow fadeInRight" style="pointer-events: none;" data-wow-delay="0.2s">
                                 <a class="c-he-p" href="./empresas.html">Imprensa</a>
                             </li>
                             <li class="wow fadeInRight" data-wow-delay="0.2s">
@@ -104,10 +106,8 @@
             </div>
         </header>
 
-        <!-- partial -->
-
         <main class="d-flex flex-column order-1 order-lg-1">
-            <section class="home-banner bg-he-p v-3">
+            <section id="home" class="home-banner bg-he-p v-3">
                 <div class="container h-100">
                     <div class="row h-100">
                         <div class="col-lg-6 pl-lg-5">
