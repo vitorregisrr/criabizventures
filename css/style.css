@@ -3036,6 +3036,72 @@ textarea.form-control {
   }
 }
 
+.contato {
+  padding-top: 210px;
+  padding-bottom: 150px;
+}
+
+@media screen and (max-width: 992px) {
+  .contato {
+    padding-top: 200px;
+    padding-bottom: 85px;
+  }
+}
+
+.contato .sub-header {
+  margin-bottom: 85px;
+}
+
+@media screen and (max-width: 992px) {
+  .contato .sub-header {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contato .sub-header .title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contato .sub-header .line {
+    width: 56%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contato .sub-header .line {
+    height: 3.5px;
+  }
+}
+
+.contato .desc p {
+  font-size: 24px;
+  padding-right: 50px;
+  color: #0D0D2B;
+}
+
+@media screen and (max-width: 992px) {
+  .contato .desc p {
+    font-size: 17px;
+    text-align: center;
+    padding-right: 0;
+  }
+}
+
+.contato iframe {
+  height: 400px;
+  border: none;
+}
+
+@media screen and (max-width: 992px) {
+  .contato iframe {
+    height: 300px;
+    margin-top: 25px;
+  }
+}
+
 .equipe-sec {
   padding-top: 100px;
   padding-bottom: 20px;
