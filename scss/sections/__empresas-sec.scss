@@ -209,6 +209,14 @@
                     width: 100%;
                     background-color: $c-impact-primary;
                 }
+
+                &.yellow{
+                    color: $c-angels-sec;
+
+                    .line {
+                        background-color: $c-angels-sec;
+                    }
+                }
             }
         }
     }

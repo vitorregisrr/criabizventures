@@ -5,6 +5,7 @@
     color: rgb(24, 24, 24);
     width: 100%;
     @include transition();
+
     @media screen and (max-width: $bp-LG) {
         height: 48px;
     }
@@ -12,10 +13,17 @@
     &::placeholder {
         color: rgba(24, 24, 24, 0.76);
     }
+
     &:active,
     &:focus {
         outline: none;
         box-shadow: 0 0 0 2px rgb(216, 32, 32);
+    }
+
+    &.border-ang-p{
+       &:active, &:focus{
+            box-shadow: 0 0 0 2px rgb(216, 182, 32);
+       }
     }
 }
 
@@ -29,6 +37,7 @@
     color: #fff;
     border: none !important;
     @include transition();
+
     @media screen and (max-width: $bp-LG) {
         font-size: 14px;
         border-radius: 15px;
@@ -44,6 +53,7 @@
             margin-left: 9px;
         }
     }
+
     &:hover {
         color: #fff;
         @include scale(1.05);
@@ -52,6 +62,7 @@
 
 .form-group {
     margin-bottom: 35px;
+
     @media screen and (max-width: $bp-LG) {
         margin-bottom: 14px;
     }

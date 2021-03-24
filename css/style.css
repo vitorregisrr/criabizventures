@@ -214,6 +214,10 @@
   background-color: #E5AC00 !important;
 }
 
+.border-ang-p {
+  border-color: #E5AC00 !important;
+}
+
 .bg-ang-s {
   background-color: #FFBA00 !important;
 }
@@ -820,6 +824,10 @@ button:hover, button:focus, button:active {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: 0 0 0 2px #d82020;
+}
+
+.form-control.border-ang-p:active, .form-control.border-ang-p:focus {
+  box-shadow: 0 0 0 2px #d8b620;
 }
 
 .send-btn {
@@ -3697,6 +3705,14 @@ textarea.form-control {
   height: 3px;
   width: 100%;
   background-color: #CB0000;
+}
+
+.empresas-sec .mobile__steps .step.active.yellow {
+  color: #FFBA00;
+}
+
+.empresas-sec .mobile__steps .step.active.yellow .line {
+  background-color: #FFBA00;
 }
 
 .empresas-sec__success {
