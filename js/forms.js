@@ -72,13 +72,13 @@
                 dataType: "json",
                 data: JSON.stringify(
                     {
-                        type: $('#form-empresas').find('input[name="type"]').val().toString(),
-                        email: $('#form-empresas').find('input[name="email"]').val().toString(),
-                        pessoa: $('#form-empresas').find('input[name="pessoa"]').val().toString(),
-                        empresa: $('#form-empresas').find('input[name="empresa"]').val().toString(),
-                        cidade: $('#form-empresas').find('input[name="cidade"]').val().toString(),
-                        telefone: $('#form-empresas').find('input[name="telefone"]').val().toString(),
-                        resumo: $('#form-empresas').find('input[name="resumo"]').val().toString(),
+                        type: $('#form-empresas').find('input[name="type"]').val(),
+                        email: $('#form-empresas').find('input[name="email"]').val(),
+                        pessoa: $('#form-empresas').find('input[name="pessoa"]').val(),
+                        empresa: $('#form-empresas').find('input[name="empresa"]').val(),
+                        cidade: $('#form-empresas').find('input[name="cidade"]').val(),
+                        telefone: $('#form-empresas').find('input[name="telefone"]').val(),
+                        resumo: $('#form-empresas').find('input[name="resumo"]').val(),
                     }
                 ),
 
