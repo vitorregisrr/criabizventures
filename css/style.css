@@ -1001,6 +1001,12 @@ textarea.form-control {
   justify-content: center;
 }
 
+@media screen and (max-width: 1350px) {
+  .send-btn.md {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .send-btn.md {
     text-align: center;
