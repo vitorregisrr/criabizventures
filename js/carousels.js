@@ -2,19 +2,20 @@
     'use strict';
 
     // Deps Carousel //
-    const homeCarousel = $(".home-banner__carousel");
-    homeCarousel.owlCarousel({
+    const womenCarousel = $("#women-carousel");
+    womenCarousel.owlCarousel({
         loop: true,
         margin: 0,
-        items: 1,
-        center: true,
-        dots: true,
-        nav: false,
-        slideBy: 1,
-        startPosition: 0,
+        items: 8,
+        center: false,
+        dots: false,
+        navigation: false,
+        infinite: true,
+        navText: ['', ''],
         autoplay: true,
-        autoHeight: true,
-        autoplayHoverPause: false
+        autoplayTimeout: 1200,
+        smartSpeed: 800,
+        
     });
     
 })();

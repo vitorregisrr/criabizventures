@@ -1,5 +1,6 @@
 (function () {
     'use strict';
+    
     jQuery.extend(jQuery.validator.messages, {
         required: "Este campo é obrigatório.",
         email: "E-mail inválido.",

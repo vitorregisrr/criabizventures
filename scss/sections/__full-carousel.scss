@@ -1,0 +1,26 @@
+.full-carousel {
+    width: 100%;
+    padding-top: 100px;
+
+    width: 100%;
+
+    .owl-carousel {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+        .owl-nav {
+            button {
+                display: none;
+            }
+            display: none !important;
+        }
+
+        .owl-stage-outer {
+            overflow: visible !important;
+        }
+    }
+     
+}

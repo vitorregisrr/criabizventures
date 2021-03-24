@@ -3834,6 +3834,32 @@ textarea.form-control {
   }
 }
 
+.full-carousel {
+  width: 100%;
+  padding-top: 100px;
+  width: 100%;
+}
+
+.full-carousel .owl-carousel {
+  width: 100%;
+}
+
+.full-carousel .owl-carousel img {
+  width: 100%;
+}
+
+.full-carousel .owl-carousel .owl-nav {
+  display: none !important;
+}
+
+.full-carousel .owl-carousel .owl-nav button {
+  display: none;
+}
+
+.full-carousel .owl-carousel .owl-stage-outer {
+  overflow: visible !important;
+}
+
 .sub-header .title {
   text-align: center;
   color: #ED3833;
