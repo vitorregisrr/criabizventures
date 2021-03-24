@@ -3837,7 +3837,15 @@ textarea.form-control {
 .full-carousel {
   width: 100%;
   padding-top: 100px;
+  margin-bottom: -20px;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .full-carousel {
+    padding-top: 20px;
+    margin-bottom: -5px;
+  }
 }
 
 .full-carousel .owl-carousel {

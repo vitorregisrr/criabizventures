@@ -1,8 +1,13 @@
 .full-carousel {
     width: 100%;
     padding-top: 100px;
-
+    margin-bottom: -20px;
     width: 100%;
+
+    @media screen and (max-width: $bp-MD){
+        padding-top: 20px;
+        margin-bottom: -5px;
+    }
 
     .owl-carousel {
         width: 100%;

@@ -15,6 +15,19 @@
         autoplay: true,
         autoplayTimeout: 1200,
         smartSpeed: 800,
+        responsive: {
+            0: {
+                items: 5,
+            },
+
+            500: {
+                items: 6
+            },
+
+            800: {
+                items: 8
+            }
+        }
         
     });
     
