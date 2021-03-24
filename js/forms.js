@@ -92,7 +92,7 @@
                         .find('input[name="telefone"]')
                         .val(),
                     resumo: $('#form-empresas')
-                        .find('input[name="resumo"]')
+                        .find('textarea[name="resumo"]')
                         .val()
                 })
             })
