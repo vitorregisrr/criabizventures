@@ -64,7 +64,8 @@
     $('#form-submit').click(function () {
         if ($("#form-empresas").valid()) {
 
-            $(this).css('ponter-events', 'none');
+            $('#form-submit').attr('disabled', 'true');
+            $('#form-submit').append('<i class="fa fa-spinner"></i>')
 
             $.ajax({
                 url: "https://formsquash.io/f/dMIPTXMFpTk8Q3cRyRGe",

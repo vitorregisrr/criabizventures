@@ -10,6 +10,11 @@
     border: none !important;
     @include transition();
 
+    &:disabled{
+        opacity: .5;
+        pointer-events: none;
+    }
+
     &.md{
         font-size: 24px;
         width: 100%;

@@ -988,6 +988,11 @@ textarea.form-control {
   transition: all 0.3s ease-in-out;
 }
 
+.send-btn:disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
 .send-btn.md {
   font-size: 24px;
   width: 100%;
