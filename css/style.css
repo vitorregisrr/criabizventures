@@ -1000,6 +1000,7 @@ textarea.form-control {
   .send-btn.md {
     text-align: center;
     font-size: 16px;
+    border-radius: 6px;
   }
 }
 
