@@ -1,77 +1,46 @@
-.btn-transparent {
-    background: none !important;
-    border: none;
-    outline: none;
-    font-weight: bold;
-    cursor: pointer;
-    &:active,
-    &:focus {
-        border: none;
-        outline: none;
-    }
-}
 
-.btn-blue {
-    font-family: 'Trebuchet Bold';
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: #0080BB;
-    color: #fff;
-    line-height: 1.2;
-    padding: 0 17px;
-    border-radius: 6px;
-    border: none;
-    margin-top: 10px;
-    @include transition();
-    &:focus {
-        outline: none;
-    }
-    &:hover {
-        @include scale(1.03);
-    }
-}
-
-.btn-outline-grad {
-    position: relative;
-    font-family: 'Trebuchet Bold';
-    text-align: center;
-    color: #6F6F6E;
-    font-weight: bold;
-    background: none;
-    border: none;
-    background: linear-gradient(90deg, rgba(0,132,191,1) 46%, rgba(128,183,76,1) 70%);
-    margin-top: 10px;
+.send-btn {
+    background-color: $c-ventures-sec;
+    font-weight: 800;
+    font-size: 28px;
     border-radius: 9px;
-    height: 30px;
-    padding: 0 20px;
-    &:focus {
-        outline: none;
-    }
-    &:hover {
-        .text {
-            color: #fff;
+    padding: 4px 115px;
+    margin: 0 auto;
+    color: #fff;
+    border: none !important;
+    @include transition();
+
+    &.md{
+        font-size: 24px;
+        width: 100%;
+        padding: 6px 0;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width: $bp-LG){
+            text-align: center;
+            font-size: 16px;
         }
-        &::after {
-            background-color: rgba(0,132,191,1);
-        }
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #fff;
-        width: 97%;
-        height: 80%;
-        border-radius: 6px;
-        @include transition();
     }
 
-    .text {
-        font-size: 19px;
-        position: relative;
-        z-index: 2;
+    @media screen and (max-width: $bp-LG) {
+        font-size: 14px;
+        border-radius: 15px;
+        padding: 12px 40px;
+    }
+
+    i {
+        font-size: 22px;
+        margin-left: 12px;
+
+        @media screen and (max-width: $bp-LG) {
+            font-size: 13px;
+            margin-left: 9px;
+        }
+    }
+
+    &:hover {
+        color: #fff;
+        @include scale(1.05);
     }
 }

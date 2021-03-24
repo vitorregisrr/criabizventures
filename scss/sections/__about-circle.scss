@@ -60,6 +60,18 @@
                 max-width: 460px;
                 line-height: 1.5;
             }
+
+            &.lg{
+                font-size: 25px;
+
+                @media screen and (max-width: $bp-LG){
+                    font-size: 22px;
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 18px;
+                }
+            }
         }
 
         .button {

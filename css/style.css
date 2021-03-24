@@ -972,87 +972,15 @@ textarea.form-control {
   }
 }
 
-.btn-transparent {
-  background: none !important;
-  border: none;
-  outline: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.btn-transparent:active, .btn-transparent:focus {
-  border: none;
-  outline: none;
-}
-
-.btn-blue {
-  font-family: 'Trebuchet Bold';
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: #0080BB;
-  color: #fff;
-  line-height: 1.2;
-  padding: 0 17px;
-  border-radius: 6px;
-  border: none;
-  margin-top: 10px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-blue:focus {
-  outline: none;
-}
-
-.btn-blue:hover {
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
-  transform: scale(1.03);
-}
-
-.btn-outline-grad {
-  position: relative;
-  font-family: 'Trebuchet Bold';
-  text-align: center;
-  color: #6F6F6E;
-  font-weight: bold;
-  background: none;
-  border: none;
-  background: linear-gradient(90deg, #0084bf 46%, #80b74c 70%);
-  margin-top: 10px;
+.send-btn {
+  background-color: #ED3833;
+  font-weight: 800;
+  font-size: 28px;
   border-radius: 9px;
-  height: 30px;
-  padding: 0 20px;
-}
-
-.btn-outline-grad:focus {
-  outline: none;
-}
-
-.btn-outline-grad:hover .text {
+  padding: 4px 115px;
+  margin: 0 auto;
   color: #fff;
-}
-
-.btn-outline-grad:hover::after {
-  background-color: #0084bf;
-}
-
-.btn-outline-grad::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  width: 97%;
-  height: 80%;
-  border-radius: 6px;
+  border: none !important;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -1060,10 +988,48 @@ textarea.form-control {
   transition: all 0.3s ease-in-out;
 }
 
-.btn-outline-grad .text {
-  font-size: 19px;
-  position: relative;
-  z-index: 2;
+.send-btn.md {
+  font-size: 24px;
+  width: 100%;
+  padding: 6px 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  .send-btn.md {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .send-btn {
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 12px 40px;
+  }
+}
+
+.send-btn i {
+  font-size: 22px;
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 992px) {
+  .send-btn i {
+    font-size: 13px;
+    margin-left: 9px;
+  }
+}
+
+.send-btn:hover {
+  color: #fff;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .depoimento-item {
@@ -1668,6 +1634,22 @@ textarea.form-control {
     padding-top: 10px;
     max-width: 460px;
     line-height: 1.5;
+  }
+}
+
+.about-circle__caption .desc.lg {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 992px) {
+  .about-circle__caption .desc.lg {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-circle__caption .desc.lg {
+    font-size: 18px;
   }
 }
 
@@ -3805,6 +3787,16 @@ textarea.form-control {
     text-align: center;
     color: #CB0000;
     margin-bottom: -5px;
+  }
+}
+
+.sub-header .title.lg {
+  font-size: 25.5px;
+}
+
+@media screen and (min-width: 992px) {
+  .sub-header .title.lg {
+    font-size: 47.5px;
   }
 }
 
