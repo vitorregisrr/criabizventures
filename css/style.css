@@ -2230,6 +2230,12 @@ textarea.form-control {
   }
 }
 
+@media screen and (min-width: 400px) {
+  .verticais-neg__brands-sub {
+    margin-left: -10.8%;
+  }
+}
+
 @media screen and (min-width: 576px) {
   .verticais-neg__brands-sub {
     margin-left: -10%;

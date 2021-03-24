@@ -55,6 +55,10 @@
                 margin-left: -12.5%;
             }
 
+            @media screen and (min-width: 400px){
+                margin-left: -10.8%;
+            }
+
             @media screen and (min-width: $bp-SM){
                 margin-left: -10%;
             }
