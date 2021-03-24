@@ -151,6 +151,10 @@
             font-weight: bold;
             font-size: 58px;
 
+            @media screen and (max-width: 1367px){
+                font-size: 53px;
+            }
+
             @media screen and (max-width: $bp-XL){
                 font-size: 45px;
                 max-width: 550px;

@@ -1435,6 +1435,12 @@ textarea.form-control {
   font-size: 58px;
 }
 
+@media screen and (max-width: 1367px) {
+  .home-banner__caption .title {
+    font-size: 53px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .home-banner__caption .title {
     font-size: 45px;
