@@ -3483,6 +3483,17 @@ textarea.form-control {
   margin: 0 auto;
 }
 
+.empresas-sec__header .content.lg {
+  max-width: 900px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 992px) {
+  .empresas-sec__header .content.lg {
+    padding-bottom: 30px;
+  }
+}
+
 .empresas-sec__header .content .title {
   font-size: 50px;
   font-weight: 800;
@@ -3491,10 +3502,25 @@ textarea.form-control {
   margin: 0 auto 50px;
 }
 
+.empresas-sec__header .content .title.lg {
+  max-width: 750px;
+}
+
 @media screen and (max-width: 992px) {
   .empresas-sec__header .content .title {
     font-size: 25px;
     margin-bottom: 20px;
+  }
+}
+
+.empresas-sec__header .content .subtitle {
+  color: #E0E0E0;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .empresas-sec__header .content .subtitle {
+    font-size: 18px;
   }
 }
 
@@ -3533,6 +3559,36 @@ textarea.form-control {
 @media screen and (max-width: 992px) {
   .empresas-sec__content .subtitle {
     font-size: 16px;
+    max-width: 90%;
+    margin: 0 auto;
+    font-weight: 400;
+    margin-bottom: 35px;
+  }
+}
+
+.empresas-sec__content .sub-desc {
+  font-size: 22px;
+  color: #0D0D2B;
+  font-weight: 400;
+  max-width: 870px;
+  color: #4F4F4F;
+  margin: 0 auto;
+  margin-bottom: 90px;
+  text-align: left;
+}
+
+@media screen and (min-width: 992px) {
+  .empresas-sec__content .sub-desc b {
+    margin-bottom: -10px;
+  }
+  .empresas-sec__content .sub-desc p {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .empresas-sec__content .sub-desc {
+    font-size: 15px;
     max-width: 90%;
     margin: 0 auto;
     font-weight: 400;
@@ -3589,6 +3645,12 @@ textarea.form-control {
 
 .empresas-sec__form {
   padding: 20px 215px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .empresas-sec__form {
+    padding: 20px 150px 0;
+  }
 }
 
 @media screen and (max-width: 992px) {
