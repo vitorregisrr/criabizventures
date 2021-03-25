@@ -4,8 +4,8 @@
     background-size: 85%;
     background-position: 0px 260px;
     background-repeat: no-repeat;
-    padding-top: 234px;
-    padding-bottom: 130px;
+    padding-top: 214px;
+    padding-bottom: 110px;
     
     &.v-2{
         background-image: url("../images/bg/home-bg-grads-2.png");
@@ -117,6 +117,7 @@
 
         .header {
             display: flex;
+            font-size: 15px;
             align-items: center;
             margin-bottom: 20px;
 
@@ -149,14 +150,16 @@
 
         .title{
             font-weight: bold;
-            font-size: 58px;
+            font-size: 50px;
+            padding-right: 30px;
 
             @media screen and (max-width: 1367px){
-                font-size: 53px;
+                font-size: 47px;
             }
 
             @media screen and (max-width: $bp-XL){
                 font-size: 45px;
+                padding-right: 0;
                 max-width: 550px;
             }
 
@@ -206,8 +209,8 @@
             display: flex;
             align-items: center;
             background-color: $c-ventures-sec;
-            font-size: 18px;
-            padding: 15px 15px 15px 20px;
+            font-size: 17px;
+            padding: 10px 14px 10px 20px;
             font-weight: 500;
             color: #fff;
             border-radius: 32px;
@@ -265,7 +268,7 @@
         }
 
         img {
-            width: 80.2%;
+            width: 70.2%;
         }
     }
 }

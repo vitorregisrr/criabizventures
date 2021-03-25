@@ -13,8 +13,8 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding-top: 240px;
-        padding-bottom: 300px;
+        padding-top: 180px;
+        padding-bottom: 220px;
 
         @media screen and (max-width: $bp-LG){
             padding-top: 150px;
@@ -34,7 +34,7 @@
 
         &-main{
             img{
-                width: 280px;
+                width: 230px;
 
                 @media screen and (max-width: $bp-LG){
                     width: 180px;
@@ -72,7 +72,7 @@
             }
             
             img{
-                width: 175px;
+                width: 145px;
                 @include transition();
 
                 @media screen and (max-width: $bp-LG){
@@ -86,7 +86,7 @@
 
             &.item-1{
                 top: 10px;
-                left: calc(50% - 120px);
+                left: calc(50% - 70px);
 
                 @media screen and (max-width: $bp-LG){
                     left: calc(50% - 75px);
@@ -132,8 +132,8 @@
             }
 
             &.item-4{
-                top: 435px;
-                left: calc(74.5%);
+                top: 235px;
+                left: calc(72.5%);
 
                 @media screen and (max-width: $bp-LG){
                     top: 270px;
@@ -158,8 +158,8 @@
             }
 
             &.item-6{
-                top: 628px;
-                left: calc(50% - 110px);
+                top: 465px;
+                left: calc(50% - 70px);
 
                 @media screen and (max-width: $bp-LG){
                     top: 377px;
@@ -174,8 +174,8 @@
             }
 
             &.item-5{
-                top: 620px;
-                left: calc(50% + 140px);
+                top: 460px;
+                left: calc(50% + 170px);
 
                 @media screen and (max-width: $bp-LG){
                     top: 370px;
@@ -190,8 +190,8 @@
             }
 
             &.item-7{
-                top: 440px;
-                left: calc(26%);
+                top: 240px;
+                left: calc(32%);
 
                 @media screen and (max-width: $bp-LG){
                     top: 120px;

@@ -40,10 +40,10 @@
         }
 
         .desc {
-            font-size: 18px;
+            font-size: 16px;
             color: $color-dark;
             line-height: 1.92;
-            max-width: 460px;
+            max-width: 480px;
             padding-top: 20px;
 
             @media screen and (max-width: $bp-LG) {
@@ -79,11 +79,11 @@
             align-items: center;
             justify-content: center;
             border-radius: 35px;
-            padding: 18px 0;
+            padding: 10px 0;
             width: 100%;
             color: #fff !important;
             font-weight: 500;
-            font-size: 24px;
+            font-size: 21px;
             margin-bottom: 20px;
             box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
             @include transition();
@@ -107,7 +107,7 @@
             }
 
             .icon {
-                font-size: 20px;
+                font-size: 18px;
                 margin-right: 15px;
 
                 @media screen and (max-width: $bp-LG) {
@@ -134,7 +134,7 @@
 
     &__banner {
         img {
-            width: 100%;
+            width: 90%;
 
             @media screen and (max-width: $bp-LG) {
                 width: 107vw;

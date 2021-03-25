@@ -25,7 +25,8 @@
 
     &__item{
         background-color: #fff;
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
         border-radius: 8px;
         box-shadow: 2px 5px 10px rgba(0,0,0,.2);
         height: 160px;
@@ -61,7 +62,7 @@
             height: unset;
 
             img{
-                height: 220px;
+                height: 190px;
                 width: unset;
 
                 @media screen and (max-width: $bp-MD){
