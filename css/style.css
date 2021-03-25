@@ -1260,7 +1260,7 @@ textarea.form-control {
   background-position: 0px 260px;
   background-repeat: no-repeat;
   padding-top: 214px;
-  padding-bottom: 110px;
+  padding-bottom: 120px;
 }
 
 .home-banner.v-2 {
@@ -3486,7 +3486,7 @@ textarea.form-control {
   text-align: center;
   color: #fff;
   font-weight: 800;
-  font-size: 58px;
+  font-size: 50px;
 }
 
 @media screen and (max-width: 992px) {
@@ -3518,7 +3518,7 @@ textarea.form-control {
 
 @media screen and (min-width: 992px) {
   .startups .sub-header .title {
-    font-size: 42px;
+    font-size: 39px;
   }
 }
 
@@ -3530,6 +3530,7 @@ textarea.form-control {
 
 .startups .sub-header .line {
   background-color: #fff;
+  height: 3.5px;
 }
 
 @media screen and (min-width: 992px) {
@@ -3543,11 +3544,11 @@ textarea.form-control {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
   background-color: #fff;
   border-radius: 14px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-  height: 220px;
+  height: 190px;
   padding: 15px;
   margin-bottom: 30px;
   -webkit-transition: all 0.3s ease-in-out;
