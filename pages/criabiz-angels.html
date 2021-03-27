@@ -56,6 +56,7 @@
         <script src="../js/main.js" defer></script>
         <script src="../js/carousels.js" defer></script>
         <script src="../js/responsivenav.js" defer></script>
+        <script src="../js/modal.js" defer></script>
         <script src="../js/forms.js" defer></script>
         <script src="../js/inputmasks.js" defer></script>
 
@@ -72,12 +73,9 @@
             integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
             crossorigin="anonymous">
 
-        <!-- partial -->
     </head>
 
     <body class="wow fadeIn">
-        <!-- partial:../partials/__main-nav.html -->
-
         <header id="main-header" class="main-header wow fadeInDown">
             <div class="container">
                 <div class="main-header__content">
@@ -93,13 +91,13 @@
                                 <a class="c-ang-s" href="./index.html">Home</a>
                             </li>
                             <li class="wow fadeInRight" data-wow-delay="0.3s">
-                                <a class="c-ang-s" href="#about">Sobre</a>
+                                <a class="c-ang-s" href="./sobre.html">Sobre nós</a>
                             </li>
                             <li class="wow fadeInRight" data-wow-delay="0.2s">
                                 <a class="c-ang-s" href="./startups.html">Nossos projetos</a>
                             </li>
-                            <li class="wow fadeInRight" style="pointer-events: none;" data-wow-delay="0.2s">
-                                <a class="c-ang-s" href="#">Imprensa</a>
+                            <li class="wow fadeInRight" data-wow-delay="0.2s">
+                                <a class="c-ang-s" href="./imprensa.html">Imprensa</a>
                             </li>
                             <li class="wow fadeInRight" data-wow-delay="0.2s">
                                 <a class="c-ang-s" href="./contato.html">Contato</a>
@@ -109,8 +107,6 @@
                 </div>
             </div>
         </header>
-
-        <!-- partial -->
 
         <main class="d-flex flex-column order-1 order-lg-1">
             <section id="home" class="home-banner bg-ang-p">
@@ -125,7 +121,7 @@
                                 </h1>
 
                                 <div class="d-flex justify-content-start">
-                                    <a class="more bg-ang-s wow zoomIn" data-wow-delay="0.8s" href="#about">Quero participar!
+                                    <a class="more bg-ang-s wow zoomIn" data-wow-delay="0.8s" href="./form-startup.html">Inscrever minha Startup
                                         <span class="circle c-ang-p wow fadeInLeft" data-wow-delay="1s">
                                             <i class="fa fa-chevron-right"></i>
                                         </span>
@@ -223,21 +219,25 @@
 
                             <div class="row justify-content-center">
                                 <div
-                                    class="col-12 col-lg-8 mb-3 d-flex align-items-center justify-content-center">
+                                    class="col-12 col-lg-9 mb-3 d-flex align-items-center justify-content-center">
 
-                                    <a href="./form-anjo.html" class="send-btn text-uppercase  md bg-f-p w-100">
+                                    <button
+                                        data-toggle="c-modal"
+                                        data-target="#modal-form-anjo"
+                                        class="send-btn text-uppercase  md bg-f-p w-100">
                                         Já sou investidor anjo
-                                    </a>
+                                    </button>
 
                                 </div>
-                                <div class="col-12 col-lg-8 d-flex align-items-center justify-content-center">
+                                <div class="col-12 col-lg-9 d-flex align-items-center justify-content-center">
 
-                                    <a
-                                        href="./form-queroseranjo.html"
+                                    <button
+                                        data-toggle="c-modal"
+                                        data-target="#modal-form-queroanjo"
                                         style="background-color: #888888 !important"
                                         class="send-btn md text-uppercase w-100 px-0">
                                         Quero aprender sobre o investimento anjo
-                                    </a>
+                                    </button>
 
                                 </div>
                             </div>
@@ -278,7 +278,7 @@
                     <div class="col-4 col-lg-2">
                         <ul>
                             <li class="title wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
-                                Negócio
+                                Nossos Clientes
                             </li>
                             <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
                                 <a href="./form-empresa.html">Empresas</a>
@@ -291,35 +291,43 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-4 col-lg-2">
+                    <div class="col-4 col-lg-3">
                         <ul>
                             <li class="title wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
-                                Projetos
+                                Verticais de Negócio
                             </li>
-                            <li
-                                class="wow fadeInUp"
-                                style="pointer-events: none;"
-                                data-wow-delay="0.5s"
-                                data-wow-offset="-200">
-                                <a href="#">Indústria 4.0</a>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-angels.html">Criabiz Angels</a>
                             </li>
-                            <li
-                                class="wow fadeInUp"
-                                style="pointer-events: none;"
-                                data-wow-delay="0.5s"
-                                data-wow-offset="-200">
-                                <a href="#">Agro 4.0</a>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-angelseduca.html">Criabiz Angels Educa</a>
                             </li>
-                            <li
-                                class="wow fadeInUp"
-                                style="pointer-events: none;"
-                                data-wow-delay="0.5s"
-                                data-wow-offset="-200">
-                                <a href="#">Edu 5.0</a>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-aging.html">Criabiz Aging</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-agritech.html">Criabiz Agritech</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-education.html">Criabiz Education</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-health.html">Criabiz Health</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-impact.html">Criabiz Impact</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-tech.html">Criabiz Tech</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-youth.html">Criabiz Youth</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-women.html">Criabiz Women</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-1"></div>
                     <div class="col-12 col-lg-2 pt-3 pt-lg-0">
                         <ul class="text-center text-lg-left">
                             <li class="title wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
@@ -353,6 +361,243 @@
                 </div>
             </div>
         </footer>
+
+        <!-- partial:../partials/__modal-form-anjo.html -->
+
+        <div class="c-modal" id="modal-form-anjo" data-visible="false">
+    <button
+        class="close"
+        data-toggle="c-modal"
+        data-target="#modal-form-anjo"
+        title="fechar">
+        <i class="fa fa-times"></i>
+    </button>
+    <div class="content">
+        <div class="container">
+
+            <div class="empresas-sec__content">
+                <h3 class="subtitle fadeInUp" data-delay="0.2s">
+                    Você já realizou Investimento Anjo, ou pertence a algum grupo estruturado de
+                    Investidores Anjo? Cadastre-se para receber os informes sobre novas rodadas.
+
+                </h3>
+
+                <h2 class="title c-ang-s fadeInUp" data-delay="0.2s">
+                    Preencha o formulário abaixo
+                </h2>
+
+                <hr class="line bg-ang-s zoomIn" data-delay="0.2s">
+                
+                    <form
+                        id="form-empresas"
+                        action="https://formsquash.io/f/dMIPTXMFpTk8Q3cRyRGe"
+                        method="POST"
+                        class="empresas-sec__form fadeInUp"
+                        data-delay="0.25s">
+                        <input name="type" type="hidden" value="Formulário Anjo">
+                            <div class="row">
+                                <div class="col-5 d-block d-lg-none">
+                                    <div class="mobile__steps pt-4">
+                                        <div id="form-marker-1" class="step yellow step-1 active">
+                                            <span class="text">
+                                                Informações
+                                            </span>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div id="form-marker-2" class="step  yellow  step-2">
+                                            <span class="text">
+                                                Sua mensagem
+                                            </span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="step-1" class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="pessoa">Nome</label>
+                                        <input name="pessoa" type="text" class="form-control border-ang-p"></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="telefone">Telefone (Whatsapp)</label>
+                                            <input name="telefone" type="text" class="form-control border-ang-p mask-phone"></div>
+                                        </div>
+
+                                        <div class="col-12 d-flex d-lg-none justify-content-center">
+                                            <div class="pt-3">
+                                                <button id="form-next" type="button" class="send-btn bg-ang-s col-lg-">
+                                                    Proximo
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row fadeIn" id="step-2">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="pessoa">Redes de Anjos em que participa e/ou Startups em que já investiu</label>
+                                                <textarea
+                                                    name="resumo"
+                                                    class="form-control border-ang-p"
+                                                    name="#"
+                                                    id="#"
+                                                    cols="30"
+                                                    rows="10"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <div>
+                                                <button id="form-submit" type="button" class="send-btn bg-ang-s">
+                                                    Enviar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div id="success-tab" style="display: none;" class="empresas-sec__success">
+                                    <span class="icon c-ang-p">
+                                        <i class="far fa-smile-wink"></i>
+                                    </span>
+                                    <h5 class="title c-ang-p">
+                                        Seus dados foram enviados com sucesso!
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- partial -->
+
+        <!-- partial:../partials/__modal-form-queroanjo.html -->
+
+        <div class="c-modal" id="modal-form-queroanjo" data-visible="false">
+    <button
+        class="close"
+        data-toggle="c-modal"
+        data-target="#modal-form-queroanjo"
+        title="fechar">
+        <i class="fa fa-times"></i>
+    </button>
+    <div class="content">
+        <div class="container">
+
+            <div class="empresas-sec__content">
+                <h3 class="subtitle fadeInUp" data-delay="0.2s">
+                    Você tem interesse em fazer parte de um grupo de Investimento Anjo? Já estudou
+                    sobre ou realizou algum aporte em projetos/startups? Cadastre-se para participar
+                    dos nossos grupos educacionais de investimento.
+                </h3>
+
+                <h2 class="title c-ang-s fadeInUp" data-delay="0.2s">
+                    Preencha o formulário abaixo
+                </h2>
+
+                <hr class="line bg-ang-s zoomIn" data-delay="0.2s"></div>
+                <form
+                    id="form-empresas"
+                    action="https://formsquash.io/f/dMIPTXMFpTk8Q3cRyRGe"
+                    method="POST"
+                    class="empresas-sec__form fadeInUp"
+                    data-delay="0.25s">
+                    <input name="type" type="hidden" value="Formulário Anjo">
+                        <div class="row">
+                            <div class="col-5 d-block d-lg-none">
+                                <div class="mobile__steps pt-4">
+                                    <div id="form-marker-1" class="step yellow step-1 active">
+                                        <span class="text">
+                                            Informações
+                                        </span>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div id="form-marker-2" class="step  yellow  step-2">
+                                        <span class="text">
+                                            Sua mensagem
+                                        </span>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="step-1" class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="pessoa">Nome</label>
+                                    <input name="pessoa" type="text" class="form-control border-ang-p"></div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="telefone">Telefone (Whatsapp)</label>
+                                        <input name="telefone" type="text" class="form-control border-ang-p mask-phone"></div>
+                                    </div>
+
+                                    <div class="col-12 d-flex d-lg-none justify-content-center">
+                                        <div class="pt-3">
+                                            <button id="form-next" type="button" class="send-btn bg-ang-s col-lg-">
+                                                Proximo
+                                                <i class="fas fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row fadeIn" id="step-2">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="pessoa">Redes de Anjos em que participa e/ou Startups em que já investiu</label>
+                                            <textarea
+                                                name="resumo"
+                                                class="form-control border-ang-p"
+                                                name="#"
+                                                id="#"
+                                                cols="30"
+                                                rows="10"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <div>
+                                            <button id="form-submit" type="button" class="send-btn bg-ang-s">
+                                                Enviar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div id="success-tab" style="display: none;" class="empresas-sec__success">
+                                <span class="icon c-ang-p">
+                                    <i class="far fa-smile-wink"></i>
+                                </span>
+                                <h5 class="title c-ang-p">
+                                    Seus dados foram enviados com sucesso!
+                                </h5>
+                                <p class="desc">
+                                    Mantemos um grupo educacional voltado à formação gratuita de futuros
+                                    “Investidores Anjo de Performance”.
+                                </p>
+                                <a href="#" class="send-btn mt-4 bg-ang-s">
+                                    Quero entrar no grupo
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
         <!-- partial -->
 
     </body>
