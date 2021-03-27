@@ -609,7 +609,7 @@ button:hover, button:focus, button:active {
   .main-header .container-sm,
   .main-header .container-xl,
   .main-header .container-xxl {
-    max-width: 1220px;
+    max-width: 1200px;
   }
 }
 
