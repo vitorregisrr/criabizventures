@@ -3563,6 +3563,12 @@ textarea.form-control {
   }
 }
 
+@media screen and (min-width: 992px) and (max-width: 1368px) {
+  .contato .desc {
+    padding-left: 40px;
+  }
+}
+
 .contato .desc p {
   font-size: 28px;
   color: #383838;

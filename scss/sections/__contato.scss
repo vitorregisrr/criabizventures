@@ -56,9 +56,14 @@
         padding-left: 120px;
         padding-bottom: 25px;
         text-align: left;
+
         @media screen and (max-width: $bp-LG) {
             padding-left: 0;
             padding-bottom: 0;
+        }
+        
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            padding-left: 40px;
         }
 
         p {
