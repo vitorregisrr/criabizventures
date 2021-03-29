@@ -50,7 +50,7 @@
 
     // Form empresa JS
     if (window.innerWidth < 992) {
-        $('#step-2').hide();
+        $('#step-2, .form-step-2').hide();
     }
 
     $('#form-next')
