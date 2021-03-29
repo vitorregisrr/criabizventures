@@ -69,7 +69,6 @@
             integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
             crossorigin="anonymous">
 
-        
     </head>
 
     <body class="wow fadeIn">
@@ -105,8 +104,6 @@
             </div>
         </header>
 
-        
-
         <main class="d-flex flex-column order-1 order-lg-1">
             <section id="contato" class="contato">
                 <div class="container">
@@ -132,21 +129,86 @@
                                         <p>
                                             Sorocaba / SP
                                             <br/>
-                                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5515997181817">
-                                                <u>
-                                                    +55 15 99718-1817</u>
-                                            </a>
+                                            <div>
+                                                <a target="_blank" class="send-btn px-3 w-100" href="https://api.whatsapp.com/send?phone=5515997181817">
+                                                Whatsapp <i class="fab fa-whatsapp"></i>
+                                                </a>
+                                            </div>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-7 wow zoomIn" data-wow-delay="0.3s">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117104.97907602374!2d-47.53674007722977!3d-23.477390656902276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f54bcad87989%3A0x4a9099fb9d10cb8e!2sSorocaba%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1616611816386!5m2!1spt-BR!2sbr"
-                                    width="100%"
-                                    style="border:0;"
-                                    allowfullscreen=""
-                                    loading="lazy"></iframe>
+                                <form
+                                    id="form-empresas"
+                                    action="https://formsquash.io/f/dMIPTXMFpTk8Q3cRyRGe"
+                                    method="POST"
+                                    class="empresas-sec__form px-0 fadeInUp"
+                                    data-delay="0.25s">
+                                    <input name="type" type="hidden" value="Formulário Anjo">
+                                    <div class="row">
+                                        <div class="col-5 d-block d-lg-none">
+                                            <div class="mobile__steps pt-4">
+                                                <div id="form-marker-1" class="step yellow step-1 active">
+                                                    <span class="text">
+                                                        Informações
+                                                    </span>
+                                                    <div class="line"></div>
+                                                </div>
+                                                <div id="form-marker-2" class="step  yellow  step-2">
+                                                    <span class="text">
+                                                        Sua mensagem
+                                                    </span>
+                                                    <div class="line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="step-1" class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="pessoa">Nome</label>
+                                                <input name="pessoa" type="text" class="form-control border-imp-p"></div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="telefone">Telefone (Whatsapp)</label>
+                                                <input name="telefone" type="text" class="form-control border-imp-p mask-phone"></div>
+                                        </div>
+
+                                        <div class="col-12 d-flex d-lg-none justify-content-center">
+                                            <div class="pt-3">
+                                                <button id="form-next" type="button" class="send-btn bg-ang-s col-lg-">
+                                                    Proximo
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row fadeIn" id="step-2">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="pessoa">Mensagem</label>
+                                                <textarea
+                                                    name="resumo"
+                                                    class="form-control border-imp-p"
+                                                    name="#"
+                                                    id="#"
+                                                    cols="30"
+                                                    rows="10"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <div>
+                                                <button id="form-submit" type="button" class="send-btn bg-v-s">
+                                                    Enviar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -181,99 +243,59 @@
                             </li>
                         </ul>
                     </div>
-                   <div class="col-4 col-lg-2">
-                    <ul>
-                        <li class="title wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
-                            Nossos Clientes
-                        </li>
-                        <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
-                            <a href="./form-empresa.html">Empresas</a>
-                        </li>
-                        <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
-                            <a href="./form-startup.html">Startups</a>
-                        </li>
-                        <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
-                            <a href="./criabiz-angels.html">Investidores Anjo</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-4 col-lg-3">
-                    <ul>
-                        <li class="title wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
-                            Verticais de Negócio
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-angels.html">Criabiz Angels</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-angelseduca.html">Criabiz Angels Educa</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-aging.html">Criabiz Aging</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-agritech.html">Criabiz Agritech</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-education.html">Criabiz Education</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-health.html">Criabiz Health</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-impact.html">Criabiz Impact</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-tech.html">Criabiz Tech</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-youth.html">Criabiz Youth</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-women.html">Criabiz Women</a>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="col-4 col-lg-2">
+                        <ul>
+                            <li class="title wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                Nossos Clientes
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./form-empresa.html">Empresas</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./form-startup.html">Startups</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-angels.html">Investidores Anjo</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-lg-3">
+                        <ul>
+                            <li class="title wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                Verticais de Negócio
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-angels.html">Criabiz Angels</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-angelseduca.html">Criabiz Angels Educa</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-aging.html">Criabiz Aging</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-agritech.html">Criabiz Agritech</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-education.html">Criabiz Education</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-health.html">Criabiz Health</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-impact.html">Criabiz Impact</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-tech.html">Criabiz Tech</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-youth.html">Criabiz Youth</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-women.html">Criabiz Women</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="col-12 col-lg-2 pt-3 pt-lg-0">
                         <ul class="text-center text-lg-left">
                             <li class="title wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
@@ -307,7 +329,6 @@
                 </div>
             </div>
         </footer>
-        
 
     </body>
 

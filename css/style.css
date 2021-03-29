@@ -3049,6 +3049,24 @@ textarea.form-control {
   }
 }
 
+.carteira-sec__carousel-item .caption .more {
+  text-decoration: underline;
+  color: #0D0D2B;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.carteira-sec__carousel-item .caption .more:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
 .banner-curso {
   padding-bottom: 150px;
 }
@@ -3135,8 +3153,8 @@ textarea.form-control {
 }
 
 .contato {
-  padding-top: 210px;
-  padding-bottom: 150px;
+  padding-top: 180px;
+  padding-bottom: 140px;
 }
 
 @media screen and (max-width: 992px) {
@@ -3147,7 +3165,7 @@ textarea.form-control {
 }
 
 .contato .sub-header {
-  margin-bottom: 85px;
+  margin-bottom: 45px;
 }
 
 @media screen and (max-width: 992px) {

@@ -177,6 +177,16 @@
                         line-height: 1.24;
                     }
                 }
+
+                .more{
+                    text-decoration: underline;
+                    color: $color-dark;
+                    @include transition();
+
+                    &:hover{
+                        @include scale(1.05);
+                    }
+                }
             }
         }
     }
