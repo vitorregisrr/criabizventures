@@ -49,6 +49,10 @@
         @media screen and (min-width: $bp-LG) and (max-width: 1368px){
             padding-bottom: 20px;
             padding-top: 145px;
+
+            .title{
+                font-size: 42px;
+            }
         }
     }
 
@@ -72,6 +76,7 @@
         
         @media screen and (min-width: $bp-LG) and (max-width: 1368px){
             padding-top: 150px;
+            background-position: 80% 50px;
             padding-bottom: 40px;
         }
 
@@ -95,6 +100,7 @@
         @media screen and (min-width: $bp-LG) and (max-width: 1368px){
             padding-top: 170px;
             padding-bottom: 60px;
+            background-position: 80% 50px;
         }
 
     }

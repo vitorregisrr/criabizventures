@@ -1489,6 +1489,9 @@ textarea.form-control {
     padding-bottom: 20px;
     padding-top: 145px;
   }
+  .home-banner.v-3 .title {
+    font-size: 42px;
+  }
 }
 
 .home-banner.v-4 {
@@ -1515,6 +1518,7 @@ textarea.form-control {
 @media screen and (min-width: 992px) and (max-width: 1368px) {
   .home-banner.v-4 {
     padding-top: 150px;
+    background-position: 80% 50px;
     padding-bottom: 40px;
   }
 }
@@ -1543,6 +1547,7 @@ textarea.form-control {
   .home-banner.v-5 {
     padding-top: 170px;
     padding-bottom: 60px;
+    background-position: 80% 50px;
   }
 }
 
