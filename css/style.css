@@ -1135,6 +1135,7 @@ textarea.form-control {
 
 @media screen and (max-width: 992px) {
   .c-modal {
+    overflow-y: scroll;
     padding-bottom: 30px;
   }
 }

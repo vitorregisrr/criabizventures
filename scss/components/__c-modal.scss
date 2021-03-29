@@ -12,6 +12,7 @@
     @include scale(0);
 
     @media screen and (max-width: $bp-LG) {
+        overflow-y: scroll;
         padding-bottom: 30px;
     }
 
