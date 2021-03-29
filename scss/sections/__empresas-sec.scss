@@ -1,15 +1,20 @@
 .empresas-sec {
     padding-bottom: 110px;
 
+    @media screen and (max-width: $bp-LG) {
+        padding-bottom: 75px;
+    }
+
     &__header {
-        padding-top: 200px;
+        padding-top: 180px;
         padding-bottom: 50px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center bottom;
 
         @media screen and (max-width: $bp-LG) {
-            padding-top: 220px;
+            padding-top: 200px;
+            padding-bottom: 35px;
         }
 
         .content {
@@ -68,12 +73,14 @@
     }
 
     &__content {
-        padding-top: 90px;
+        padding-top: 70px;
+
         @media screen and (max-width: $bp-LG) {
-            padding-top: 40px;
+            padding-top: 30px;
         }
 
         .subtitle {
+            font-size: 22px;
             color: $color-dark;
             font-weight: bold;
             max-width: 970px;
@@ -81,6 +88,7 @@
             margin: 0 auto;
             text-align: center;
             margin-bottom: 60px;
+
             @media screen and (max-width: $bp-LG) {
                 font-size: 15px;
                 max-width: 90%;
@@ -90,9 +98,8 @@
             }
         }
 
-        
         .sub-desc {
-            font-size: 22px;
+            font-size: 17px;
             color: $color-dark;
             font-weight: 400;
             max-width: 870px;
@@ -122,7 +129,7 @@
 
         .title {
             color: $c-impact-primary;
-            font-size: 50px;
+            font-size: 38px;
             text-align: center;
             font-weight: bold;
             @media screen and (max-width: $bp-LG) {
@@ -136,7 +143,7 @@
             background-color: $c-impact-primary;
             height: 4px;
             width: 46%;
-            margin: 25px auto 35px;
+            margin: 20px auto 30px;
             @media screen and (max-width: $bp-LG) {
                 width: 95%;
                 margin-top: 10px;
@@ -146,7 +153,7 @@
         }
 
         .desc {
-            font-size: 29px;
+            font-size: 22px;
             font-weight: bold;
             color: #383838;
             text-align: center;

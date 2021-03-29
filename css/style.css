@@ -3668,8 +3668,14 @@ textarea.form-control {
   padding-bottom: 110px;
 }
 
+@media screen and (max-width: 992px) {
+  .empresas-sec {
+    padding-bottom: 75px;
+  }
+}
+
 .empresas-sec__header {
-  padding-top: 200px;
+  padding-top: 180px;
   padding-bottom: 50px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3678,7 +3684,8 @@ textarea.form-control {
 
 @media screen and (max-width: 992px) {
   .empresas-sec__header {
-    padding-top: 220px;
+    padding-top: 200px;
+    padding-bottom: 35px;
   }
 }
 
@@ -3745,16 +3752,17 @@ textarea.form-control {
 }
 
 .empresas-sec__content {
-  padding-top: 90px;
+  padding-top: 70px;
 }
 
 @media screen and (max-width: 992px) {
   .empresas-sec__content {
-    padding-top: 40px;
+    padding-top: 30px;
   }
 }
 
 .empresas-sec__content .subtitle {
+  font-size: 22px;
   color: #0D0D2B;
   font-weight: bold;
   max-width: 970px;
@@ -3775,7 +3783,7 @@ textarea.form-control {
 }
 
 .empresas-sec__content .sub-desc {
-  font-size: 22px;
+  font-size: 17px;
   color: #0D0D2B;
   font-weight: 400;
   max-width: 870px;
@@ -3806,7 +3814,7 @@ textarea.form-control {
 
 .empresas-sec__content .title {
   color: #CB0000;
-  font-size: 50px;
+  font-size: 38px;
   text-align: center;
   font-weight: bold;
 }
@@ -3823,7 +3831,7 @@ textarea.form-control {
   background-color: #CB0000;
   height: 4px;
   width: 46%;
-  margin: 25px auto 35px;
+  margin: 20px auto 30px;
 }
 
 @media screen and (max-width: 992px) {
@@ -3836,7 +3844,7 @@ textarea.form-control {
 }
 
 .empresas-sec__content .desc {
-  font-size: 29px;
+  font-size: 22px;
   font-weight: bold;
   color: #383838;
   text-align: center;
