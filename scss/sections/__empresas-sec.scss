@@ -108,6 +108,19 @@
             margin-bottom: 90px;
             text-align: left;
 
+
+            h4{
+                font-weight: 800;
+                text-transform: uppercase;
+                font-size: 1.7rem;
+                color: $c-ventures-primary;
+                border-bottom: 3px solid $c-ventures-primary;
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 1.5rem;
+                }
+            }
+
             @media screen and (min-width: $bp-LG){
                 b{
                     margin-bottom: -10px;

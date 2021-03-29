@@ -13,6 +13,11 @@
             position: absolute;
             top: -150%;
             z-index: -1;
+
+            &.v-2{
+                width: 120%;
+                top: -50%;
+            }
         }
     }
 

@@ -3224,6 +3224,11 @@ textarea.form-control {
   z-index: -1;
 }
 
+.contato .caption .bg-grad.v-2 {
+  width: 120%;
+  top: -50%;
+}
+
 .contato .sub-header {
   margin-bottom: 45px;
 }
@@ -3857,6 +3862,20 @@ textarea.form-control {
   margin: 0 auto;
   margin-bottom: 90px;
   text-align: left;
+}
+
+.empresas-sec__content .sub-desc h4 {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  color: #BA1814;
+  border-bottom: 3px solid #BA1814;
+}
+
+@media screen and (max-width: 768px) {
+  .empresas-sec__content .sub-desc h4 {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
