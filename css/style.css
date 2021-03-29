@@ -1444,14 +1444,7 @@ textarea.form-control {
   .home-banner {
     padding-bottom: 50px;
     background-size: 120%;
-    background-position: 160% 585px;
-  }
-}
-
-@media screen and (max-width: 376px) {
-  .home-banner {
-    background-size: 150%;
-    background-position: 40% 585px;
+    background-position: 160% 655px;
   }
 }
 
