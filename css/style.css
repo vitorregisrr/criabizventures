@@ -2803,7 +2803,7 @@ textarea.form-control {
     -o-transform: scale(0.8);
     transform: scale(0.8);
     padding-top: 35px;
-    padding-bottom: 0px;
+    padding-bottom: 40pxpx;
   }
 }
 
