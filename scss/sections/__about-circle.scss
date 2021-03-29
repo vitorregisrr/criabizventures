@@ -1,5 +1,10 @@
 .about-circle {
     padding-top: 80px;
+
+    @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+        @include scale(0.8);
+        padding-top: 0;
+    }
     
     @media screen and (max-width: $bp-LG) {
         padding-top: 50px;

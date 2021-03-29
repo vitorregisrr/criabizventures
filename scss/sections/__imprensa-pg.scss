@@ -1,4 +1,11 @@
 .imprensa-pg {
+
+    
+    @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+        margin-top: -350px;
+        margin-bottom: -400px;
+    }
+
     .bg-grad {
         width: 200%;
         position: absolute;

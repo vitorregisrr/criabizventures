@@ -1,9 +1,15 @@
 .contato {
     padding-top: 180px;
     padding-bottom: 140px;
+
     @media screen and (max-width: $bp-LG) {
         padding-top: 200px;
         padding-bottom: 85px;
+    }
+
+    @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+        padding-top: 120px;
+        @include scale(0.8);
     }
 
     .caption {

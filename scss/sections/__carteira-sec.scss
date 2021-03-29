@@ -9,6 +9,14 @@
         padding-top: 30px;
     }
 
+    @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+        @include scale(0.8);
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: -30px;
+        margin-bottom: -90px;
+    }
+
     .sub-header {
         margin-bottom: 55px;
         @media screen and (max-width: $bp-LG) {
@@ -147,7 +155,7 @@
                 }
 
                 .title {
-                    font-size: 50px;
+                    font-size: 40px;
                     color: $c-education-primary;
                     font-weight: 700;
                     @media screen and (max-width: $bp-XL) {
@@ -159,7 +167,7 @@
                 }
 
                 .desc {
-                    font-size: 30px;
+                    font-size: 25px;
                     color: $color-dark;
                     line-height: 1.6;
                     text-align: center;

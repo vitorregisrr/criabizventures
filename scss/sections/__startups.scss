@@ -5,14 +5,24 @@
     background-position: -50px 20%;
     background-repeat: no-repeat;
     padding-top: 220px;
+
     @media screen and (max-width: $bp-LG) {
         padding-top: 205px;
+    }
+    
+    @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+        padding-top: 150px;
     }
 
     &__header {
         margin-bottom: 65px;
+
         @media screen and (max-width: $bp-LG) {
             margin-bottom: 35px;
+        }
+
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            @include scale(0.8);
         }
 
         .title {
@@ -39,6 +49,10 @@
 
     .sub-header {
         margin-bottom: 45px;
+
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            @include scale(0.8);
+        }
 
         .title {
             font-weight: 800;
@@ -80,6 +94,10 @@
         @media screen and (max-width: $bp-MD) {
             height: 150px;
             width: 100%;
+        }
+
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            @include scale(0.8);
         }
 
         &:hover {

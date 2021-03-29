@@ -31,3 +31,9 @@ button{
         outline: none;
      }
 }
+
+@media screen and (min-width: $bp-LG) and (max-width: 1368px){
+    .container{
+        max-width: 1000px;
+    }
+}

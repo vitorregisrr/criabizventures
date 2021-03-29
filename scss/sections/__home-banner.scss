@@ -46,6 +46,10 @@
             background-position: 80% 405px;
         }
 
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            padding-bottom: 20px;
+            padding-top: 145px;
+        }
     }
 
     
@@ -62,6 +66,12 @@
         @media screen and (max-width: $bp-SM){
             background-size: 140%;
             background-position: 80% 275px;
+            padding-bottom: 40px;
+        }
+
+        
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            padding-top: 150px;
             padding-bottom: 40px;
         }
 
@@ -107,12 +117,21 @@
         background-size: 120%;
         background-position: 160% 655px;
     }
+
+    @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+        padding-top: 170px;
+        padding-bottom: 40px;
+    }
     
     &__caption {
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 100%;
+
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            @include scale(0.8);
+        }
 
         .header {
             display: flex;
@@ -264,6 +283,10 @@
 
         @media screen and (max-width: $bp-LG){
             display: none;
+        }
+
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            @include scale(0.8);
         }
 
         img {
