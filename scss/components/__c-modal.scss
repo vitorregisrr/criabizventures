@@ -1,25 +1,49 @@
 .c-modal {
     position: fixed;
-    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     bottom: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 70vw;
+    height: 86vh;
     background-color: #fff;
     pointer-events: none;
     opacity: 0;
-    z-index: 13;
+    z-index: 14;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px rgba(0,0,0,.1);
     transition: all 0.8s;
-    @include scale(0);
 
     @media screen and (max-width: $bp-LG) {
         overflow-y: scroll;
+        width: 100vw;
+        height: 100vh;
         padding-bottom: 30px;
     }
 
     &[data-visible="true"] {
         opacity: 1;
         pointer-events: all;
-        @include scale(1);
+    }
+
+    &__overlay{
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.137);
+        width: 100vw;
+        height: 100vh;
+        z-index: 13;
+        opacity: 0;
+        pointer-events: none;
+        @include transition();
+
+        &[data-visible="true"] {
+            opacity: 1;
+            pointer-events: all;
+            pointer-events: all;
+            @include scale(1);
+        }
     }
 
     .close {
@@ -49,8 +73,6 @@
             @include scale(1.3);
         }
     }
-
-   
 
     .content {
         height: 100%;

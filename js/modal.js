@@ -8,8 +8,10 @@
         $(target).attr('data-visible', !isActive);
 
         if(isActive){
+            $('#overlay').attr('data-visible', 'false');
             $('html').css('overflow', 'visible');
         }else{
+            $('#overlay').attr('data-visible', 'true');
             $('html').css('overflow', 'hidden');
         }
     });

@@ -1117,31 +1117,55 @@ textarea.form-control {
 
 .c-modal {
   position: fixed;
-  top: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   bottom: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 70vw;
+  height: 86vh;
   background-color: #fff;
   pointer-events: none;
   opacity: 0;
-  z-index: 13;
+  z-index: 14;
+  border-radius: 15px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.8s;
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
 }
 
 @media screen and (max-width: 992px) {
   .c-modal {
     overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
     padding-bottom: 30px;
   }
 }
 
 .c-modal[data-visible="true"] {
   opacity: 1;
+  pointer-events: all;
+}
+
+.c-modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.137);
+  width: 100vw;
+  height: 100vh;
+  z-index: 13;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.c-modal__overlay[data-visible="true"] {
+  opacity: 1;
+  pointer-events: all;
   pointer-events: all;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
