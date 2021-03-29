@@ -2,14 +2,14 @@
     padding-bottom: 110px;
 
     &__header {
-        padding-top: 230px;
-        padding-bottom: 60px;
+        padding-top: 200px;
+        padding-bottom: 50px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center bottom;
 
         @media screen and (max-width: $bp-LG) {
-            padding-top: 260px;
+            padding-top: 220px;
         }
 
         .content {
@@ -29,7 +29,7 @@
             }
 
             .title {
-                font-size: 50px;
+                font-size: 42px;
                 font-weight: 800;
                 text-align: center;
                 max-width: 680px;
@@ -46,6 +46,7 @@
             }
 
             .subtitle{
+                font-size: 17px;
                 color: #E0E0E0;
                 text-align: center;
 
@@ -55,7 +56,7 @@
             }
 
             .desc {
-                font-size: 23px;
+                font-size: 19px;
 
                 @media screen and (max-width: $bp-LG) {
                     font-size: 14px;
@@ -81,7 +82,7 @@
             text-align: center;
             margin-bottom: 60px;
             @media screen and (max-width: $bp-LG) {
-                font-size: 16px;
+                font-size: 15px;
                 max-width: 90%;
                 margin: 0 auto;
                 font-weight: 400;
@@ -171,55 +172,7 @@
         }
     }
 
-    .mobile__steps {
-        position: relative;
-        display: flex;
-        margin-bottom: 20px;
-
-        .step {
-            white-space: nowrap;
-            font-size: 13px;
-            color: rgba(0,0,0,.2);
-
-            .text{
-                display: block;
-                padding-left: 5px;
-                margin-bottom: 4px;
-            }
-
-            &.step-2{
-                .text{
-                    padding-left: 10px;
-                    padding-right: 8px;
-                }
-            }
-
-            .line {
-                height: 3px;
-                width: 100%;
-                background-color: rgba(0,0,0,.2);
-            }
-
-            &.active {
-                font-weight: bold;
-                color: $c-impact-primary;
-
-                .line {
-                    height: 3px;
-                    width: 100%;
-                    background-color: $c-impact-primary;
-                }
-
-                &.yellow{
-                    color: $c-angels-sec;
-
-                    .line {
-                        background-color: $c-angels-sec;
-                    }
-                }
-            }
-        }
-    }
+    
 
     &__success{
         display: flex;
@@ -268,6 +221,56 @@
         .send-btn{
             @media screen and (min-width: $bp-LG){
                 padding: 4.5px 38px;
+            }
+        }
+    }
+}
+
+.mobile__steps {
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+
+    .step {
+        white-space: nowrap;
+        font-size: 13px;
+        color: rgba(0,0,0,.2);
+
+        .text{
+            display: block;
+            padding-left: 5px;
+            margin-bottom: 4px;
+        }
+
+        &.step-2{
+            .text{
+                padding-left: 10px;
+                padding-right: 8px;
+            }
+        }
+
+        .line {
+            height: 3px;
+            width: 100%;
+            background-color: rgba(0,0,0,.2);
+        }
+
+        &.active {
+            font-weight: bold;
+            color: $c-impact-primary;
+
+            .line {
+                height: 3px;
+                width: 100%;
+                background-color: $c-impact-primary;
+            }
+
+            &.yellow{
+                color: $c-angels-sec;
+
+                .line {
+                    background-color: $c-angels-sec;
+                }
             }
         }
     }

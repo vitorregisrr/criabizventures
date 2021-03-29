@@ -13,6 +13,7 @@
 
     @media screen and (max-width: $bp-LG) {
         overflow-y: auto;
+        padding-bottom: 30px;
     }
 
     &[data-visible="true"] {
@@ -26,11 +27,11 @@
         right: 57px;
         top: 35px;
         height: 42px;
+        color: $c-angels-primary;
         width: 42px;
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
-        background-image: url("../images/ico/close.png");
         opacity: 1 !important;
         transition: all 0.4s;
         outline: none !important;

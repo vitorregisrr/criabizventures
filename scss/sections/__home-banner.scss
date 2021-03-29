@@ -46,7 +46,7 @@
         background-position: -50px 280px;
 
         @media screen and (min-width: $bp-LG){
-            padding-top: 190px;
+            padding-top: 170px;
             padding-bottom: 60px;
         }
 
@@ -83,7 +83,7 @@
     }
     
     @media screen and (max-width: $bp-MD){
-        padding-top: 190px;
+        padding-top: 175px;
         padding-bottom: 30px;
         background-position: 160% 500px;
     }
@@ -98,7 +98,6 @@
         background-size: 150%;
         background-position: 40% 585px;
     }
-
     
     &__caption {
         display: flex;
