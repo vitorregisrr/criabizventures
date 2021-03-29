@@ -9,10 +9,8 @@
     opacity: 0;
     z-index: 13;
     transition: all 0.4s;
-    overflow: hidden;
 
     @media screen and (max-width: $bp-LG) {
-        overflow-y: auto;
         padding-bottom: 30px;
     }
 
@@ -53,11 +51,25 @@
 
     .content {
         height: 100%;
-        overflow: hidden;
+        overflow: auto;
+        padding-bottom: 60px;
 
         @media screen and (max-width: $bp-LG) {
             padding-left: 0;
             height: auto;
+        }
+
+        .subtitle{
+            @media screen and (min-width: $bp-LG){
+                margin-bottom: 35px;
+                margin-top: -15px;
+            }
+        }
+
+        .line{
+            @media screen and (min-width: $bp-LG){
+                margin-bottom: 15px;
+            }
         }
     }
 }

@@ -1126,12 +1126,10 @@ textarea.form-control {
   opacity: 0;
   z-index: 13;
   transition: all 0.4s;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 992px) {
   .c-modal {
-    overflow-y: auto;
     padding-bottom: 30px;
   }
 }
@@ -1178,13 +1176,27 @@ textarea.form-control {
 
 .c-modal .content {
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
+  padding-bottom: 60px;
 }
 
 @media screen and (max-width: 992px) {
   .c-modal .content {
     padding-left: 0;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .c-modal .content .subtitle {
+    margin-bottom: 35px;
+    margin-top: -15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .c-modal .content .line {
+    margin-bottom: 15px;
   }
 }
 

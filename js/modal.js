@@ -6,6 +6,12 @@
         var target = $(this).attr('data-target');
         var isActive = $(target).attr('data-visible') === 'true' ? true : false;
         $(target).attr('data-visible', !isActive);
+
+        if(isActive){
+            $('html').css('overflow', 'visible');
+        }else{
+            $('html').css('overflow', 'hidden');
+        }
     });
 
     window.dispatchEvent(new Event('resize'));
