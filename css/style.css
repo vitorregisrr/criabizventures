@@ -1376,6 +1376,13 @@ textarea.form-control {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .home-banner.v-2 {
+    padding-bottom: 65px;
+    background-position: -50px 320px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .home-banner.v-2 {
     background-size: 140%;
@@ -1394,6 +1401,13 @@ textarea.form-control {
   .home-banner.v-3 {
     padding-top: 185px;
     padding-bottom: 95px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home-banner.v-3 {
+    padding-bottom: 65px;
+    background-position: -50px 340px;
   }
 }
 
@@ -2408,15 +2422,15 @@ textarea.form-control {
 
 @media screen and (max-width: 992px) {
   .verticais-neg__brands-sub.item-4 {
-    top: 180px;
+    top: 164px;
     left: calc(79.5%);
   }
 }
 
 @media screen and (max-width: 768px) {
   .verticais-neg__brands-sub.item-4 {
-    left: calc(79%);
-    top: 125px;
+    left: calc(81%);
+    top: 118px;
   }
 }
 
@@ -2479,7 +2493,7 @@ textarea.form-control {
 
 @media screen and (max-width: 992px) {
   .verticais-neg__brands-sub.item-7 {
-    top: 180px;
+    top: 168.5px;
     left: calc(23.6%);
   }
 }
