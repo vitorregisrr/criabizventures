@@ -8,7 +8,8 @@
     pointer-events: none;
     opacity: 0;
     z-index: 13;
-    transition: all 0.4s;
+    transition: all 0.8s;
+    @include scale(0);
 
     @media screen and (max-width: $bp-LG) {
         padding-bottom: 30px;
@@ -17,6 +18,7 @@
     &[data-visible="true"] {
         opacity: 1;
         pointer-events: all;
+        @include scale(1);
     }
 
     .close {
