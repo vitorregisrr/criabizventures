@@ -3623,7 +3623,8 @@ textarea.form-control {
 
 @media screen and (min-width: 992px) and (max-width: 1368px) {
   .equipe-sec {
-    padding-top: 25px;
+    padding-top: 65px;
+    padding-bottom: 0px;
   }
 }
 
