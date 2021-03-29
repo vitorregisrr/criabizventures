@@ -92,6 +92,11 @@
             background-position: 80% 275px;
         }
 
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            padding-top: 160px;
+            padding-bottom: 40px;
+        }
+
     }
 
     @media screen and (max-width: $bp-XL){
