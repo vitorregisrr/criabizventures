@@ -1469,6 +1469,13 @@ textarea.form-control {
   }
 }
 
+@media screen and (min-width: 992px) and (max-width: 1368px) {
+  .home-banner.v-2 {
+    padding-top: 140px;
+    padding-bottom: 55px;
+  }
+}
+
 .home-banner.v-3 {
   background-image: url("../images/bg/home-bg-grads-2.png");
   background-size: 100%;
