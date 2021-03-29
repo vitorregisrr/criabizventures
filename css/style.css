@@ -3861,6 +3861,17 @@ textarea.form-control {
   }
 }
 
+@media screen and (min-width: 992px) and (max-width: 1368px) {
+  .equipe-sec .conselheiros {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    margin-top: -100px;
+  }
+}
+
 .equipe-sec .conselheiros .sub-header {
   margin-bottom: 20px;
 }
@@ -3916,6 +3927,12 @@ textarea.form-control {
   .equipe-sec .conselheiros__item .about .name {
     font-size: 20px;
     font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1368px) {
+  .equipe-sec .conselheiros__item .about .name {
+    font-size: 28px;
   }
 }
 
