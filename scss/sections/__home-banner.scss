@@ -75,11 +75,16 @@
 
     }
 
+    @media screen and (max-width: $bp-XL){
+        background-position: 0px 260px;
+    }
+    
+
     @media screen and (max-width: $bp-LG){
         padding-top: 220px;
         padding-bottom: 186px;
         background-size: 120%;
-        background-position: 160% 495px;
+        background-position: 160% 585px;
     }
     
     @media screen and (max-width: $bp-MD){

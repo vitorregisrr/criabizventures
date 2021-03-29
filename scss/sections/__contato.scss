@@ -1,36 +1,43 @@
-.contato{
+.contato {
     padding-top: 180px;
     padding-bottom: 140px;
-
-    @media screen and (max-width: $bp-LG){
+    @media screen and (max-width: $bp-LG) {
         padding-top: 200px;
         padding-bottom: 85px;
     }
 
-    .sub-header{
-        margin-bottom: 45px;
+    .caption {
+        position: relative;
+        .bg-grad {
+            width: 200%;
+            position: absolute;
+            top: -150%;
+            z-index: -1;
+        }
+    }
 
-        @media screen and (max-width: $bp-LG){
+    .sub-header {
+        margin-bottom: 45px;
+        @media screen and (max-width: $bp-LG) {
             margin-bottom: 30px;
         }
 
-        .title{
-            @media screen and (max-width: $bp-LG){
+        .title {
+            @media screen and (max-width: $bp-LG) {
                 font-size: 24px;
             }
         }
-        .line{
-            @media screen and (min-width: $bp-LG){
+        .line {
+            @media screen and (min-width: $bp-LG) {
                 width: 56%;
             }
-
-            @media screen and (max-width: $bp-LG){
+            @media screen and (max-width: $bp-LG) {
                 height: 3.5px;
             }
         }
     }
 
-    .desc{
+    .desc {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -38,30 +45,27 @@
         padding-left: 120px;
         padding-bottom: 25px;
         text-align: left;
-
-        @media screen and (max-width: $bp-LG){
-            padding-left: 0px;
+        @media screen and (max-width: $bp-LG) {
+            padding-left: 0;
             padding-bottom: 0;
         }
 
-        p{
+        p {
             font-size: 28px;
             color: #383838;
-            opacity: .9;
+            opacity: 0.9;
 
-            b{
+            b {
                 font-size: 30px;
-
-                @media screen and (max-width: $bp-LG){
+                @media screen and (max-width: $bp-LG) {
                     font-size: 23px;
                 }
             }
 
-            a{
+            a {
                 color: #383838!important;
             }
-
-            @media screen and (max-width: $bp-LG){
+            @media screen and (max-width: $bp-LG) {
                 font-size: 17px;
                 text-align: center;
                 padding-right: 0;
@@ -69,11 +73,10 @@
         }
     }
 
-    iframe{
+    iframe {
         height: 400px;
         border: none;
-
-        @media screen and (max-width: $bp-LG){
+        @media screen and (max-width: $bp-LG) {
             height: 300px;
             margin-top: 25px;
         }

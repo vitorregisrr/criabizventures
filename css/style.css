@@ -1435,12 +1435,18 @@ textarea.form-control {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .home-banner {
+    background-position: 0px 260px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .home-banner {
     padding-top: 220px;
     padding-bottom: 186px;
     background-size: 120%;
-    background-position: 160% 495px;
+    background-position: 160% 585px;
   }
 }
 
@@ -2454,6 +2460,13 @@ textarea.form-control {
   left: calc(15.5%);
 }
 
+@media screen and (max-width: 1200px) {
+  .verticais-neg__brands-sub.item-7 {
+    top: 148px;
+    left: calc(11.6%);
+  }
+}
+
 @media screen and (max-width: 992px) {
   .verticais-neg__brands-sub.item-7 {
     top: 180px;
@@ -3176,6 +3189,17 @@ textarea.form-control {
   }
 }
 
+.contato .caption {
+  position: relative;
+}
+
+.contato .caption .bg-grad {
+  width: 200%;
+  position: absolute;
+  top: -150%;
+  z-index: -1;
+}
+
 .contato .sub-header {
   margin-bottom: 45px;
 }
@@ -3216,7 +3240,7 @@ textarea.form-control {
 
 @media screen and (max-width: 992px) {
   .contato .desc {
-    padding-left: 0px;
+    padding-left: 0;
     padding-bottom: 0;
   }
 }
@@ -3224,7 +3248,7 @@ textarea.form-control {
 .contato .desc p {
   font-size: 28px;
   color: #383838;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .contato .desc p b {
