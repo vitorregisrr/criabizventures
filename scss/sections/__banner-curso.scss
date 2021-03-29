@@ -1,6 +1,10 @@
 .banner-curso {
     padding-bottom: 150px;
 
+    @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+        @include scale(0.8);
+    }
+
     @media screen and (max-width: $bp-LG){
         padding-bottom: 70px;
     }
@@ -35,6 +39,10 @@
 
             @media screen and (max-width: $bp-MD){
                 font-size: 25px;
+            }
+
+            @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+                font-size: 30px;
             }
         }
 

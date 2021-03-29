@@ -1073,6 +1073,18 @@ textarea.form-control {
   margin-bottom: 70px;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1368px) {
+  .depoimento-item {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    margin-bottom: 0;
+    margin-top: -20px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .depoimento-item {
     padding: 0 20px;
@@ -3416,6 +3428,16 @@ textarea.form-control {
   padding-bottom: 150px;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1368px) {
+  .banner-curso {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
 @media screen and (max-width: 992px) {
   .banner-curso {
     padding-bottom: 70px;
@@ -3461,6 +3483,12 @@ textarea.form-control {
 @media screen and (max-width: 768px) {
   .banner-curso__caption .title {
     font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1368px) {
+  .banner-curso__caption .title {
+    font-size: 30px;
   }
 }
 
