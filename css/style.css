@@ -1206,9 +1206,9 @@ textarea.form-control {
 .c-modal .close {
   position: absolute;
   z-index: 4;
-  right: 57px;
-  top: 35px;
-  height: 42px;
+  right: 24px;
+  top: 22px;
+  height: 22px;
   color: #E5AC00;
   width: 42px;
   background-size: contain;
