@@ -139,7 +139,7 @@
                         font-size: 19px;
                         color: $c-ventures-primary;
                         transition: all 0.4s;
-                        
+
                         @media screen and (max-width: $bp-LG) {
                             font-size: 17px;
                             text-align: center;
@@ -157,7 +157,7 @@
                         @media screen and (max-width: 320px) {
                             font-size: 10px;
                         }
-                        &:hover {
+                        &:hover, &.active{
                             color: $c-ventures-sec;
                             @include scale(1.03);
                         }
