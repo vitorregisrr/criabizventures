@@ -1,0 +1,71 @@
+.imprensa-pg {
+    .bg-grad {
+        width: 200%;
+        position: absolute;
+        top: -150%;
+        z-index: -1;
+
+        &.v-2 {
+            width: 90%;
+            top: -100px;
+        }
+    }
+    hr {
+        width: 50px;
+        height: 3px;
+        background-color: $c-ventures-primary;
+        border: none;
+
+        @media screen and (max-width: $bp-MD){
+            width: 150px;
+            margin-top: -15px;
+        }
+    }
+
+    ul {
+        list-style-type: disc !important;
+        list-style: disc !important;
+        padding-left: 35px;
+        color: $color-dark;
+
+        @media screen and (max-width: $bp-MD){
+            padding-left: 15px;
+            font-size: 15px;
+        }
+
+    }
+    a {
+        color: $color-dark !important;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    h2 {
+        color: $c-ventures-primary;
+        font-weight: 800;
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 20px;
+        }
+    }
+
+    .columnName {
+        font-size: 30px;
+        color: $c-ventures-primary !important;
+        font-weight: 800;
+        margin-top: -25px;
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 20px;
+        }
+
+    }
+
+    .img-cris{
+        @media screen and (max-width: $bp-MD){
+            width: 45%;
+            margin: 0 auto;
+        }
+    }
+}

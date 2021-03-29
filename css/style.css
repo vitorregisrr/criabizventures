@@ -2858,6 +2858,85 @@ textarea.form-control {
   }
 }
 
+.imprensa-pg .bg-grad {
+  width: 200%;
+  position: absolute;
+  top: -150%;
+  z-index: -1;
+}
+
+.imprensa-pg .bg-grad.v-2 {
+  width: 90%;
+  top: -100px;
+}
+
+.imprensa-pg hr {
+  width: 50px;
+  height: 3px;
+  background-color: #BA1814;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .imprensa-pg hr {
+    width: 150px;
+    margin-top: -15px;
+  }
+}
+
+.imprensa-pg ul {
+  list-style-type: disc !important;
+  list-style: disc !important;
+  padding-left: 35px;
+  color: #0D0D2B;
+}
+
+@media screen and (max-width: 768px) {
+  .imprensa-pg ul {
+    padding-left: 15px;
+    font-size: 15px;
+  }
+}
+
+.imprensa-pg a {
+  color: #0D0D2B !important;
+}
+
+.imprensa-pg a:hover {
+  text-decoration: underline;
+}
+
+.imprensa-pg h2 {
+  color: #BA1814;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+  .imprensa-pg h2 {
+    font-size: 20px;
+  }
+}
+
+.imprensa-pg .columnName {
+  font-size: 30px;
+  color: #BA1814 !important;
+  font-weight: 800;
+  margin-top: -25px;
+}
+
+@media screen and (max-width: 768px) {
+  .imprensa-pg .columnName {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imprensa-pg .img-cris {
+    width: 45%;
+    margin: 0 auto;
+  }
+}
+
 .carteira-sec {
   padding-top: 95px;
 }
@@ -3226,7 +3305,7 @@ textarea.form-control {
 
 .contato .caption .bg-grad.v-2 {
   width: 120%;
-  top: -50%;
+  top: -40%;
 }
 
 .contato .sub-header {
