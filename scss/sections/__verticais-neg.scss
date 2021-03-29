@@ -29,7 +29,8 @@
         @media screen and (max-width: $bp-MD){
             padding-top: 89.5px;
             padding-bottom: 90px;
-            padding-left: 13.5px;
+            padding-left: 13px;
+            margin-left: -5px;
             margin-top: 60px;
         }
 
@@ -128,12 +129,7 @@
 
                 @media screen and (max-width: 450px){
                     left: calc(89%);
-                    top: 142px;
-                }
-
-                @media screen and (max-width: 320px){
-                    left: calc(90%);
-                    top: 195px;
+                    top: 120px;
                 }
             
             }
@@ -186,7 +182,7 @@
 
                 @media screen and (max-width: 500px){
                     left: calc(14%);
-                    top: 140px;
+                    top: 120px;
                 }
             }
             

@@ -2258,7 +2258,8 @@ textarea.form-control {
   .verticais-neg__brands {
     padding-top: 89.5px;
     padding-bottom: 90px;
-    padding-left: 13.5px;
+    padding-left: 13px;
+    margin-left: -5px;
     margin-top: 60px;
   }
 }
@@ -2394,14 +2395,7 @@ textarea.form-control {
 @media screen and (max-width: 450px) {
   .verticais-neg__brands-sub.item-4 {
     left: calc(89%);
-    top: 142px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .verticais-neg__brands-sub.item-4 {
-    left: calc(90%);
-    top: 195px;
+    top: 120px;
   }
 }
 
@@ -2465,7 +2459,7 @@ textarea.form-control {
 @media screen and (max-width: 500px) {
   .verticais-neg__brands-sub.item-7 {
     left: calc(14%);
-    top: 140px;
+    top: 120px;
   }
 }
 
