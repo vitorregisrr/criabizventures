@@ -54,7 +54,12 @@
             @media screen and (max-width: $bp-MD){
                 font-size: 14px;
             }
+
+            @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+                font-size: 15px;
+            }
            }
+           
         }
     }
 

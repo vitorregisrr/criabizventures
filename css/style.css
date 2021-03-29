@@ -1517,9 +1517,9 @@ textarea.form-control {
 
 @media screen and (min-width: 992px) and (max-width: 1368px) {
   .home-banner.v-4 {
-    padding-top: 150px;
+    padding-top: 130px;
     background-position: 80% 50px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 }
 
@@ -1859,6 +1859,12 @@ textarea.form-control {
     width: 90%;
     background-color: #ED3833;
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1368px) {
+  .about-circle__caption hr {
+    width: 650px;
   }
 }
 
@@ -3479,6 +3485,12 @@ textarea.form-control {
   }
 }
 
+@media screen and (min-width: 992px) and (max-width: 1368px) {
+  .banner-curso__caption .desc p {
+    font-size: 15px;
+  }
+}
+
 .banner-curso img {
   width: 100%;
 }
@@ -4459,6 +4471,18 @@ textarea.form-control {
   .full-carousel {
     padding-top: 20px;
     margin-bottom: -5px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1368px) {
+  .full-carousel {
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -o-transform: scale(0.85);
+    transform: scale(0.85);
+    margin-top: -70px;
+    margin-bottom: -30px;
   }
 }
 
