@@ -2898,6 +2898,10 @@ textarea.form-control {
   }
 }
 
+.imprensa-pg ul li {
+  display: list-item;
+}
+
 .imprensa-pg a {
   color: #0D0D2B !important;
 }

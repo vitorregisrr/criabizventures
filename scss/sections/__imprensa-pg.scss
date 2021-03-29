@@ -33,6 +33,10 @@
             font-size: 15px;
         }
 
+        li{
+            display: list-item;
+        }
+
     }
     a {
         color: $color-dark !important;
