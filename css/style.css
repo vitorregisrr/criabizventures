@@ -2946,6 +2946,8 @@ textarea.form-control {
     -ms-transform: scale(0.8);
     -o-transform: scale(0.8);
     transform: scale(0.8);
+    padding-bottom: 50px;
+    padding-top: 80px;
   }
 }
 
