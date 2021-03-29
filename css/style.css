@@ -1136,6 +1136,7 @@ textarea.form-control {
   .c-modal {
     overflow-y: scroll;
     width: 100vw;
+    border-radius: 0;
     height: 100vh;
     padding-bottom: 30px;
   }
