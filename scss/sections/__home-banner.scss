@@ -2,33 +2,34 @@
     background-color: $c-ventures-primary;
     background-image: url("../images/bg//home-bg-grads.png");
     background-size: 85%;
-    background-position: 0px 350px;
+    background-position: 0px 160px;
     background-repeat: no-repeat;
-    padding-top: 214px;
+    padding-top: 194px;
     padding-bottom: 120px;
     
     &.v-2{
         background-image: url("../images/bg/home-bg-grads-2.png");
         background-size: 100%;
-        background-position: -50px 380px;
+        background-position: -50px 250px;
 
         @media screen and (min-width: $bp-XL){
-            padding-bottom: 150px;
+            padding-bottom: 120px;
         }
 
         @media screen and (max-width: $bp-SM){
             background-size: 140%;
+            padding-bottom: 70px;
             background-position: 80% 345px;
         }
     }
     &.v-3{
         background-image: url("../images/bg/home-bg-grads-2.png");
         background-size: 100%;
-        background-position: -50px 450px;
+        background-position: -50px 250px;
 
         @media screen and (min-width: $bp-LG){
-            padding-top: 200px;
-            padding-bottom: 100px;
+            padding-top: 185px;
+            padding-bottom: 95px;
         }
 
         @media screen and (max-width: $bp-SM){
@@ -52,6 +53,7 @@
         @media screen and (max-width: $bp-SM){
             background-size: 140%;
             background-position: 80% 275px;
+            padding-bottom: 40px;
         }
 
     }
@@ -73,39 +75,28 @@
 
     }
 
-    @media screen and (max-width: 1350px){
-        background-position: 0 160%;
-    }
-
-    @media screen and (max-width: $bp-XL){
-        padding-top: 200px;
-    }
-
     @media screen and (max-width: $bp-LG){
         padding-top: 220px;
-        padding-bottom: 66px;
+        padding-bottom: 186px;
         background-size: 120%;
-        background-position: 160% 150px;
+        background-position: 160% 495px;
     }
     
     @media screen and (max-width: $bp-MD){
         padding-top: 190px;
-        background-position: 160% 200px;
+        padding-bottom: 30px;
+        background-position: 160% 500px;
     }
     
     @media screen and (max-width: $bp-SM){
+        padding-bottom: 50px;
         background-size: 120%;
-        background-position: 160% 305px;
+        background-position: 160% 585px;
     }
 
-    @media screen and (max-width: 375px){
-        background-position: 160% 325px;
-    }
-
-    @media screen and (max-width: 320px){
-        padding-top: 165px;
-        padding-bottom: 60px;
-        background-position: 160% 315px;
+    @media screen and (max-width: 376px){
+        background-size: 150%;
+        background-position: 40% 585px;
     }
 
     
@@ -268,7 +259,7 @@
         }
 
         img {
-            width: 70.2%;
+            width: 63.2%;
         }
     }
 }

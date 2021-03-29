@@ -1,5 +1,5 @@
 .about-circle {
-    padding-top: 120px;
+    padding-top: 80px;
     
     @media screen and (max-width: $bp-LG) {
         padding-top: 50px;
@@ -31,7 +31,8 @@
             height: 4.5px;
             width: 800px;
             border: none;
-            margin: none none 25px;
+            margin: none none 15px;
+            
             @media screen and (max-width: $bp-LG) {
                 width: 90%;
                 background-color: $c-ventures-sec;
@@ -43,8 +44,7 @@
             font-size: 16px;
             color: $color-dark;
             line-height: 1.92;
-            max-width: 480px;
-            padding-top: 20px;
+            padding-top: 5px;
 
             @media screen and (max-width: $bp-LG) {
                 padding-top: 10px;
@@ -62,10 +62,10 @@
             }
 
             &.lg{
-                font-size: 25px;
+                font-size: 22px;
 
                 @media screen and (max-width: $bp-LG){
-                    font-size: 22px;
+                    font-size: 20px;
                 }
 
                 @media screen and (max-width: $bp-MD){
@@ -79,14 +79,15 @@
             align-items: center;
             justify-content: center;
             border-radius: 35px;
-            padding: 10px 0;
+            padding: 9px 0;
             width: 100%;
             color: #fff !important;
             font-weight: 500;
-            font-size: 21px;
-            margin-bottom: 20px;
+            font-size: 19px;
+            margin-bottom: 15px;
             box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
             @include transition();
+
             &:hover {
                 @include scale(1.03);
             }
@@ -134,7 +135,7 @@
 
     &__banner {
         img {
-            width: 90%;
+            width: 105%;
 
             @media screen and (max-width: $bp-LG) {
                 width: 107vw;

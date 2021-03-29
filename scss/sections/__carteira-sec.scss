@@ -1,8 +1,10 @@
 .carteira-sec {
-    padding-top: 120px;
+    padding-top:  95px;
+
     @media screen and (max-width: $bp-LG) {
         padding-top: 50px;
     }
+    
     @media screen and (max-width: $bp-MD) {
         padding-top: 30px;
     }
@@ -33,7 +35,7 @@
             }
 
             img {
-                height: 70px;
+                height: 60px;
                 object-fit: contain;
                 object-position: center;
                 max-width: 390px;

@@ -58,14 +58,14 @@
 
 
     &__people{
-        margin-top: -90px;
+        margin-top: -50px;
 
         @media screen and (max-width: $bp-LG){
             margin-top: -40px;
         }
 
         &-item{
-            padding-top: 80px;
+            padding-top: 30px;
             padding-bottom: 30px;
             border-bottom: 3.5px solid $c-health-sec;
 
@@ -139,8 +139,8 @@
 
                 .desc{
                     color: $color-dark;
-                    font-size: 17px;
-                    padding-left: 150px;
+                    font-size: 16px;
+                    padding-left: 70px;
                     padding-right: 50px;
 
                     @media screen and (max-width: $bp-XL){
@@ -187,7 +187,7 @@
         &__item{
             display: flex;
             justify-content: center;
-            padding-top: 50px;
+            padding-top: 30px;
             padding-bottom: 30px;
             
             @media screen and (max-width: $bp-LG){

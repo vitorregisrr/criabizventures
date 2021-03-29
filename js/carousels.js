@@ -42,6 +42,7 @@
         nav: true,
         navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
         autoplay: true,
+        autoplayHoverPause:true,
         autoplayTimeout: 1400,
         smartSpeed: 800,
         infinite: true,
@@ -56,6 +57,10 @@
 
             800: {
                 items: 4
+            },
+
+            1100: {
+                items: 5
             }
         }
         

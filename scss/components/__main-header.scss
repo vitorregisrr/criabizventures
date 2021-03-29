@@ -58,6 +58,11 @@
                         @media screen and (max-width: $bp-LG){
                             font-size: 11px;
                         }
+
+                        @media screen and (max-width: $bp-SM){
+                            font-size: 9px;
+                        }
+                        
                         @media screen and (max-width: 330px){
                             font-size: 9px;
                         }
@@ -146,7 +151,7 @@
                             text-align: center;
                         }
                         @media screen and (max-width: $bp-SM) {
-                            font-size: 13px;
+                            font-size: 11px;
                             text-align: center;
                         }
                         @media screen and (max-width: 320px) {

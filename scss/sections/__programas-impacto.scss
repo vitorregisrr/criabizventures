@@ -1,5 +1,5 @@
 .programas-impacto{
-    padding-top: 75px;
+    padding-top: 55px;
 
     @media screen and (max-width: $bp-LG){
         padding-top: 25px;
@@ -29,8 +29,8 @@
         margin: 0 auto;
         border-radius: 8px;
         box-shadow: 2px 5px 10px rgba(0,0,0,.2);
-        height: 160px;
-        padding: 15px 10px;
+        height: 150px;
+        padding: 20px 20px;
         @include transition();
 
         @media screen and (max-width: $bp-LG){
