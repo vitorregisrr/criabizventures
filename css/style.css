@@ -1506,7 +1506,7 @@ textarea.form-control {
 @media screen and (min-width: 992px) and (max-width: 1368px) {
   .home-banner.v-3 {
     padding-bottom: 20px;
-    padding-top: 145px;
+    padding-top: 125px;
   }
   .home-banner.v-3 .title {
     font-size: 42px;
