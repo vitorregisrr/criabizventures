@@ -23,6 +23,11 @@
             &.v-2{
                 width: 120%;
                 top: -40%;
+
+                @media screen and (max-width: $bp-MD){
+                    width: 200%;
+                    top: -15%;
+                }
             }
         }
     }

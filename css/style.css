@@ -3579,6 +3579,13 @@ textarea.form-control {
   top: -40%;
 }
 
+@media screen and (max-width: 768px) {
+  .contato .caption .bg-grad.v-2 {
+    width: 200%;
+    top: -15%;
+  }
+}
+
 .contato .sub-header {
   margin-bottom: 45px;
 }
