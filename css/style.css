@@ -2494,7 +2494,7 @@ textarea.form-control {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-top: 105px;
+  padding-top: 125px;
   padding-bottom: 0px;
   margin-top: 15px;
 }
@@ -2533,7 +2533,8 @@ textarea.form-control {
 }
 
 .verticais-neg__brands-main img {
-  width: 180px;
+  width: 155px;
+  margin-left: 19px;
 }
 
 @media screen and (max-width: 992px) {
@@ -2587,7 +2588,7 @@ textarea.form-control {
 }
 
 .verticais-neg__brands-sub img {
-  width: 105px;
+  width: 120px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;

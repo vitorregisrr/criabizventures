@@ -13,7 +13,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding-top: 105px;
+        padding-top: 125px;
         padding-bottom: 0px;
         margin-top: 15px;
         
@@ -40,7 +40,8 @@
 
         &-main{
             img{
-                width: 180px;
+                width: 155px;
+                margin-left: 19px;
 
                 @media screen and (max-width: $bp-LG){
                     width: 180px;
@@ -78,7 +79,7 @@
             }
             
             img{
-                width: 105px;
+                width: 120px;
                 @include transition();
 
                 @media screen and (max-width: $bp-LG){
