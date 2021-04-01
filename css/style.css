@@ -778,7 +778,7 @@ button:hover, button:focus, button:active {
 @media screen and (max-width: 992px) {
   .main-header__content .main-nav ul {
     flex-direction: column;
-    padding-bottom: 60%;
+    padding-bottom: 67.5%;
   }
 }
 
