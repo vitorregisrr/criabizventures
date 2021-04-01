@@ -824,6 +824,7 @@ button:hover, button:focus, button:active {
 
 .main-header__content .main-nav ul li a:hover, .main-header__content .main-nav ul li a.active {
   color: #ED3833;
+  font-weight: 500;
   -webkit-transform: scale(1.03);
   -moz-transform: scale(1.03);
   -ms-transform: scale(1.03);

@@ -181,6 +181,7 @@
                         
                         &:hover, &.active{
                             color: $c-ventures-sec;
+                            font-weight: 500;
                             @include scale(1.03);
                         }
                     }
