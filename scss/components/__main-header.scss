@@ -179,10 +179,14 @@
                             font-weight: 500;
                         }
                         
-                        &:hover, &.active{
+                        &.active{
                             color: $c-ventures-sec;
-                            font-weight: 500;
-                            @include scale(1.03);
+                            text-shadow: .6px .6px 1px $c-ventures-sec;
+                            @include scale(1.05);
+                        }
+                        &:hover{
+                            color: $c-ventures-sec;
+                            @include scale(1.04);
                         }
                     }
                 }

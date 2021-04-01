@@ -39,6 +39,9 @@
                 required: true,
                 minlength: 14
             },
+            linkPitchDeck: {
+                required: true
+            },
             resumo: {
                 required: true
             }

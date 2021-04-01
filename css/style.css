@@ -314,22 +314,8 @@
   }
 }
 
-.chevron-right {
-  height: 100% !important;
-  width: 100% !important;
-  background-image: url(../images/ico/chevron-right.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.chevron-left {
-  height: 100% !important;
-  width: 100% !important;
-  background-image: url(../images/ico/chevron-left.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.color-grey {
+  color: #383838 !important;
 }
 
 .bounce {
@@ -822,14 +808,23 @@ button:hover, button:focus, button:active {
   }
 }
 
-.main-header__content .main-nav ul li a:hover, .main-header__content .main-nav ul li a.active {
+.main-header__content .main-nav ul li a.active {
   color: #ED3833;
-  font-weight: 500;
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
-  transform: scale(1.03);
+  text-shadow: 0.6px 0.6px 1px #ED3833;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.main-header__content .main-nav ul li a:hover {
+  color: #ED3833;
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+  transform: scale(1.04);
 }
 
 @media screen and (max-width: 992px) {
@@ -3848,6 +3843,14 @@ textarea.form-control {
   margin-bottom: 25px;
 }
 
+.equipe-sec__people-item .about .name a {
+  color: inherit !important;
+}
+
+.equipe-sec__people-item .about .name a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 992px) {
   .equipe-sec__people-item .about .name {
     white-space: nowrap;
@@ -4006,7 +4009,7 @@ textarea.form-control {
 }
 
 .equipe-sec .conselheiros__item .about .name {
-  font-size: 32px;
+  font-size: 28px;
   color: #00BD9F;
   font-weight: 800;
   margin-bottom: 15px;
@@ -4031,11 +4034,27 @@ textarea.form-control {
   }
 }
 
+.equipe-sec .conselheiros__item .about .name a {
+  color: inherit !important;
+}
+
+.equipe-sec .conselheiros__item .about .name a:hover {
+  text-decoration: underline;
+}
+
 .equipe-sec .conselheiros__item .about .ocupation {
   color: #0D0D2B;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   margin-bottom: 30px;
+}
+
+.equipe-sec .conselheiros__item .about .ocupation a {
+  color: inherit !important;
+}
+
+.equipe-sec .conselheiros__item .about .ocupation a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1200px) {
@@ -4070,7 +4089,7 @@ textarea.form-control {
   background-size: 80%;
   background-position: -50px 20%;
   background-repeat: no-repeat;
-  padding-top: 220px;
+  padding-top: 180px;
 }
 
 @media screen and (max-width: 992px) {
@@ -4253,8 +4272,8 @@ textarea.form-control {
 }
 
 .empresas-sec__header {
-  padding-top: 180px;
-  padding-bottom: 50px;
+  padding-top: 210px;
+  padding-bottom: 80px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -4287,11 +4306,11 @@ textarea.form-control {
 }
 
 .empresas-sec__header .content .title {
-  font-size: 42px;
+  font-size: 44px;
   font-weight: 800;
   text-align: center;
   max-width: 680px;
-  margin: 0 auto 50px;
+  margin: 0 auto 30px;
 }
 
 .empresas-sec__header .content .title.lg {
@@ -4306,14 +4325,16 @@ textarea.form-control {
 }
 
 .empresas-sec__header .content .subtitle {
-  font-size: 17px;
-  color: #E0E0E0;
+  font-size: 23px;
+  color: #fff;
   text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 992px) {
   .empresas-sec__header .content .subtitle {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
