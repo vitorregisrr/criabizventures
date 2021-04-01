@@ -49,9 +49,11 @@
     });
 
     // Form empresa JS
-    if (window.innerWidth < 992) {
-        $('#step-2, .form-step-2').hide();
-    }
+    setTimeout(() => {
+        if (window.innerWidth < 992) {
+            $('#step-2, .form-step-2').hide();
+        }
+    }, 800);
 
     $('#form-next')
         .click(function () {
