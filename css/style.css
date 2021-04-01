@@ -2571,7 +2571,7 @@ textarea.form-control {
 
 @media screen and (max-width: 768px) {
   .verticais-neg__brands-sub.item-1 {
-    left: calc(50% - 40px);
+    left: calc(50% - 52px);
   }
 }
 
@@ -2588,7 +2588,7 @@ textarea.form-control {
 
 @media screen and (max-width: 768px) {
   .verticais-neg__brands-sub.item-2 {
-    left: calc(50% + 80px);
+    left: calc(50% + 72px);
   }
 }
 
@@ -2633,7 +2633,7 @@ textarea.form-control {
 @media screen and (max-width: 768px) {
   .verticais-neg__brands-sub.item-6 {
     top: 245px;
-    left: calc(50% - 40px);
+    left: calc(50% - 50px);
   }
 }
 
@@ -2652,7 +2652,7 @@ textarea.form-control {
 @media screen and (max-width: 768px) {
   .verticais-neg__brands-sub.item-5 {
     top: 240px;
-    left: calc(50% + 80px);
+    left: calc(50% + 72px);
   }
 }
 
