@@ -2447,6 +2447,12 @@ textarea.form-control {
   justify-content: center;
 }
 
+@media screen and (max-width: 576px) {
+  .painel-numeros__footer .brands {
+    flex-wrap: wrap;
+  }
+}
+
 .painel-numeros__footer .brands img {
   height: 70px;
   margin: 0 20px;
@@ -2467,8 +2473,15 @@ textarea.form-control {
 
 @media screen and (max-width: 768px) {
   .painel-numeros__footer .brands img {
-    height: 40px;
+    height: 30px;
     margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .painel-numeros__footer .brands img {
+    height: 35px;
+    margin-bottom: 10px;
   }
 }
 

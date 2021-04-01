@@ -319,6 +319,10 @@
             align-items: center;
             justify-content: center;
 
+            @media screen and (max-width: $bp-SM){
+                flex-wrap: wrap;
+            }
+
             img {
                 height: 70px;
                 margin: 0 20px;
@@ -329,8 +333,13 @@
                 }
 
                 @media screen and (max-width: $bp-MD){
-                    height: 40px;
+                    height: 30px;
                     margin: 0 10px;
+                }
+
+                @media screen and (max-width: $bp-SM){
+                    height: 35px;
+                    margin-bottom: 10px;
                 }
             }
         }
