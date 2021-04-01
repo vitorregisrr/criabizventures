@@ -1,9 +1,10 @@
 (function () {
     'use strict';
 
-    $('[data-toggle="nav-links"]').click(function () {
-        $('#nav-links').toggleClass('active');
-        $(this).toggleClass('active');
-        console.log('Toggle menu');
+    $('#nav-toggler').click(function () {
+        var isActive = $('.main-nav').attr('data-visible') === 'true' ? true : false;
+        $('.main-nav').attr('data-visible', !isActive);
+
+        $('.main-nav .wow').css('visibility', 'visible');
     });
 })();

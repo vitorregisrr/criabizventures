@@ -69,7 +69,6 @@
             integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
             crossorigin="anonymous">
 
-        
     </head>
 
     <body class="wow fadeIn">
@@ -77,11 +76,17 @@
         <header id="main-header" class="main-header wow fadeInDown">
             <div class="container">
                 <div class="main-header__content">
-                    <a href="#home">
-                        <img
-                            src="../images/logo/criabiz-health.png"
-                            alt="Logo CriaBiz Health"
-                            class="brand horizontal wow fadeInLeft"/></a>
+
+                    <div class="brand-group">
+                        <a href="#home">
+                            <img
+                                src="../images/logo/criabiz-health.png"
+                                alt="Logo CriaBiz Health"
+                                class="brand horizontal wow fadeInLeft"/></a>
+                        <button id="nav-toggler" class="main-header__toggler">
+                            <i class="fa c-he-p fa-bars"></i>
+                        </button>
+                    </div>
 
                     <nav class="main-nav">
                         <ul>
@@ -125,7 +130,10 @@
                                 </div>
 
                                 <div class="d-flex justify-content-start">
-                                    <a class="more bg-he-s wow zoomIn" data-wow-delay="0.8s" href="./form-startup.html">Inscrever minha Startup
+                                    <a
+                                        class="more bg-he-s wow zoomIn"
+                                        data-wow-delay="0.8s"
+                                        href="./form-startup.html">Inscrever minha Startup
                                         <span class="circle c-he-p wow fadeInLeft" data-wow-delay="1s">
                                             <i class="fa fa-chevron-right"></i>
                                         </span>
@@ -615,99 +623,59 @@
                             </li>
                         </ul>
                     </div>
-                   <div class="col-4 col-lg-2">
-                    <ul>
-                        <li class="title wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
-                            Nossos Clientes
-                        </li>
-                        <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
-                            <a href="./form-empresa.html">Empresas</a>
-                        </li>
-                        <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
-                            <a href="./form-startup.html">Startups</a>
-                        </li>
-                        <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
-                            <a href="./criabiz-angels.html">Investidores Anjo</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-4 col-lg-3">
-                    <ul>
-                        <li class="title wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
-                            Verticais de Negócio
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-angels.html">Criabiz Angels</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-angelseduca.html">Criabiz Angels Educa</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-aging.html">Criabiz Aging</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-agritech.html">Criabiz Agritech</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-education.html">Criabiz Education</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-health.html">Criabiz Health</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-impact.html">Criabiz Impact</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-tech.html">Criabiz Tech</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-youth.html">Criabiz Youth</a>
-                        </li>
-                        <li
-                            class="wow fadeInUp"
-                           
-                            data-wow-delay="0.5s"
-                            data-wow-offset="-200">
-                            <a href="./criabiz-women.html">Criabiz Women</a>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="col-4 col-lg-2">
+                        <ul>
+                            <li class="title wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                Nossos Clientes
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./form-empresa.html">Empresas</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./form-startup.html">Startups</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-angels.html">Investidores Anjo</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-lg-3">
+                        <ul>
+                            <li class="title wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                Verticais de Negócio
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-angels.html">Criabiz Angels</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-angelseduca.html">Criabiz Angels Educa</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-aging.html">Criabiz Aging</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-agritech.html">Criabiz Agritech</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-education.html">Criabiz Education</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-health.html">Criabiz Health</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-impact.html">Criabiz Impact</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-tech.html">Criabiz Tech</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-youth.html">Criabiz Youth</a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
+                                <a href="./criabiz-women.html">Criabiz Women</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="col-12 col-lg-2 pt-3 pt-lg-0">
                         <ul class="text-center text-lg-left">
                             <li class="title wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
@@ -741,7 +709,6 @@
                 </div>
             </div>
         </footer>
-        
 
     </body>
 

@@ -79,11 +79,17 @@
         <header id="main-header" class="main-header wow fadeInDown">
             <div class="container">
                 <div class="main-header__content">
-                    <a href="#home">
-                        <img
-                            src="../images/logo/criabiz-angels.png"
-                            alt="Logo CriaBiz Angels"
-                            class="brand wow fadeInLeft"/></a>
+
+                    <div class="brand-group">
+                        <a href="#home">
+                            <img
+                                src="../images/logo/criabiz-angels.png"
+                                alt="Logo CriaBiz Angels"
+                                class="brand wow fadeInLeft"/></a>
+                        <button id="nav-toggler" class="main-header__toggler">
+                            <i class="fa c-ang-s fa-bars"></i>
+                        </button>
+                    </div>
 
                     <nav class="main-nav">
                         <ul>
@@ -146,9 +152,7 @@
                     <div class="row justify-content-center px-xl-4">
                         <div class="col-lg-6 pl-lg-5 pt-xl-3">
                             <div class="about-circle__caption pt-lg-5">
-                                <h2
-                                    class="title c-ang-s wow fadeInUp"
-                                    data-wow-delay="0.3s">
+                                <h2 class="title c-ang-s wow fadeInUp" data-wow-delay="0.3s">
                                     <span class="d-block">
                                         Perfil do grupo
                                     </span>
@@ -367,35 +371,35 @@
         <!-- partial:../partials/__modal-form-anjo.html -->
 
         <div class="c-modal" id="modal-form-anjo" data-visible="false">
-    <button
-        class="close"
-        data-toggle="c-modal"
-        data-target="#modal-form-anjo"
-        title="fechar">
-        <i class="fa fa-times"></i>
-    </button>
+            <button
+                class="close"
+                data-toggle="c-modal"
+                data-target="#modal-form-anjo"
+                title="fechar">
+                <i class="fa fa-times"></i>
+            </button>
 
-    <div class="content">
-        <div class="container pt-4 pt-lg-0">
-            <div class="empresas-sec__content">
-                <h3 class="subtitle fadeInUp" data-delay="0.2s">
-                    Você já realizou Investimento Anjo, ou pertence a algum grupo estruturado de
-                    Investidores Anjo? Cadastre-se para receber os informes sobre novas rodadas.
-                </h3>
+            <div class="content">
+                <div class="container pt-4 pt-lg-0">
+                    <div class="empresas-sec__content">
+                        <h3 class="subtitle fadeInUp" data-delay="0.2s">
+                            Você já realizou Investimento Anjo, ou pertence a algum grupo estruturado de
+                            Investidores Anjo? Cadastre-se para receber os informes sobre novas rodadas.
+                        </h3>
 
-                <h2 class="title c-ang-s fadeInUp" data-delay="0.2s">
-                    Preencha o formulário abaixo
-                </h2>
+                        <h2 class="title c-ang-s fadeInUp" data-delay="0.2s">
+                            Preencha o formulário abaixo
+                        </h2>
 
-                <hr class="line bg-ang-s zoomIn" data-delay="0.2s">
-                
-                    <form
-                        id="form-empresas"
-                        action="https://formsquash.io/f/dMIPTXMFpTk8Q3cRyRGe"
-                        method="POST"
-                        class="empresas-sec__form fadeInUp"
-                        data-delay="0.25s">
-                        <input name="type" type="hidden" value="Formulário Anjo">
+                        <hr class="line bg-ang-s zoomIn" data-delay="0.2s">
+
+                        <form
+                            id="form-empresas"
+                            action="https://formsquash.io/f/dMIPTXMFpTk8Q3cRyRGe"
+                            method="POST"
+                            class="empresas-sec__form fadeInUp"
+                            data-delay="0.25s">
+                            <input name="type" type="hidden" value="Formulário Anjo">
                             <div class="row">
                                 <div class="col-5 d-block d-lg-none">
                                     <div class="mobile__steps pt-4">
@@ -419,56 +423,54 @@
                                     <div class="form-group">
                                         <label for="pessoa">Nome</label>
                                         <input name="pessoa" type="text" class="form-control border-ang-p"></div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="telefone">Telefone (Whatsapp)</label>
+                                        <input name="telefone" type="text" class="form-control border-ang-p mask-phone"></div>
+                                </div>
+
+                                <div class="col-12 d-flex d-lg-none justify-content-center">
+                                    <div class="pt-3">
+                                        <button id="form-next" type="button" class="send-btn bg-ang-s col-lg-">
+                                            Proximo
+                                            <i class="fas fa-arrow-right"></i>
+                                        </button>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label for="telefone">Telefone (Whatsapp)</label>
-                                            <input name="telefone" type="text" class="form-control border-ang-p mask-phone"></div>
-                                        </div>
-
-                                        <div class="col-12 d-flex d-lg-none justify-content-center">
-                                            <div class="pt-3">
-                                                <button id="form-next" type="button" class="send-btn bg-ang-s col-lg-">
-                                                    Proximo
-                                                    <i class="fas fa-arrow-right"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row fadeIn form-step-2" id="step-2">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="pessoa">Redes de Anjos em que participa e/ou Startups em que já investiu</label>
-                                                <textarea
-                                                    name="resumo"
-                                                    class="form-control border-ang-p"
-                                                    name="#"
-                                                    id="#"
-                                                    cols="30"
-                                                    rows="10"></textarea>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 d-flex justify-content-center">
-                                            <div>
-                                                <button id="form-submit" type="button" class="send-btn bg-ang-s">
-                                                    Enviar
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-
-                                <div id="success-tab" style="display: none;" class="empresas-sec__success">
-                                    <span class="icon c-ang-p">
-                                        <i class="far fa-smile-wink"></i>
-                                    </span>
-                                    <h5 class="title c-ang-p">
-                                        Seus dados foram enviados com sucesso!
-                                    </h5>
                                 </div>
                             </div>
+
+                            <div class="row fadeIn form-step-2" id="step-2">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="pessoa">Redes de Anjos em que participa e/ou Startups em que já investiu</label>
+                                        <textarea
+                                            name="resumo"
+                                            class="form-control border-ang-p"
+                                            name="#"
+                                            id="#"
+                                            cols="30"
+                                            rows="10"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div>
+                                        <button id="form-submit" type="button" class="send-btn bg-ang-s">
+                                            Enviar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div id="success-tab" style="display: none;" class="empresas-sec__success">
+                            <span class="icon c-ang-p">
+                                <i class="far fa-smile-wink"></i>
+                            </span>
+                            <h5 class="title c-ang-p">
+                                Seus dados foram enviados com sucesso!
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -476,128 +478,130 @@
         </div>
     </div>
 </div>
+</div>
+</div>
 
 <div class="c-modal__overlay" id="overlay"></div>
 
-        <!-- partial -->
+<!-- partial -->
 
 <!-- partial:../partials/__modal-form-queroanjo.html -->
 
 <div class="c-modal" id="modal-form-queroanjo" data-visible="false">
-    <button
-        class="close"
-        data-toggle="c-modal"
-        data-target="#modal-form-queroanjo"
-        title="fechar">
-        <i class="fa fa-times"></i>
-    </button>
-    <div class="content">
-        <div class="container">
-            <div class="empresas-sec__content">
-                <h3 class="subtitle fadeInUp pt-4 pt-lg-0" data-delay="0.2s">
-                    Você tem interesse em fazer parte de um grupo de Investimento Anjo? Já estudou
-                    sobre ou realizou algum aporte em projetos/startups? Cadastre-se para participar
-                    dos nossos grupos educacionais de investimento.
-                </h3>
+<button
+class="close"
+data-toggle="c-modal"
+data-target="#modal-form-queroanjo"
+title="fechar">
+<i class="fa fa-times"></i>
+</button>
+<div class="content">
+<div class="container">
+    <div class="empresas-sec__content">
+        <h3 class="subtitle fadeInUp pt-4 pt-lg-0" data-delay="0.2s">
+            Você tem interesse em fazer parte de um grupo de Investimento Anjo? Já estudou
+            sobre ou realizou algum aporte em projetos/startups? Cadastre-se para participar
+            dos nossos grupos educacionais de investimento.
+        </h3>
 
-                <h2 class="title c-ang-s fadeInUp" data-delay="0.2s">
-                    Preencha o formulário abaixo
-                </h2>
+        <h2 class="title c-ang-s fadeInUp" data-delay="0.2s">
+            Preencha o formulário abaixo
+        </h2>
 
-                <hr class="line bg-ang-s zoomIn" data-delay="0.2s"></div>
-                <form
-                    id="form-empresas"
-                    action="https://formsquash.io/f/dMIPTXMFpTk8Q3cRyRGe"
-                    method="POST"
-                    class="empresas-sec__form fadeInUp"
-                    data-delay="0.25s">
-                    <input name="type" type="hidden" value="Formulário Anjo">
-                        <div class="row">
-                            <div class="col-5 d-block d-lg-none">
-                                <div class="mobile__steps pt-4">
-                                    <div id="form-marker-1" class="step yellow step-1 active">
-                                        <span class="text">
-                                            Informações
-                                        </span>
-                                        <div class="line"></div>
-                                    </div>
-                                    <div id="form-marker-2" class="step  yellow  step-2">
-                                        <span class="text">
-                                            Sua mensagem
-                                        </span>
-                                        <div class="line"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="step-1" class="row">
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="pessoa">Nome</label>
-                                    <input name="pessoa" type="text" class="form-control border-ang-p"></div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="telefone">Telefone (Whatsapp)</label>
-                                        <input name="telefone" type="text" class="form-control border-ang-p mask-phone"></div>
-                                    </div>
-
-                                    <div class="col-12 d-flex d-lg-none justify-content-center">
-                                        <div class="pt-3">
-                                            <button id="form-next" type="button" class="send-btn bg-ang-s col-lg-">
-                                                Proximo
-                                                <i class="fas fa-arrow-right"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row fadeIn form-step-2" id="step-2">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label for="pessoa">Descreva um pouco sobre você e seus interesses na área de investimento</label>
-                                            <textarea
-                                                name="resumo"
-                                                class="form-control border-ang-p"
-                                                name="#"
-                                                id="#"
-                                                cols="30"
-                                                rows="10"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 d-flex justify-content-center">
-                                        <div>
-                                            <button id="form-submit" type="button" class="send-btn bg-ang-s">
-                                                Enviar
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-
-                            <div id="success-tab" style="display: none;" class="empresas-sec__success">
-                                <span class="icon c-ang-p">
-                                    <i class="far fa-smile-wink"></i>
-                                </span>
-                                <h5 class="title c-ang-p">
-                                    Seus dados foram enviados com sucesso!
-                                </h5>
-                                <p class="desc">
-                                    Mantemos um grupo educacional voltado à formação gratuita de futuros
-                                    “Investidores Anjo de Performance”.
-                                </p>
-                                <a href="#" class="send-btn mt-4 bg-ang-s">
-                                    Quero entrar no grupo
-                                    <i class="fab fa-whatsapp"></i>
-                                </a>
-                            </div>
-                        </div>
+        <hr class="line bg-ang-s zoomIn" data-delay="0.2s"></div>
+    <form
+        id="form-empresas"
+        action="https://formsquash.io/f/dMIPTXMFpTk8Q3cRyRGe"
+        method="POST"
+        class="empresas-sec__form fadeInUp"
+        data-delay="0.25s">
+        <input name="type" type="hidden" value="Formulário Anjo">
+        <div class="row">
+            <div class="col-5 d-block d-lg-none">
+                <div class="mobile__steps pt-4">
+                    <div id="form-marker-1" class="step yellow step-1 active">
+                        <span class="text">
+                            Informações
+                        </span>
+                        <div class="line"></div>
+                    </div>
+                    <div id="form-marker-2" class="step  yellow  step-2">
+                        <span class="text">
+                            Sua mensagem
+                        </span>
+                        <div class="line"></div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="step-1" class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="pessoa">Nome</label>
+                    <input name="pessoa" type="text" class="form-control border-ang-p"></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="telefone">Telefone (Whatsapp)</label>
+                    <input name="telefone" type="text" class="form-control border-ang-p mask-phone"></div>
+            </div>
+
+            <div class="col-12 d-flex d-lg-none justify-content-center">
+                <div class="pt-3">
+                    <button id="form-next" type="button" class="send-btn bg-ang-s col-lg-">
+                        Proximo
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row fadeIn form-step-2" id="step-2">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="pessoa">Descreva um pouco sobre você e seus interesses na área de investimento</label>
+                    <textarea
+                        name="resumo"
+                        class="form-control border-ang-p"
+                        name="#"
+                        id="#"
+                        cols="30"
+                        rows="10"></textarea>
+                </div>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center">
+                <div>
+                    <button id="form-submit" type="button" class="send-btn bg-ang-s">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div id="success-tab" style="display: none;" class="empresas-sec__success">
+        <span class="icon c-ang-p">
+            <i class="far fa-smile-wink"></i>
+        </span>
+        <h5 class="title c-ang-p">
+            Seus dados foram enviados com sucesso!
+        </h5>
+        <p class="desc">
+            Mantemos um grupo educacional voltado à formação gratuita de futuros
+            “Investidores Anjo de Performance”.
+        </p>
+        <a href="#" class="send-btn mt-4 bg-ang-s">
+            Quero entrar no grupo
+            <i class="fab fa-whatsapp"></i>
+        </a>
     </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="c-modal__overlay" id="overlay"></div>
