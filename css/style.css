@@ -2549,12 +2549,13 @@ textarea.form-control {
 @media screen and (max-width: 992px) {
   .verticais-neg__brands-main img {
     width: 180px;
+    margin-left: 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .verticais-neg__brands-main img {
-    width: 130px;
+    width: 127px;
   }
 }
 

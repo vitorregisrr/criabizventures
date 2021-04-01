@@ -45,10 +45,11 @@
 
                 @media screen and (max-width: $bp-LG){
                     width: 180px;
+                    margin-left: 0;
                 }
 
                 @media screen and (max-width: $bp-MD){
-                    width: 130px;
+                    width: 127px;
                 }
             }
         }
