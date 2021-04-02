@@ -1192,7 +1192,7 @@ textarea.form-control {
   opacity: 0;
   z-index: 14;
   border-radius: 15px;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.05);
   transition: all 0.8s;
 }
 
