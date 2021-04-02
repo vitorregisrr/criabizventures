@@ -1183,7 +1183,7 @@ textarea.form-control {
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -70%);
   bottom: 0;
   width: 70vw;
   height: 86vh;
@@ -1209,6 +1209,7 @@ textarea.form-control {
 .c-modal[data-visible="true"] {
   opacity: 1;
   pointer-events: all;
+  transform: translate(-50%, -50%);
 }
 
 .c-modal__overlay {
