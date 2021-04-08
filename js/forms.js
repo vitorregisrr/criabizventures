@@ -67,10 +67,10 @@
             }
         });
 
-    $('#form-submit').click(function () {
+    $('#form-submit, .form-submit-button').click(function () {
         if ($("#form-empresas").valid()) {
 
-            $('#form-submit').attr('disabled', 'true');
+            $('#form-submit, .form-submit-button').attr('disabled', 'true');
 
             $.ajax({
                 url: "https://formsquash.io/f/dMIPTXMFpTk8Q3cRyRGe",
