@@ -70,7 +70,7 @@
     $('#form-submit, .form-submit-button').click(function () {
         if ($("#form-empresas").valid()) {
 
-            $('#form-submit, .form-submit-button').attr('disabled', 'true');
+            $(this).attr('disabled', 'true');
 
             $.ajax({
                 url: "https://formsquash.io/f/dMIPTXMFpTk8Q3cRyRGe",
