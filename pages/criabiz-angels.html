@@ -320,7 +320,10 @@
                             <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
                                 <a href="./criabiz-tech.html">Criabiz Tech</a>
                             </li>
-                            <li class="title wow fadeInUp mt-2" data-wow-delay="0.5s" data-wow-offset="-200">
+                            <li
+                                class="title wow fadeInUp mt-2"
+                                data-wow-delay="0.5s"
+                                data-wow-offset="-200">
                                 Verticais de Impacto
                             </li>
                             <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="-200">
@@ -397,7 +400,7 @@
                         <hr class="line bg-ang-s zoomIn" data-delay="0.2s">
 
                         <form
-                            id="form-empresas"
+                            id="form-empresas-1"
                             action="https://formsquash.io/f/dMIPTXMFpTk8Q3cRyRGe"
                             method="POST"
                             class="empresas-sec__form fadeInUp"
@@ -421,7 +424,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="step-1" class="row">
+                            <div class="row form-step-1">
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="pessoa">Nome</label>
@@ -435,7 +438,7 @@
 
                                 <div class="col-12 d-flex d-lg-none justify-content-center">
                                     <div class="pt-3">
-                                        <button id="form-next" type="button" class="send-btn bg-ang-s col-lg-">
+                                        <button data-target="#form-empresas-1" type="button" class="form-next-button send-btn bg-ang-s col-lg-">
                                             Proximo
                                             <i class="fas fa-arrow-right"></i>
                                         </button>
@@ -443,7 +446,7 @@
                                 </div>
                             </div>
 
-                            <div class="row fadeIn form-step-2" id="step-2">
+                            <div class="row fadeIn form-step-2">
                                 <div class="col-12">
                                     <div class="form-group">
                                         <label for="pessoa">Redes de Anjos em que participa e/ou Startups em que já investiu</label>
@@ -459,7 +462,10 @@
 
                                 <div class="col-12 d-flex justify-content-center">
                                     <div>
-                                        <button id="form-submit" type="button" class="form-submit-button send-btn bg-ang-s">
+                                        <button
+                                            type="button"
+                                            data-target="#form-empresas-1"
+                                            class="form-submit-button send-btn bg-ang-s">
                                             Enviar
                                         </button>
                                     </div>
@@ -513,7 +519,7 @@ title="fechar">
 
         <hr class="line bg-ang-s zoomIn" data-delay="0.2s"></div>
     <form
-        id="form-empresas"
+        id="form-empresas-2"
         action="https://formsquash.io/f/dMIPTXMFpTk8Q3cRyRGe"
         method="POST"
         class="empresas-sec__form fadeInUp"
@@ -537,7 +543,7 @@ title="fechar">
                 </div>
             </div>
         </div>
-        <div id="step-1" class="row">
+        <div class="row form-step-1">
             <div class="col-lg-6">
                 <div class="form-group">
                     <label for="pessoa">Nome</label>
@@ -551,7 +557,7 @@ title="fechar">
 
             <div class="col-12 d-flex d-lg-none justify-content-center">
                 <div class="pt-3">
-                    <button id="form-next" type="button" class="send-btn bg-ang-s col-lg-">
+                    <button data-target="#form-empresas-2" type="button" class="form-next-button send-btn bg-ang-s col-lg-">
                         Proximo
                         <i class="fas fa-arrow-right"></i>
                     </button>
@@ -559,7 +565,7 @@ title="fechar">
             </div>
         </div>
 
-        <div class="row fadeIn form-step-2" id="step-2">
+        <div class="row fadeIn form-step-2">
             <div class="col-12">
                 <div class="form-group">
                     <label for="pessoa">Descreva um pouco sobre você e seus interesses na área de investimento</label>
@@ -575,7 +581,10 @@ title="fechar">
 
             <div class="col-12 d-flex justify-content-center">
                 <div>
-                    <button id="form-submit" type="button" class="form-submit-button send-btn bg-ang-s">
+                    <button
+                        type="button"
+                        data-target="#form-empresas-2"
+                        class="form-submit-button send-btn bg-ang-s">
                         Enviar
                     </button>
                 </div>

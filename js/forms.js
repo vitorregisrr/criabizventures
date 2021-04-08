@@ -20,36 +20,38 @@
     });
 
     // Formulário acessar (LOGIN)
-    $("#form-empresas").validate({
-        rules: {
-            empresa: {
-                required: true
+    $(".empresas-sec__form").each(function(){
+        $(this).validate({
+            rules: {
+                empresa: {
+                    required: true
+                },
+                pessoa: {
+                    required: true
+                },
+                cidade: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                telefone: {
+                    required: true,
+                    minlength: 14
+                },
+                linkPitchDeck: {
+                    required: true
+                },
+                resumo: {
+                    required: true
+                }
             },
-            pessoa: {
-                required: true
-            },
-            cidade: {
-                required: true
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            telefone: {
-                required: true,
-                minlength: 14
-            },
-            linkPitchDeck: {
-                required: true
-            },
-            resumo: {
-                required: true
-            }
-        },
-
-        messages: {}
-
-    });
+    
+            messages: {}
+    
+        });
+    })
 
     // Form empresa JS
     setTimeout(() => {
@@ -58,51 +60,51 @@
         }
     }, 800);
 
-    $('#form-next')
+    $('#form-next, .form-next-button')
         .click(function () {
-            if ($("#form-empresas").valid()) {
-                $('#step-1').hide();
-                $('#step-2').fadeIn();
-                $('#form-marker-2').addClass('active');
+            const target = $(this).attr('data-target') || "#form-empresas";;
+            if ($(target).valid()) {
+                $(target).find('.form-step-1, #step-1').hide();
+                $(target).find('.form-step-2, #step-2').fadeIn();
+                $(target).find('.step-2').addClass('active');
             }
         });
 
     $('#form-submit, .form-submit-button').click(function () {
-        if ($("#form-empresas").valid()) {
-
+        const target = $(this).attr('data-target') || "#form-empresas";
+        if ($(target).valid()) {
             $(this).attr('disabled', 'true');
-
             $.ajax({
                 url: "https://formsquash.io/f/dMIPTXMFpTk8Q3cRyRGe",
                 method: "POST",
                 dataType: "json",
                 contentType: "application/json; charset=iso-8859-1",
                 data: JSON.stringify({
-                    type: $('#form-empresas')
+                    type: $(target)
                         .find('input[name="type"]')
                         .val(),
-                    email: $('#form-empresas')
+                    email: $(target)
                         .find('input[name="email"]')
                         .val(),
-                    pessoa: $('#form-empresas')
+                    pessoa: $(target)
                         .find('input[name="pessoa"]')
                         .val(),
-                    empresa: $('#form-empresas')
+                    empresa: $(target)
                         .find('input[name="empresa"]')
                         .val(),
-                    cidade: $('#form-empresas')
+                    cidade: $(target)
                         .find('input[name="cidade"]')
                         .val(),
-                    telefone: $('#form-empresas')
+                    telefone: $(target)
                         .find('input[name="telefone"]')
                         .val(),
-                    resumo: $('#form-empresas')
+                    resumo: $(target)
                         .find('textarea[name="resumo"]')
                         .val()
                 })
             })
-            $('#form-empresas').hide();
-            $('#success-tab').fadeIn();
+            $(target).hide();
+            $(target).parent().find('.empresas-sec__success').fadeIn();
         }
     });
 
